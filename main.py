@@ -1,86 +1,118 @@
-#Download Latin Models
-import cltk
-from cltk import NLP
-from cltk.data.fetch import FetchCorpus
-from pathlib import Path
-import os
+# Pure Stanza Approach for Latin Lemmatization (Bypasses CLTK UD Feature Issues)
 import stanza
+from pathlib import Path
+import re
 
+# Download Stanza Latin models
 print("Downloading Stanza Latin models...")
 try:
-    stanza.download('la')  # Download Latin models for Stanza
+    stanza.download('la')
     print("Stanza Latin models downloaded successfully!")
 except Exception as e:
     print(f"Error downloading Stanza models: {e}")
-    print("Make sure you have internet connection and sufficient disk space")
 
-# Download CLTK-specific models
-print("Downloading CLTK Latin models...")
-corpus_downloader = FetchCorpus(language="lat")
-
-# Download essential Latin corpora for additional processing
+# Initialize Stanza pipeline directly (no CLTK wrapper)
+print("Initializing Stanza Latin pipeline...")
 try:
-    corpus_downloader.import_corpus("lat_models_cltk")  # Main Latin models
-    corpus_downloader.import_corpus("lat_text_latin_library")  # Additional Latin texts
-    print("CLTK models downloaded successfully!")
+    stanza_nlp = stanza.Pipeline(
+        'la', 
+        processors='tokenize,pos,lemma', 
+        use_gpu=False, 
+        verbose=False,
+        download_method=None  # Skip auto-download prompts
+    )
+    print("Stanza pipeline initialized successfully!")
 except Exception as e:
-    print(f"Error downloading CLTK models: {e}")
-    print("You may need to download manually or check your internet connection")
+    print(f"Error initializing Stanza pipeline: {e}")
+    exit(1)
 
-# Initialize the NLP pipeline for Latin
-print("Initializing Latin NLP pipeline...")
-cltk_nlp = NLP(language="lat")
-print(cltk_nlp.pipeline)
-
-# Test the pipeline to ensure all components are loaded
+# Test the pipeline
 test_text = "Gallia est omnis divisa in partes tres"
 try:
-    test_doc = cltk_nlp.analyze(test_text)
-    print("Pipeline initialized successfully!")
-    print(f"Test analysis complete - found {len(test_doc.tokens)} tokens")
+    test_doc = stanza_nlp(test_text)
+    print(f"Test analysis complete - found {len(test_doc.sentences[0].words)} words")
     
-    # Check what attributes are available in tokens
-    if test_doc.tokens:
-        sample_token = test_doc.tokens[0]
-        print(f"Available attributes for tokens: {dir(sample_token)}")
-        
-    # Check if lemmata are available at document level
-    if hasattr(test_doc, 'lemmata') and test_doc.lemmata:
-        print(f"Document-level lemmata available: {test_doc.lemmata[:5]}")
+    # Show lemmatization results
+    lemmas = [word.lemma for word in test_doc.sentences[0].words if word.text.isalpha()]
+    print(f"Test lemmas: {lemmas}")
+    
+    # Show detailed word analysis
+    print("\nDetailed analysis:")
+    for word in test_doc.sentences[0].words:
+        print(f"  {word.text} -> {word.lemma} (POS: {word.pos})")
         
 except Exception as e:
-    print(f"Pipeline initialization error: {e}")
-    print("Make sure Stanza Latin models are properly downloaded")
+    print(f"Pipeline test error: {e}")
 
-#Identifying Authors for Each Period
-#Classical: Cicero, Caesar, Livy, Ovid
-#Imperial: 	Seneca, Apuleius, Tertullian
-#Late: 	Augustine, Jerome, Ambrose
+# Function to clean and preprocess Latin text
+def clean_latin_text(text):
+    """
+    Clean Latin text for better lemmatization
+    Removes numbers, excessive whitespace, and normalizes text
+    """
+    # Remove numbers and digits
+    text = re.sub(r'\d+', '', text)
+    
+    # Remove excessive punctuation but keep sentence boundaries
+    text = re.sub(r'[^\w\s\.\!\?]', ' ', text)
+    
+    # Normalize whitespace
+    text = re.sub(r'\s+', ' ', text)
+    
+    # Remove very short lines that might be headers/page numbers
+    lines = text.split('\n')
+    cleaned_lines = [line.strip() for line in lines if len(line.strip()) > 10]
+    
+    return '\n'.join(cleaned_lines)
 
-#Lemmatize text for each period
+# Function to lemmatize text using pure Stanza
+def lemmatize_text_stanza(text):
+    """
+    Lemmatize Latin text using Stanza directly
+    Returns list of lemmas for alphabetic tokens
+    """
+    try:
+        # Clean the text first
+        clean_text = clean_latin_text(text)
+        
+        if not clean_text.strip():
+            print("Warning: Text is empty after cleaning")
+            return []
+        
+        # Process with Stanza
+        doc = stanza_nlp(clean_text)
+        lemmas = []
+        
+        for sentence in doc.sentences:
+            for word in sentence.words:
+                # Only include alphabetic words longer than 1 character
+                if (word.lemma and 
+                    word.text.isalpha() and 
+                    len(word.text) > 1 and
+                    word.lemma.isalpha()):
+                    lemmas.append(word.lemma.lower())
+                elif (word.text.isalpha() and 
+                      len(word.text) > 1):
+                    # Fallback to original word if no lemma
+                    lemmas.append(word.text.lower())
+        
+        return lemmas
+    
+    except Exception as e:
+        print(f"Error lemmatizing text: {e}")
+        return []
 
-#Function to lemmatize a specific text
-def lemmatize_text_cltk(text):
-    doc = cltk_nlp.analyze(text)
-    for token in doc.tokens:
-        print(vars(token))  # See what's inside
-    return [
-        token.lemma
-        for token in doc.tokens
-        if hasattr(token, "pos") and token.pos and token.lemma and token.string.isalpha()
-    ]
-
-#Function that loops to create lemmatized versions of each period folder
+# Function to process folders with better error handling
 def lemmatize_folder(input_dir, output_dir):
     """
     Process all .txt files in input directory and save lemmatized versions
     """
     input_dir = Path(input_dir)
     output_dir = Path(output_dir)
-
-    # Create output directory if it doesn't exist
+    
+    # Create output directory
     output_dir.mkdir(parents=True, exist_ok=True)
-
+    
     # Check if input directory exists
     if not input_dir.exists():
         print(f"Input directory {input_dir} does not exist!")
@@ -92,29 +124,35 @@ def lemmatize_folder(input_dir, output_dir):
         return
     
     print(f"Processing {len(txt_files)} files from {input_dir}...")
-
+    
     for file in txt_files:
         try:
             print(f"Processing: {file.name}")
             
-            # Read the file with error handling for encoding
-            try:
-                raw_text = file.read_text(encoding="utf-8")
-            except UnicodeDecodeError:
+            # Read file with multiple encoding attempts
+            raw_text = None
+            for encoding in ['utf-8', 'latin-1', 'cp1252']:
                 try:
-                    raw_text = file.read_text(encoding="latin-1")
-                    print(f"  Used latin-1 encoding for {file.name}")
-                except:
-                    print(f"  Could not read {file.name} - skipping")
+                    raw_text = file.read_text(encoding=encoding)
+                    break
+                except UnicodeDecodeError:
                     continue
+            
+            if raw_text is None:
+                print(f"  Could not read {file.name} with any encoding - skipping")
+                continue
             
             # Skip empty files
             if not raw_text.strip():
                 print(f"  {file.name} is empty - skipping")
                 continue
             
+            # Show file stats
+            word_count = len(raw_text.split())
+            print(f"  File contains ~{word_count} words")
+            
             # Lemmatize the text
-            lemmas = lemmatize_text_cltk(raw_text)
+            lemmas = lemmatize_text_stanza(raw_text)
             
             if lemmas:
                 # Join lemmas into a single string
@@ -125,22 +163,27 @@ def lemmatize_folder(input_dir, output_dir):
                 output_file.write_text(lemmatized_text, encoding="utf-8")
                 
                 print(f"  ✓ Lemmatized: {file.name} ({len(lemmas)} lemmas)")
+                
+                # Show reduction ratio
+                reduction = round((1 - len(lemmas) / word_count) * 100, 1)
+                print(f"    Size reduction: {reduction}% (vocabulary normalization)")
             else:
                 print(f"  ✗ No lemmas extracted from {file.name}")
                 
         except Exception as e:
             print(f"  Error processing {file.name}: {e}")
 
-# Run the lemmatize function for each time period
+# Main execution
 if __name__ == "__main__":
-    print("\n" + "="*50)
-    print("Starting lemmatization process...")
-    print("="*50)
+    print("\n" + "="*60)
+    print("STANZA-ONLY LATIN LEMMATIZATION")
+    print("(Bypasses CLTK UD feature compatibility issues)")
+    print("="*60)
     
     # Process each period
     periods = [
         ("data/classical", "lemmatized/classical"),
-        ("data/imperial", "lemmatized/imperial"),
+        ("data/imperial", "lemmatized/imperial"),  
         ("data/late", "lemmatized/late")
     ]
     
@@ -148,6 +191,7 @@ if __name__ == "__main__":
         print(f"\n--- Processing {input_dir} ---")
         lemmatize_folder(input_dir, output_dir)
     
-    print("\n" + "="*50)
-    print("Lemmatization process complete!")
-    print("="*50)
+    print("\n" + "="*60)
+    print("LEMMATIZATION COMPLETE!")
+    print("Pure Stanza approach - no CLTK UD feature conflicts")
+    print("="*60)
