@@ -1,0 +1,486 @@
+2025-06-17 01:48:32,963 - INFO - Creating alignment vocabulary
+2025-06-17 01:48:32,964 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 1-2.txt
+2025-06-17 01:48:32,971 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 1-4.txt
+2025-06-17 01:48:32,986 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt
+2025-06-17 01:48:32,994 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 1-2.txt
+2025-06-17 01:48:33,013 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 5-6.txt
+2025-06-17 01:48:33,025 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt
+2025-06-17 01:48:33,028 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt
+2025-06-17 01:48:33,033 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 3-5.txt
+2025-06-17 01:48:33,042 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 5-8.txt
+2025-06-17 01:48:33,054 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 2.txt
+2025-06-17 01:48:33,066 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 1.txt
+2025-06-17 01:48:33,069 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 3-4.txt
+2025-06-17 01:48:33,086 - INFO - classical: 4208 words above frequency 5
+2025-06-17 01:48:33,086 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 2.txt
+2025-06-17 01:48:33,088 - INFO - Reading lemmatized/imperial/Apuleius, Florida.txt
+2025-06-17 01:48:33,091 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 1.txt
+2025-06-17 01:48:33,093 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 16-30.txt
+2025-06-17 01:48:33,101 - INFO - Reading lemmatized/imperial/Apuleius, Apologia.txt
+2025-06-17 01:48:33,116 - INFO - Reading lemmatized/imperial/Tertullian, Ad Nationes Libri Duo Books 1-2.txt
+2025-06-17 01:48:33,121 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 1-20.txt
+2025-06-17 01:48:33,125 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt
+2025-06-17 01:48:33,129 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 1-15.txt
+2025-06-17 01:48:33,133 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 21-40.txt
+2025-06-17 01:48:33,137 - INFO - imperial: 2415 words above frequency 5
+2025-06-17 01:48:33,137 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 2.txt
+2025-06-17 01:48:33,140 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 3-5.txt
+2025-06-17 01:48:33,148 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 1-2.txt
+2025-06-17 01:48:33,153 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 9-11.txt
+2025-06-17 01:48:33,167 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 12-13.txt
+2025-06-17 01:48:33,179 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 6-8.txt
+2025-06-17 01:48:33,188 - INFO - Reading lemmatized/late/Jerome, Saint, In Hieremiam Prophetam Libri Sex Book 1.txt
+2025-06-17 01:48:33,198 - INFO - Reading lemmatized/late/Augustine, Epistulae 32.txt
+2025-06-17 01:48:33,201 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, De Interpellatione Iob et David Book 1.txt
+2025-06-17 01:48:33,206 - INFO - Reading lemmatized/late/Jerome, Saint, Epistulae 1.txt
+2025-06-17 01:48:33,210 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 1.txt
+2025-06-17 01:48:33,216 - INFO - Reading lemmatized/late/Augustine, De civitate dei Books 1-2.txt
+2025-06-17 01:48:33,232 - INFO - late: 3305 words above frequency 5
+2025-06-17 01:48:33,233 - INFO - Alignment vocabulary: 1227 words
+2025-06-17 01:51:26,875 - INFO - Creating alignment vocabulary
+2025-06-17 01:51:26,876 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 1-2.txt
+2025-06-17 01:51:26,880 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 1-4.txt
+2025-06-17 01:51:26,888 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt
+2025-06-17 01:51:26,893 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 1-2.txt
+2025-06-17 01:51:26,906 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 5-6.txt
+2025-06-17 01:51:26,916 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt
+2025-06-17 01:51:26,918 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt
+2025-06-17 01:51:26,919 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 3-5.txt
+2025-06-17 01:51:26,924 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 5-8.txt
+2025-06-17 01:51:26,935 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 2.txt
+2025-06-17 01:51:26,939 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 1.txt
+2025-06-17 01:51:26,941 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 3-4.txt
+2025-06-17 01:51:26,960 - INFO - classical: 4208 words above frequency 5
+2025-06-17 01:51:26,961 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 2.txt
+2025-06-17 01:51:26,966 - INFO - Reading lemmatized/imperial/Apuleius, Florida.txt
+2025-06-17 01:51:26,970 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 1.txt
+2025-06-17 01:51:26,972 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 16-30.txt
+2025-06-17 01:51:26,978 - INFO - Reading lemmatized/imperial/Apuleius, Apologia.txt
+2025-06-17 01:51:26,991 - INFO - Reading lemmatized/imperial/Tertullian, Ad Nationes Libri Duo Books 1-2.txt
+2025-06-17 01:51:27,002 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 1-20.txt
+2025-06-17 01:51:27,007 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt
+2025-06-17 01:51:27,010 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 1-15.txt
+2025-06-17 01:51:27,016 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 21-40.txt
+2025-06-17 01:51:27,021 - INFO - imperial: 2415 words above frequency 5
+2025-06-17 01:51:27,022 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 2.txt
+2025-06-17 01:51:27,024 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 3-5.txt
+2025-06-17 01:51:27,032 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 1-2.txt
+2025-06-17 01:51:27,037 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 9-11.txt
+2025-06-17 01:51:27,054 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 12-13.txt
+2025-06-17 01:51:27,070 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 6-8.txt
+2025-06-17 01:51:27,084 - INFO - Reading lemmatized/late/Jerome, Saint, In Hieremiam Prophetam Libri Sex Book 1.txt
+2025-06-17 01:51:27,094 - INFO - Reading lemmatized/late/Augustine, Epistulae 32.txt
+2025-06-17 01:51:27,096 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, De Interpellatione Iob et David Book 1.txt
+2025-06-17 01:51:27,099 - INFO - Reading lemmatized/late/Jerome, Saint, Epistulae 1.txt
+2025-06-17 01:51:27,103 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 1.txt
+2025-06-17 01:51:27,116 - INFO - Reading lemmatized/late/Augustine, De civitate dei Books 1-2.txt
+2025-06-17 01:51:27,148 - INFO - late: 3305 words above frequency 5
+2025-06-17 01:51:27,151 - INFO - Alignment vocabulary: 1227 words
+2025-06-17 01:51:27,153 - INFO - Training Word2Vec model for classical period
+2025-06-17 01:51:27,154 - ERROR - Failed to train model for classical: 'Word2VecTrainer' object has no attribute 'base_model_params'
+2025-06-17 01:51:27,156 - INFO - Training Word2Vec model for imperial period
+2025-06-17 01:51:27,157 - ERROR - Failed to train model for imperial: 'Word2VecTrainer' object has no attribute 'base_model_params'
+2025-06-17 01:51:27,157 - INFO - Training Word2Vec model for late period
+2025-06-17 01:51:27,157 - ERROR - Failed to train model for late: 'Word2VecTrainer' object has no attribute 'base_model_params'
+2025-06-17 01:51:27,171 - INFO - Training complete!
+2025-06-17 01:51:27,175 - INFO - Summary:
+Empty DataFrame
+Columns: []
+Index: []
+2025-06-17 01:52:51,418 - INFO - Creating alignment vocabulary
+2025-06-17 01:52:51,418 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 1-2.txt
+2025-06-17 01:52:51,422 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 1-4.txt
+2025-06-17 01:52:51,430 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt
+2025-06-17 01:52:51,435 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 1-2.txt
+2025-06-17 01:52:51,447 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 5-6.txt
+2025-06-17 01:52:51,457 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt
+2025-06-17 01:52:51,459 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt
+2025-06-17 01:52:51,460 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 3-5.txt
+2025-06-17 01:52:51,465 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 5-8.txt
+2025-06-17 01:52:51,475 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 2.txt
+2025-06-17 01:52:51,480 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 1.txt
+2025-06-17 01:52:51,482 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 3-4.txt
+2025-06-17 01:52:51,499 - INFO - classical: 4208 words above frequency 5
+2025-06-17 01:52:51,500 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 2.txt
+2025-06-17 01:52:51,502 - INFO - Reading lemmatized/imperial/Apuleius, Florida.txt
+2025-06-17 01:52:51,506 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 1.txt
+2025-06-17 01:52:51,508 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 16-30.txt
+2025-06-17 01:52:51,513 - INFO - Reading lemmatized/imperial/Apuleius, Apologia.txt
+2025-06-17 01:52:51,521 - INFO - Reading lemmatized/imperial/Tertullian, Ad Nationes Libri Duo Books 1-2.txt
+2025-06-17 01:52:51,526 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 1-20.txt
+2025-06-17 01:52:51,530 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt
+2025-06-17 01:52:51,534 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 1-15.txt
+2025-06-17 01:52:51,538 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 21-40.txt
+2025-06-17 01:52:51,541 - INFO - imperial: 2415 words above frequency 5
+2025-06-17 01:52:51,542 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 2.txt
+2025-06-17 01:52:51,544 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 3-5.txt
+2025-06-17 01:52:51,553 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 1-2.txt
+2025-06-17 01:52:51,560 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 9-11.txt
+2025-06-17 01:52:51,573 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 12-13.txt
+2025-06-17 01:52:51,581 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 6-8.txt
+2025-06-17 01:52:51,593 - INFO - Reading lemmatized/late/Jerome, Saint, In Hieremiam Prophetam Libri Sex Book 1.txt
+2025-06-17 01:52:51,602 - INFO - Reading lemmatized/late/Augustine, Epistulae 32.txt
+2025-06-17 01:52:51,604 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, De Interpellatione Iob et David Book 1.txt
+2025-06-17 01:52:51,607 - INFO - Reading lemmatized/late/Jerome, Saint, Epistulae 1.txt
+2025-06-17 01:52:51,608 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 1.txt
+2025-06-17 01:52:51,613 - INFO - Reading lemmatized/late/Augustine, De civitate dei Books 1-2.txt
+2025-06-17 01:52:51,625 - INFO - late: 3305 words above frequency 5
+2025-06-17 01:52:51,625 - INFO - Alignment vocabulary: 1227 words
+2025-06-17 01:52:51,627 - INFO - Training Word2Vec model for classical period
+2025-06-17 01:52:51,627 - INFO - Using classical period parameters: min_count=4, window=6
+2025-06-17 01:52:51,627 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 1-2.txt
+2025-06-17 01:52:51,630 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 1-4.txt
+2025-06-17 01:52:51,637 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt
+2025-06-17 01:52:51,641 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 1-2.txt
+2025-06-17 01:52:51,652 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 5-6.txt
+2025-06-17 01:52:51,660 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt
+2025-06-17 01:52:51,661 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt
+2025-06-17 01:52:51,663 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 3-5.txt
+2025-06-17 01:52:51,666 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 5-8.txt
+2025-06-17 01:52:51,677 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 2.txt
+2025-06-17 01:52:51,681 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 1.txt
+2025-06-17 01:52:51,682 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 3-4.txt
+2025-06-17 01:52:51,700 - INFO - Corpus stats for classical: {'period': 'classical', 'num_sentences': 12, 'vocab_size': 15917, 'total_tokens': 172844, 'avg_sentence_length': 14403.666666666666}
+2025-06-17 01:52:51,700 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 1-2.txt
+2025-06-17 01:52:51,704 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 1-4.txt
+2025-06-17 01:52:51,710 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt
+2025-06-17 01:52:51,713 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 1-2.txt
+2025-06-17 01:52:51,724 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 5-6.txt
+2025-06-17 01:52:51,732 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt
+2025-06-17 01:52:51,733 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt
+2025-06-17 01:52:51,735 - INFO - Reading lemmatized/classical/Ovid, Metamorphoses Books 3-5.txt
+2025-06-17 01:52:51,739 - INFO - Reading lemmatized/classical/Julius Caesar, Gallic War Books 5-8.txt
+2025-06-17 01:52:51,748 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 2.txt
+2025-06-17 01:52:51,751 - INFO - Reading lemmatized/classical/Cicero, Marcus Tullius, Philippicae Speech 1.txt
+2025-06-17 01:52:51,753 - INFO - Reading lemmatized/classical/Titus Livius (Livy), Ab urbe condita Books 3-4.txt
+2025-06-17 01:52:51,765 - INFO - collecting all words and their counts
+2025-06-17 01:52:51,765 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-17 01:52:51,788 - INFO - collected 15917 word types from a corpus of 172844 raw words and 12 sentences
+2025-06-17 01:52:51,788 - INFO - Creating a fresh vocabulary
+2025-06-17 01:52:51,808 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=4 retains 4985 unique words (31.32% of original 15917, drops 10932)', 'datetime': '2025-06-17T01:52:51.806972', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:52:51,809 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=4 leaves 157265 word corpus (90.99% of original 172844, drops 15579)', 'datetime': '2025-06-17T01:52:51.809053', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:52:51,835 - INFO - deleting the raw counts dictionary of 15917 items
+2025-06-17 01:52:51,835 - INFO - sample=0.0001 downsamples 733 most-common words
+2025-06-17 01:52:51,836 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 91689.90548633743 word corpus (58.3%% of prior 157265)', 'datetime': '2025-06-17T01:52:51.836104', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:52:51,837 - INFO - constructing a huffman tree from 4985 words
+2025-06-17 01:52:51,956 - INFO - built huffman tree with maximum node depth 15
+2025-06-17 01:52:51,989 - INFO - estimated required memory for 4985 words and 200 dimensions: 15453500 bytes
+2025-06-17 01:52:51,989 - INFO - resetting layer weights
+2025-06-17 01:52:51,993 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-17T01:52:51.993484', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-17 01:52:51,993 - WARNING - Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+2025-06-17 01:52:51,993 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 4985 vocabulary and 200 features, using sg=1 hs=1 sample=0.0001 negative=15 window=6 shrink_windows=True', 'datetime': '2025-06-17T01:52:51.993743', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-17 01:52:53,267 - INFO - EPOCH 0 - PROGRESS: at 58.33% examples, 32296 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:52:53,657 - INFO - EPOCH 0: training on 172844 raw words (74094 effective words) took 1.7s, 44688 effective words/s
+2025-06-17 01:52:53,657 - INFO - Epoch 0: Loss = 1991536.375
+2025-06-17 01:52:54,882 - INFO - EPOCH 1 - PROGRESS: at 58.33% examples, 33523 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:52:55,388 - INFO - EPOCH 1: training on 172844 raw words (74111 effective words) took 1.7s, 42840 effective words/s
+2025-06-17 01:52:55,388 - INFO - Epoch 1: Loss = 3871008.25
+2025-06-17 01:52:56,453 - INFO - EPOCH 2 - PROGRESS: at 66.67% examples, 40065 words/s, in_qsize 4, out_qsize 0
+2025-06-17 01:52:56,913 - INFO - EPOCH 2: training on 172844 raw words (74108 effective words) took 1.5s, 48633 effective words/s
+2025-06-17 01:52:56,913 - INFO - Epoch 2: Loss = 5473244.0
+2025-06-17 01:52:58,039 - INFO - EPOCH 3 - PROGRESS: at 58.33% examples, 36363 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:52:58,460 - INFO - EPOCH 3: training on 172844 raw words (74061 effective words) took 1.5s, 47915 effective words/s
+2025-06-17 01:52:58,460 - INFO - Epoch 3: Loss = 7229217.5
+2025-06-17 01:52:59,581 - INFO - EPOCH 4 - PROGRESS: at 58.33% examples, 33668 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:00,056 - INFO - EPOCH 4: training on 172844 raw words (74203 effective words) took 1.6s, 46535 effective words/s
+2025-06-17 01:53:00,056 - INFO - Epoch 4: Loss = 9025840.0
+2025-06-17 01:53:01,122 - INFO - EPOCH 5 - PROGRESS: at 66.67% examples, 40076 words/s, in_qsize 4, out_qsize 0
+2025-06-17 01:53:01,557 - INFO - EPOCH 5: training on 172844 raw words (74197 effective words) took 1.5s, 49493 effective words/s
+2025-06-17 01:53:01,557 - INFO - Epoch 5: Loss = 10848698.0
+2025-06-17 01:53:02,716 - INFO - EPOCH 6 - PROGRESS: at 58.33% examples, 35406 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:03,072 - INFO - EPOCH 6: training on 172844 raw words (74071 effective words) took 1.5s, 48925 effective words/s
+2025-06-17 01:53:03,072 - INFO - Epoch 6: Loss = 12460315.0
+2025-06-17 01:53:04,124 - INFO - EPOCH 7 - PROGRESS: at 58.33% examples, 38916 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:04,603 - INFO - EPOCH 7: training on 172844 raw words (74042 effective words) took 1.5s, 48401 effective words/s
+2025-06-17 01:53:04,603 - INFO - Epoch 7: Loss = 14037750.0
+2025-06-17 01:53:05,800 - INFO - EPOCH 8 - PROGRESS: at 58.33% examples, 34370 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:06,274 - INFO - EPOCH 8: training on 172844 raw words (74209 effective words) took 1.7s, 44444 effective words/s
+2025-06-17 01:53:06,274 - INFO - Epoch 8: Loss = 15623740.0
+2025-06-17 01:53:07,341 - INFO - EPOCH 9 - PROGRESS: at 58.33% examples, 38503 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:07,786 - INFO - EPOCH 9: training on 172844 raw words (74169 effective words) took 1.5s, 49103 effective words/s
+2025-06-17 01:53:07,786 - INFO - Epoch 9: Loss = 17030854.0
+2025-06-17 01:53:08,899 - INFO - EPOCH 10 - PROGRESS: at 58.33% examples, 36789 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:09,341 - INFO - EPOCH 10: training on 172844 raw words (74030 effective words) took 1.6s, 47644 effective words/s
+2025-06-17 01:53:09,341 - INFO - Epoch 10: Loss = 17989922.0
+2025-06-17 01:53:10,367 - INFO - EPOCH 11 - PROGRESS: at 66.67% examples, 41684 words/s, in_qsize 4, out_qsize 0
+2025-06-17 01:53:10,863 - INFO - EPOCH 11: training on 172844 raw words (74133 effective words) took 1.5s, 48743 effective words/s
+2025-06-17 01:53:10,864 - INFO - Epoch 11: Loss = 18840046.0
+2025-06-17 01:53:11,911 - INFO - EPOCH 12 - PROGRESS: at 58.33% examples, 39152 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:12,403 - INFO - EPOCH 12: training on 172844 raw words (74071 effective words) took 1.5s, 48151 effective words/s
+2025-06-17 01:53:12,403 - INFO - Epoch 12: Loss = 19879868.0
+2025-06-17 01:53:13,531 - INFO - EPOCH 13 - PROGRESS: at 66.67% examples, 37740 words/s, in_qsize 4, out_qsize 0
+2025-06-17 01:53:13,967 - INFO - EPOCH 13: training on 172844 raw words (73968 effective words) took 1.6s, 47343 effective words/s
+2025-06-17 01:53:13,967 - INFO - Epoch 13: Loss = 20908480.0
+2025-06-17 01:53:15,029 - INFO - EPOCH 14 - PROGRESS: at 58.33% examples, 38667 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:15,461 - INFO - EPOCH 14: training on 172844 raw words (74101 effective words) took 1.5s, 49633 effective words/s
+2025-06-17 01:53:15,461 - INFO - Epoch 14: Loss = 21832600.0
+2025-06-17 01:53:16,501 - INFO - EPOCH 15 - PROGRESS: at 58.33% examples, 36846 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:17,043 - INFO - EPOCH 15: training on 172844 raw words (74061 effective words) took 1.6s, 47413 effective words/s
+2025-06-17 01:53:17,043 - INFO - Epoch 15: Loss = 22789660.0
+2025-06-17 01:53:18,109 - INFO - EPOCH 16 - PROGRESS: at 58.33% examples, 38444 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:18,594 - INFO - EPOCH 16: training on 172844 raw words (74093 effective words) took 1.6s, 47801 effective words/s
+2025-06-17 01:53:18,594 - INFO - Epoch 16: Loss = 23780280.0
+2025-06-17 01:53:19,680 - INFO - EPOCH 17 - PROGRESS: at 58.33% examples, 34725 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:20,162 - INFO - EPOCH 17: training on 172844 raw words (74166 effective words) took 1.6s, 47328 effective words/s
+2025-06-17 01:53:20,163 - INFO - Epoch 17: Loss = 24706084.0
+2025-06-17 01:53:21,247 - INFO - EPOCH 18 - PROGRESS: at 58.33% examples, 37860 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:21,697 - INFO - EPOCH 18: training on 172844 raw words (74075 effective words) took 1.5s, 48314 effective words/s
+2025-06-17 01:53:21,697 - INFO - Epoch 18: Loss = 25606206.0
+2025-06-17 01:53:22,711 - INFO - EPOCH 19 - PROGRESS: at 58.33% examples, 40508 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:23,262 - INFO - EPOCH 19: training on 172844 raw words (74078 effective words) took 1.6s, 47365 effective words/s
+2025-06-17 01:53:23,263 - INFO - Epoch 19: Loss = 26570772.0
+2025-06-17 01:53:24,310 - INFO - EPOCH 20 - PROGRESS: at 58.33% examples, 39152 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:24,800 - INFO - EPOCH 20: training on 172844 raw words (74026 effective words) took 1.5s, 48193 effective words/s
+2025-06-17 01:53:24,800 - INFO - Epoch 20: Loss = 27510818.0
+2025-06-17 01:53:25,824 - INFO - EPOCH 21 - PROGRESS: at 58.33% examples, 36807 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:26,336 - INFO - EPOCH 21: training on 172844 raw words (74106 effective words) took 1.5s, 48270 effective words/s
+2025-06-17 01:53:26,336 - INFO - Epoch 21: Loss = 28415996.0
+2025-06-17 01:53:27,407 - INFO - EPOCH 22 - PROGRESS: at 58.33% examples, 38335 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:27,886 - INFO - EPOCH 22: training on 172844 raw words (74146 effective words) took 1.5s, 47869 effective words/s
+2025-06-17 01:53:27,887 - INFO - Epoch 22: Loss = 29325716.0
+2025-06-17 01:53:29,104 - INFO - EPOCH 23 - PROGRESS: at 66.67% examples, 35036 words/s, in_qsize 4, out_qsize 0
+2025-06-17 01:53:29,456 - INFO - EPOCH 23: training on 172844 raw words (74011 effective words) took 1.6s, 47192 effective words/s
+2025-06-17 01:53:29,456 - INFO - Epoch 23: Loss = 30221428.0
+2025-06-17 01:53:30,558 - INFO - EPOCH 24 - PROGRESS: at 58.33% examples, 37215 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:30,939 - INFO - EPOCH 24: training on 172844 raw words (74009 effective words) took 1.5s, 49972 effective words/s
+2025-06-17 01:53:30,940 - INFO - Epoch 24: Loss = 31015632.0
+2025-06-17 01:53:32,043 - INFO - EPOCH 25 - PROGRESS: at 66.67% examples, 35607 words/s, in_qsize 4, out_qsize 0
+2025-06-17 01:53:32,383 - INFO - EPOCH 25: training on 172844 raw words (74046 effective words) took 1.4s, 51328 effective words/s
+2025-06-17 01:53:32,384 - INFO - Epoch 25: Loss = 31847218.0
+2025-06-17 01:53:33,455 - INFO - EPOCH 26 - PROGRESS: at 58.33% examples, 35042 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:33,952 - INFO - EPOCH 26: training on 172844 raw words (74008 effective words) took 1.6s, 47227 effective words/s
+2025-06-17 01:53:33,952 - INFO - Epoch 26: Loss = 32655030.0
+2025-06-17 01:53:35,071 - INFO - EPOCH 27 - PROGRESS: at 50.00% examples, 27780 words/s, in_qsize 6, out_qsize 0
+2025-06-17 01:53:35,875 - INFO - EPOCH 27: training on 172844 raw words (74151 effective words) took 1.9s, 38573 effective words/s
+2025-06-17 01:53:35,876 - INFO - Epoch 27: Loss = 33463664.0
+2025-06-17 01:53:37,091 - INFO - EPOCH 28 - PROGRESS: at 75.00% examples, 40544 words/s, in_qsize 3, out_qsize 1
+2025-06-17 01:53:37,327 - INFO - EPOCH 28: training on 172844 raw words (74081 effective words) took 1.5s, 51069 effective words/s
+2025-06-17 01:53:37,328 - INFO - Epoch 28: Loss = 33880312.0
+2025-06-17 01:53:38,387 - INFO - EPOCH 29 - PROGRESS: at 58.33% examples, 38658 words/s, in_qsize 5, out_qsize 0
+2025-06-17 01:53:38,875 - INFO - EPOCH 29: training on 172844 raw words (74086 effective words) took 1.5s, 47925 effective words/s
+2025-06-17 01:53:38,875 - INFO - Epoch 29: Loss = 34246180.0
+2025-06-17 01:53:38,875 - INFO - Word2Vec lifecycle event {'msg': 'training on 5185320 raw words (2222711 effective words) took 46.9s, 47411 effective words/s', 'datetime': '2025-06-17T01:53:38.875473', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-17 01:53:38,875 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=4985, vector_size=200, alpha=0.03>', 'datetime': '2025-06-17T01:53:38.875655', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-17 01:53:38,875 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec_classical.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-17T01:53:38.875916', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-17 01:53:38,876 - INFO - not storing attribute cum_table
+2025-06-17 01:53:38,914 - INFO - saved models/word2vec_classical.model
+2025-06-17 01:53:38,914 - INFO - Model saved to models/word2vec_classical.model
+2025-06-17 01:53:38,917 - INFO - Training Word2Vec model for imperial period
+2025-06-17 01:53:38,917 - INFO - Using imperial period parameters: min_count=3, window=8
+2025-06-17 01:53:38,917 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 2.txt
+2025-06-17 01:53:38,918 - INFO - Reading lemmatized/imperial/Apuleius, Florida.txt
+2025-06-17 01:53:38,921 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 1.txt
+2025-06-17 01:53:38,923 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 16-30.txt
+2025-06-17 01:53:38,926 - INFO - Reading lemmatized/imperial/Apuleius, Apologia.txt
+2025-06-17 01:53:38,932 - INFO - Reading lemmatized/imperial/Tertullian, Ad Nationes Libri Duo Books 1-2.txt
+2025-06-17 01:53:38,936 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 1-20.txt
+2025-06-17 01:53:38,940 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt
+2025-06-17 01:53:38,943 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 1-15.txt
+2025-06-17 01:53:38,946 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 21-40.txt
+2025-06-17 01:53:38,954 - INFO - Corpus stats for imperial: {'period': 'imperial', 'num_sentences': 10, 'vocab_size': 12633, 'total_tokens': 73092, 'avg_sentence_length': 7309.2}
+2025-06-17 01:53:38,954 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 2.txt
+2025-06-17 01:53:38,956 - INFO - Reading lemmatized/imperial/Apuleius, Florida.txt
+2025-06-17 01:53:38,959 - INFO - Reading lemmatized/imperial/Apuleius, Metamorphoses Book 1.txt
+2025-06-17 01:53:38,963 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 16-30.txt
+2025-06-17 01:53:38,971 - INFO - Reading lemmatized/imperial/Apuleius, Apologia.txt
+2025-06-17 01:53:38,982 - INFO - Reading lemmatized/imperial/Tertullian, Ad Nationes Libri Duo Books 1-2.txt
+2025-06-17 01:53:38,997 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 1-20.txt
+2025-06-17 01:53:38,999 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt
+2025-06-17 01:53:39,001 - INFO - Reading lemmatized/imperial/Seneca, Lucius Annaeus, Epistulae 1-15.txt
+2025-06-17 01:53:39,003 - INFO - Reading lemmatized/imperial/Tertullian, Apologeticum Chapters 21-40.txt
+2025-06-17 01:53:39,007 - INFO - collecting all words and their counts
+2025-06-17 01:53:39,007 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-17 01:53:39,019 - INFO - collected 12633 word types from a corpus of 73092 raw words and 10 sentences
+2025-06-17 01:53:39,019 - INFO - Creating a fresh vocabulary
+2025-06-17 01:53:39,030 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 3999 unique words (31.66% of original 12633, drops 8634)', 'datetime': '2025-06-17T01:53:39.030473', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:53:39,030 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 62522 word corpus (85.54% of original 73092, drops 10570)', 'datetime': '2025-06-17T01:53:39.030617', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:53:39,049 - INFO - deleting the raw counts dictionary of 12633 items
+2025-06-17 01:53:39,049 - INFO - sample=1e-05 downsamples 3999 most-common words
+2025-06-17 01:53:39,049 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 12478.902766141957 word corpus (20.0%% of prior 62522)', 'datetime': '2025-06-17T01:53:39.049523', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:53:39,050 - INFO - constructing a huffman tree from 3999 words
+2025-06-17 01:53:39,164 - INFO - built huffman tree with maximum node depth 15
+2025-06-17 01:53:39,206 - INFO - estimated required memory for 3999 words and 200 dimensions: 12396900 bytes
+2025-06-17 01:53:39,207 - INFO - resetting layer weights
+2025-06-17 01:53:39,212 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-17T01:53:39.212721', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-17 01:53:39,212 - WARNING - Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+2025-06-17 01:53:39,213 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 3999 vocabulary and 200 features, using sg=1 hs=1 sample=1e-05 negative=15 window=8 shrink_windows=True', 'datetime': '2025-06-17T01:53:39.213184', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-17 01:53:39,580 - INFO - EPOCH 0: training on 73092 raw words (12368 effective words) took 0.4s, 33764 effective words/s
+2025-06-17 01:53:39,580 - INFO - Epoch 0: Loss = 482840.34375
+2025-06-17 01:53:39,907 - INFO - EPOCH 1: training on 73092 raw words (12532 effective words) took 0.3s, 38459 effective words/s
+2025-06-17 01:53:39,908 - INFO - Epoch 1: Loss = 799576.25
+2025-06-17 01:53:40,216 - INFO - EPOCH 2: training on 73092 raw words (12376 effective words) took 0.3s, 40248 effective words/s
+2025-06-17 01:53:40,216 - INFO - Epoch 2: Loss = 1073871.25
+2025-06-17 01:53:40,535 - INFO - EPOCH 3: training on 73092 raw words (12557 effective words) took 0.3s, 39561 effective words/s
+2025-06-17 01:53:40,535 - INFO - Epoch 3: Loss = 1441464.625
+2025-06-17 01:53:40,865 - INFO - EPOCH 4: training on 73092 raw words (12475 effective words) took 0.3s, 38535 effective words/s
+2025-06-17 01:53:40,865 - INFO - Epoch 4: Loss = 1733325.5
+2025-06-17 01:53:41,201 - INFO - EPOCH 5: training on 73092 raw words (12313 effective words) took 0.3s, 36768 effective words/s
+2025-06-17 01:53:41,201 - INFO - Epoch 5: Loss = 2214912.5
+2025-06-17 01:53:41,518 - INFO - EPOCH 6: training on 73092 raw words (12457 effective words) took 0.3s, 39470 effective words/s
+2025-06-17 01:53:41,518 - INFO - Epoch 6: Loss = 2501034.75
+2025-06-17 01:53:41,841 - INFO - EPOCH 7: training on 73092 raw words (12528 effective words) took 0.3s, 39007 effective words/s
+2025-06-17 01:53:41,841 - INFO - Epoch 7: Loss = 2795013.5
+2025-06-17 01:53:42,150 - INFO - EPOCH 8: training on 73092 raw words (12443 effective words) took 0.3s, 40399 effective words/s
+2025-06-17 01:53:42,150 - INFO - Epoch 8: Loss = 3077796.0
+2025-06-17 01:53:42,507 - INFO - EPOCH 9: training on 73092 raw words (12598 effective words) took 0.4s, 35365 effective words/s
+2025-06-17 01:53:42,508 - INFO - Epoch 9: Loss = 3366103.25
+2025-06-17 01:53:42,826 - INFO - EPOCH 10: training on 73092 raw words (12582 effective words) took 0.3s, 39607 effective words/s
+2025-06-17 01:53:42,827 - INFO - Epoch 10: Loss = 3834482.25
+2025-06-17 01:53:43,171 - INFO - EPOCH 11: training on 73092 raw words (12405 effective words) took 0.3s, 36807 effective words/s
+2025-06-17 01:53:43,171 - INFO - Epoch 11: Loss = 4127994.5
+2025-06-17 01:53:43,499 - INFO - EPOCH 12: training on 73092 raw words (12499 effective words) took 0.3s, 38377 effective words/s
+2025-06-17 01:53:43,499 - INFO - Epoch 12: Loss = 4435611.5
+2025-06-17 01:53:43,844 - INFO - EPOCH 13: training on 73092 raw words (12449 effective words) took 0.3s, 36227 effective words/s
+2025-06-17 01:53:43,845 - INFO - Epoch 13: Loss = 4693910.0
+2025-06-17 01:53:44,181 - INFO - EPOCH 14: training on 73092 raw words (12351 effective words) took 0.3s, 36813 effective words/s
+2025-06-17 01:53:44,182 - INFO - Epoch 14: Loss = 5056677.0
+2025-06-17 01:53:44,554 - INFO - EPOCH 15: training on 73092 raw words (12342 effective words) took 0.4s, 33262 effective words/s
+2025-06-17 01:53:44,554 - INFO - Epoch 15: Loss = 5466598.5
+2025-06-17 01:53:44,877 - INFO - EPOCH 16: training on 73092 raw words (12402 effective words) took 0.3s, 38566 effective words/s
+2025-06-17 01:53:44,877 - INFO - Epoch 16: Loss = 5727513.0
+2025-06-17 01:53:45,189 - INFO - EPOCH 17: training on 73092 raw words (12519 effective words) took 0.3s, 40236 effective words/s
+2025-06-17 01:53:45,189 - INFO - Epoch 17: Loss = 6174897.0
+2025-06-17 01:53:45,525 - INFO - EPOCH 18: training on 73092 raw words (12417 effective words) took 0.3s, 37120 effective words/s
+2025-06-17 01:53:45,525 - INFO - Epoch 18: Loss = 6441003.0
+2025-06-17 01:53:45,877 - INFO - EPOCH 19: training on 73092 raw words (12330 effective words) took 0.4s, 35124 effective words/s
+2025-06-17 01:53:45,878 - INFO - Epoch 19: Loss = 6698613.5
+2025-06-17 01:53:46,193 - INFO - EPOCH 20: training on 73092 raw words (12377 effective words) took 0.3s, 39648 effective words/s
+2025-06-17 01:53:46,193 - INFO - Epoch 20: Loss = 6981961.0
+2025-06-17 01:53:46,519 - INFO - EPOCH 21: training on 73092 raw words (12423 effective words) took 0.3s, 38221 effective words/s
+2025-06-17 01:53:46,519 - INFO - Epoch 21: Loss = 7330895.0
+2025-06-17 01:53:46,836 - INFO - EPOCH 22: training on 73092 raw words (12464 effective words) took 0.3s, 39547 effective words/s
+2025-06-17 01:53:46,836 - INFO - Epoch 22: Loss = 7616626.0
+2025-06-17 01:53:47,151 - INFO - EPOCH 23: training on 73092 raw words (12643 effective words) took 0.3s, 40259 effective words/s
+2025-06-17 01:53:47,151 - INFO - Epoch 23: Loss = 7881479.5
+2025-06-17 01:53:47,481 - INFO - EPOCH 24: training on 73092 raw words (12345 effective words) took 0.3s, 37484 effective words/s
+2025-06-17 01:53:47,482 - INFO - Epoch 24: Loss = 8175077.5
+2025-06-17 01:53:47,818 - INFO - EPOCH 25: training on 73092 raw words (12382 effective words) took 0.3s, 39630 effective words/s
+2025-06-17 01:53:47,818 - INFO - Epoch 25: Loss = 8438084.0
+2025-06-17 01:53:48,131 - INFO - EPOCH 26: training on 73092 raw words (12499 effective words) took 0.3s, 40029 effective words/s
+2025-06-17 01:53:48,132 - INFO - Epoch 26: Loss = 8741680.0
+2025-06-17 01:53:48,467 - INFO - EPOCH 27: training on 73092 raw words (12449 effective words) took 0.3s, 37192 effective words/s
+2025-06-17 01:53:48,468 - INFO - Epoch 27: Loss = 9013539.0
+2025-06-17 01:53:48,778 - INFO - EPOCH 28: training on 73092 raw words (12333 effective words) took 0.3s, 39873 effective words/s
+2025-06-17 01:53:48,778 - INFO - Epoch 28: Loss = 9463778.0
+2025-06-17 01:53:49,093 - INFO - EPOCH 29: training on 73092 raw words (12501 effective words) took 0.3s, 39817 effective words/s
+2025-06-17 01:53:49,093 - INFO - Epoch 29: Loss = 9767069.0
+2025-06-17 01:53:49,094 - INFO - Word2Vec lifecycle event {'msg': 'training on 2192760 raw words (373359 effective words) took 9.9s, 37787 effective words/s', 'datetime': '2025-06-17T01:53:49.093988', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-17 01:53:49,094 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=3999, vector_size=200, alpha=0.03>', 'datetime': '2025-06-17T01:53:49.094186', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-17 01:53:49,094 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-17T01:53:49.094438', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-17 01:53:49,094 - INFO - not storing attribute cum_table
+2025-06-17 01:53:49,125 - INFO - saved models/word2vec_imperial.model
+2025-06-17 01:53:49,125 - INFO - Model saved to models/word2vec_imperial.model
+2025-06-17 01:53:49,127 - INFO - Training Word2Vec model for late period
+2025-06-17 01:53:49,128 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 2.txt
+2025-06-17 01:53:49,129 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 3-5.txt
+2025-06-17 01:53:49,135 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 1-2.txt
+2025-06-17 01:53:49,139 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 9-11.txt
+2025-06-17 01:53:49,148 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 12-13.txt
+2025-06-17 01:53:49,153 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 6-8.txt
+2025-06-17 01:53:49,160 - INFO - Reading lemmatized/late/Jerome, Saint, In Hieremiam Prophetam Libri Sex Book 1.txt
+2025-06-17 01:53:49,165 - INFO - Reading lemmatized/late/Augustine, Epistulae 32.txt
+2025-06-17 01:53:49,166 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, De Interpellatione Iob et David Book 1.txt
+2025-06-17 01:53:49,168 - INFO - Reading lemmatized/late/Jerome, Saint, Epistulae 1.txt
+2025-06-17 01:53:49,169 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 1.txt
+2025-06-17 01:53:49,172 - INFO - Reading lemmatized/late/Augustine, De civitate dei Books 1-2.txt
+2025-06-17 01:53:49,185 - INFO - Corpus stats for late: {'period': 'late', 'num_sentences': 12, 'vocab_size': 17918, 'total_tokens': 134634, 'avg_sentence_length': 11219.5}
+2025-06-17 01:53:49,185 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 2.txt
+2025-06-17 01:53:49,187 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 3-5.txt
+2025-06-17 01:53:49,193 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 1-2.txt
+2025-06-17 01:53:49,196 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 9-11.txt
+2025-06-17 01:53:49,209 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 12-13.txt
+2025-06-17 01:53:49,216 - INFO - Reading lemmatized/late/Augustine, Confessiones Books 6-8.txt
+2025-06-17 01:53:49,225 - INFO - Reading lemmatized/late/Jerome, Saint, In Hieremiam Prophetam Libri Sex Book 1.txt
+2025-06-17 01:53:49,229 - INFO - Reading lemmatized/late/Augustine, Epistulae 32.txt
+2025-06-17 01:53:49,230 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, De Interpellatione Iob et David Book 1.txt
+2025-06-17 01:53:49,233 - INFO - Reading lemmatized/late/Jerome, Saint, Epistulae 1.txt
+2025-06-17 01:53:49,234 - INFO - Reading lemmatized/late/Ambrose, Saint, Bishop of Milan, Exameron Book 1.txt
+2025-06-17 01:53:49,237 - INFO - Reading lemmatized/late/Augustine, De civitate dei Books 1-2.txt
+2025-06-17 01:53:49,245 - INFO - collecting all words and their counts
+2025-06-17 01:53:49,245 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-17 01:53:49,264 - INFO - collected 17918 word types from a corpus of 134634 raw words and 12 sentences
+2025-06-17 01:53:49,265 - INFO - Creating a fresh vocabulary
+2025-06-17 01:53:49,284 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 5184 unique words (28.93% of original 17918, drops 12734)', 'datetime': '2025-06-17T01:53:49.284673', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:53:49,284 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 119521 word corpus (88.77% of original 134634, drops 15113)', 'datetime': '2025-06-17T01:53:49.284814', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:53:49,328 - INFO - deleting the raw counts dictionary of 17918 items
+2025-06-17 01:53:49,329 - INFO - sample=1e-05 downsamples 4010 most-common words
+2025-06-17 01:53:49,329 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 26187.912028487244 word corpus (21.9%% of prior 119521)', 'datetime': '2025-06-17T01:53:49.329501', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-17 01:53:49,332 - INFO - constructing a huffman tree from 5184 words
+2025-06-17 01:53:49,544 - INFO - built huffman tree with maximum node depth 15
+2025-06-17 01:53:49,609 - INFO - estimated required memory for 5184 words and 200 dimensions: 16070400 bytes
+2025-06-17 01:53:49,609 - INFO - resetting layer weights
+2025-06-17 01:53:49,613 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-17T01:53:49.613755', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-17 01:53:49,613 - WARNING - Both hierarchical softmax and negative sampling are activated. This is probably a mistake. You should set either 'hs=0' or 'negative=0' to disable one of them. 
+2025-06-17 01:53:49,614 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 5184 vocabulary and 200 features, using sg=1 hs=1 sample=1e-05 negative=15 window=8 shrink_windows=True', 'datetime': '2025-06-17T01:53:49.614087', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-17 01:53:50,369 - INFO - EPOCH 0: training on 134634 raw words (26156 effective words) took 0.8s, 34685 effective words/s
+2025-06-17 01:53:50,369 - INFO - Epoch 0: Loss = 958165.0625
+2025-06-17 01:53:51,089 - INFO - EPOCH 1: training on 134634 raw words (26393 effective words) took 0.7s, 36702 effective words/s
+2025-06-17 01:53:51,090 - INFO - Epoch 1: Loss = 2015306.625
+2025-06-17 01:53:51,816 - INFO - EPOCH 2: training on 134634 raw words (26161 effective words) took 0.7s, 36097 effective words/s
+2025-06-17 01:53:51,816 - INFO - Epoch 2: Loss = 2982106.5
+2025-06-17 01:53:52,515 - INFO - EPOCH 3: training on 134634 raw words (26060 effective words) took 0.7s, 37308 effective words/s
+2025-06-17 01:53:52,516 - INFO - Epoch 3: Loss = 3989810.25
+2025-06-17 01:53:53,211 - INFO - EPOCH 4: training on 134634 raw words (26097 effective words) took 0.7s, 37592 effective words/s
+2025-06-17 01:53:53,211 - INFO - Epoch 4: Loss = 4923232.5
+2025-06-17 01:53:54,040 - INFO - EPOCH 5: training on 134634 raw words (26177 effective words) took 0.8s, 31612 effective words/s
+2025-06-17 01:53:54,041 - INFO - Epoch 5: Loss = 5971533.5
+2025-06-17 01:53:54,781 - INFO - EPOCH 6: training on 134634 raw words (26177 effective words) took 0.7s, 35397 effective words/s
+2025-06-17 01:53:54,781 - INFO - Epoch 6: Loss = 6798279.0
+2025-06-17 01:53:55,570 - INFO - EPOCH 7: training on 134634 raw words (26137 effective words) took 0.8s, 33188 effective words/s
+2025-06-17 01:53:55,570 - INFO - Epoch 7: Loss = 7694316.0
+2025-06-17 01:53:56,354 - INFO - EPOCH 8: training on 134634 raw words (26265 effective words) took 0.8s, 33585 effective words/s
+2025-06-17 01:53:56,354 - INFO - Epoch 8: Loss = 8520502.0
+2025-06-17 01:53:57,049 - INFO - EPOCH 9: training on 134634 raw words (26171 effective words) took 0.7s, 37715 effective words/s
+2025-06-17 01:53:57,049 - INFO - Epoch 9: Loss = 9287575.0
+2025-06-17 01:53:57,754 - INFO - EPOCH 10: training on 134634 raw words (26347 effective words) took 0.7s, 37445 effective words/s
+2025-06-17 01:53:57,754 - INFO - Epoch 10: Loss = 10114678.0
+2025-06-17 01:53:58,495 - INFO - EPOCH 11: training on 134634 raw words (26160 effective words) took 0.7s, 35357 effective words/s
+2025-06-17 01:53:58,495 - INFO - Epoch 11: Loss = 10837211.0
+2025-06-17 01:53:59,200 - INFO - EPOCH 12: training on 134634 raw words (26157 effective words) took 0.7s, 37191 effective words/s
+2025-06-17 01:53:59,200 - INFO - Epoch 12: Loss = 11792189.0
+2025-06-17 01:53:59,928 - INFO - EPOCH 13: training on 134634 raw words (26194 effective words) took 0.7s, 36050 effective words/s
+2025-06-17 01:53:59,928 - INFO - Epoch 13: Loss = 12514460.0
+2025-06-17 01:54:00,698 - INFO - EPOCH 14: training on 134634 raw words (26178 effective words) took 0.8s, 34049 effective words/s
+2025-06-17 01:54:00,698 - INFO - Epoch 14: Loss = 13239177.0
+2025-06-17 01:54:01,458 - INFO - EPOCH 15: training on 134634 raw words (26100 effective words) took 0.8s, 34420 effective words/s
+2025-06-17 01:54:01,458 - INFO - Epoch 15: Loss = 13993422.0
+2025-06-17 01:54:02,168 - INFO - EPOCH 16: training on 134634 raw words (26237 effective words) took 0.7s, 37015 effective words/s
+2025-06-17 01:54:02,168 - INFO - Epoch 16: Loss = 14707365.0
+2025-06-17 01:54:02,885 - INFO - EPOCH 17: training on 134634 raw words (26089 effective words) took 0.7s, 36506 effective words/s
+2025-06-17 01:54:02,885 - INFO - Epoch 17: Loss = 15413008.0
+2025-06-17 01:54:03,624 - INFO - EPOCH 18: training on 134634 raw words (26343 effective words) took 0.7s, 35704 effective words/s
+2025-06-17 01:54:03,624 - INFO - Epoch 18: Loss = 16171727.0
+2025-06-17 01:54:04,340 - INFO - EPOCH 19: training on 134634 raw words (26026 effective words) took 0.7s, 36394 effective words/s
+2025-06-17 01:54:04,341 - INFO - Epoch 19: Loss = 16910014.0
+2025-06-17 01:54:05,075 - INFO - EPOCH 20: training on 134634 raw words (26132 effective words) took 0.7s, 35649 effective words/s
+2025-06-17 01:54:05,075 - INFO - Epoch 20: Loss = 17342720.0
+2025-06-17 01:54:05,773 - INFO - EPOCH 21: training on 134634 raw words (26019 effective words) took 0.7s, 37333 effective words/s
+2025-06-17 01:54:05,773 - INFO - Epoch 21: Loss = 17770244.0
+2025-06-17 01:54:06,645 - INFO - EPOCH 22: training on 134634 raw words (26007 effective words) took 0.9s, 29875 effective words/s
+2025-06-17 01:54:06,645 - INFO - Epoch 22: Loss = 18198318.0
+2025-06-17 01:54:07,341 - INFO - EPOCH 23: training on 134634 raw words (26120 effective words) took 0.7s, 37587 effective words/s
+2025-06-17 01:54:07,342 - INFO - Epoch 23: Loss = 18620222.0
+2025-06-17 01:54:08,048 - INFO - EPOCH 24: training on 134634 raw words (26241 effective words) took 0.7s, 37211 effective words/s
+2025-06-17 01:54:08,048 - INFO - Epoch 24: Loss = 19052960.0
+2025-06-17 01:54:08,798 - INFO - EPOCH 25: training on 134634 raw words (26368 effective words) took 0.7s, 35188 effective words/s
+2025-06-17 01:54:08,799 - INFO - Epoch 25: Loss = 19468732.0
+2025-06-17 01:54:09,504 - INFO - EPOCH 26: training on 134634 raw words (26060 effective words) took 0.7s, 37024 effective words/s
+2025-06-17 01:54:09,504 - INFO - Epoch 26: Loss = 19880104.0
+2025-06-17 01:54:10,234 - INFO - EPOCH 27: training on 134634 raw words (26080 effective words) took 0.7s, 35764 effective words/s
+2025-06-17 01:54:10,235 - INFO - Epoch 27: Loss = 20327174.0
+2025-06-17 01:54:10,966 - INFO - EPOCH 28: training on 134634 raw words (26300 effective words) took 0.7s, 35992 effective words/s
+2025-06-17 01:54:10,967 - INFO - Epoch 28: Loss = 20744634.0
+2025-06-17 01:54:11,706 - INFO - EPOCH 29: training on 134634 raw words (26041 effective words) took 0.7s, 35264 effective words/s
+2025-06-17 01:54:11,707 - INFO - Epoch 29: Loss = 21179526.0
+2025-06-17 01:54:11,707 - INFO - Word2Vec lifecycle event {'msg': 'training on 4039020 raw words (784993 effective words) took 22.1s, 35531 effective words/s', 'datetime': '2025-06-17T01:54:11.707338', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-17 01:54:11,707 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=5184, vector_size=200, alpha=0.03>', 'datetime': '2025-06-17T01:54:11.707500', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-17 01:54:11,707 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec_late.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-17T01:54:11.707717', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-17 01:54:11,708 - INFO - not storing attribute cum_table
+2025-06-17 01:54:11,748 - INFO - saved models/word2vec_late.model
+2025-06-17 01:54:11,748 - INFO - Model saved to models/word2vec_late.model
+2025-06-17 01:54:11,755 - INFO - Training complete!
+2025-06-17 01:54:11,763 - INFO - Summary:
+      period  vocab_size  aligned_words  coverage
+0  classical        4985           1227       1.0
+1   imperial        3999           1227       1.0
+2       late        5184           1227       1.0
