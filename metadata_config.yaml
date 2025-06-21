@@ -19,9 +19,9 @@ works:
     genre: "poetry"
     subgenre: "epic"
     date_composed: "8 CE"
-    books: 15
+    books: 1
     file_pattern: "Ovid, Metamorphoses Books 1-2.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
     
   - author: "Ovid"
     work: "Metamorphoses 3-5"
@@ -30,9 +30,9 @@ works:
     genre: "poetry"
     subgenre: "mythological"
     date_composed: "8 CE"
-    books: 15
+    books: 1
     file_pattern: "Ovid, Metamorphoses Books 3-5.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - History  
   - author: "Livy"
@@ -42,9 +42,9 @@ works:
     genre: "history"
     subgenre: "annalistic"
     date_composed: "27-9 BCE"
-    books: 35  # surviving books
+    books: 1  # surviving books
     file_pattern: "Titus Livius (Livy), Ab urbe condita Books 1-2.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - History  
   - author: "Livy"
@@ -54,9 +54,9 @@ works:
     genre: "history"
     subgenre: "annalistic"
     date_composed: "27-9 BCE"
-    books: 35  # surviving books
+    books: 1  # surviving books
     file_pattern: "Titus Livius (Livy), Ab urbe condita Books 3-4.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - History  
   - author: "Livy"
@@ -66,9 +66,9 @@ works:
     genre: "history"
     subgenre: "annalistic"
     date_composed: "27-9 BCE"
-    books: 35  # surviving books
+    books: 1  # surviving books
     file_pattern: "Titus Livius (Livy), Ab urbe condita Books 5-6.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
   
   # Classical Period - History  
   - author: "Caesar"
@@ -78,9 +78,9 @@ works:
     genre: "history"
     subgenre: "military_history"
     date_composed: "58-49 BCE"
-    books: 8  # surviving books
+    books: 1  # surviving books
     file_pattern: "Julius Caesar, Gallic War Books 1-4.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - History  
   - author: "Caesar"
@@ -90,9 +90,9 @@ works:
     genre: "history"
     subgenre: "military_history"
     date_composed: "58-49 BCE"
-    books: 8  # surviving books
+    books: 1  # surviving books
     file_pattern: "Julius Caesar, Gallic War Books 5-8.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - Oratory  
   - author: "Cicero"
@@ -102,9 +102,9 @@ works:
     genre: "oratory"
     subgenre: "condemnatory_speeches"
     date_composed: "44-43 BCE"
-    books: 14  
+    books: 1  
     file_pattern: "Cicero, Marcus Tullius, Philippicae Speech 1.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - Oratory  
   - author: "Cicero"
@@ -114,45 +114,47 @@ works:
     genre: "oratory"
     subgenre: "condemnatory_speeches"
     date_composed: "44-43 BCE"
-    books: 14  
+    books: 1  
     file_pattern: "Cicero, Marcus Tullius, Philippicae Speech 2.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
   # Classical Period - Political Philosophy  
   - author: "Cicero"
     work: "De Republica 1-2"
     work_short: "republica_1_2"
     period: "classical"
-    genre: "political_philosophy"
+    genre: "philosophy"
     subgenre: "dialogue"
     date_composed: "54-51 BCE"
-    books: 6 
+    books: 1 
     file_pattern: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
 # Classical Period - Political Philosophy  
   - author: "Cicero"
     work: "De Republica 3-4"
     work_short: "republica_3_4"
     period: "classical"
-    genre: "political_philosophy"
+    genre: "philosophy"
     subgenre: "dialogue"
     date_composed: "54-51 BCE"
-    books: 6 
+    books: 1 
     file_pattern: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt"
-    folder_path: "lemmatized/classical/"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
 
 # Classical Period - Political Philosophy  
   - author: "Cicero"
     work: "De Republica 5-6"
     work_short: "republica_5_6"
     period: "classical"
-    genre: "political_philosophy"
+    genre: "philosophy"
     subgenre: "dialogue"
     date_composed: "54-51 BCE"
-    books: 6 
-    file_pattern: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt"
-    folder_path: "lemmatized/classical/"
+    books: 1 
+    file_pattern: "Cicero, Marcus Tullius, De Republica Books 5-6.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/"
+
+###############################################################################################
 
   # Imperial Period - Oratory
   - author: "Apuleius"
@@ -164,7 +166,7 @@ works:
     date_composed: "158-159 CE"
     books: 1
     file_pattern: "Apuleius, Apologia.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial/"
 
   # Imperial Period - Oratory
   - author: "Apuleius"
@@ -176,7 +178,7 @@ works:
     date_composed: "160 CE"
     books: 1
     file_pattern: "Apuleius, Florida.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial/"
 
   # Imperial Period - Novel
   - author: "Apuleius"
@@ -186,9 +188,9 @@ works:
     genre: "novel"
     subgenre: "novel"
     date_composed: "~150-180 CE"
-    books: 11
+    books: 1
     file_pattern: "Apuleius, Metamorphoses Book 1.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial/"
 
   # Imperial Period - Novel
   - author: "Apuleius"
@@ -198,9 +200,9 @@ works:
     genre: "novel"
     subgenre: "novel"
     date_composed: "~150-180 CE"
-    books: 11
+    books: 1
     file_pattern: "Apuleius, Metamorphoses Book 2.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial/"
     
   # Imperial Period - Philosophy
   - author: "Seneca"
@@ -210,9 +212,9 @@ works:
     genre: "philosophy"
     subgenre: "letter"
     date_composed: "65 CE"
-    books: 124  
+    books: 1  
     file_pattern: "Seneca, Lucius Annaeus, Epistulae 1-15.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
 
   # Imperial Period - Philosophy
   - author: "Seneca"
@@ -222,9 +224,9 @@ works:
     genre: "philosophy"
     subgenre: "letter"
     date_composed: "65 CE"
-    books: 124  
+    books: 1  
     file_pattern: "Seneca, Lucius Annaeus, Epistulae 16-30.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
   
   # Imperial Period - Philosophy
   - author: "Seneca"
@@ -236,7 +238,79 @@ works:
     date_composed: "49 CE"
     books: 1
     file_pattern: "Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+  # Imperial Period - Poetry
+  - author: "Flaccus"
+    work: "Argonautica 1"
+    work_short: "argonautica_1"
+    period: "imperial"
+    genre: "poetry"
+    subgenre: "mythological"
+    date_composed: "70-90 CE"
+    books: 1
+    file_pattern: "Valerius Flaccus, Gaius, Argonautica Book 1.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+  # Imperial Period - Poetry
+  - author: "Flaccus"
+    work: "Argonautica 2"
+    work_short: "argonautica_2"
+    period: "imperial"
+    genre: "poetry"
+    subgenre: "mythological"
+    date_composed: "70-90 CE"
+    books: 1
+    file_pattern: "Valerius Flaccus, Gaius, Argonautica Book 2.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+  # Imperial Period - Poetry
+  - author: "Flaccus"
+    work: "Argonautica 3"
+    work_short: "argonautica_3"
+    period: "imperial"
+    genre: "poetry"
+    subgenre: "mythological"
+    date_composed: "70-90 CE"
+    books: 1
+    file_pattern: "Valerius Flaccus, Gaius, Argonautica Book 3.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+  # Imperial Period - History
+  - author: "Tacitus"
+    work: "Historiae 1-2"
+    work_short: "historiae_1_2"
+    period: "imperial"
+    genre: "history"
+    subgenre: "history"
+    date_composed: "100-110 CE"
+    books: 1
+    file_pattern: "Tacitus, Cornelius, Historiae Books 1-2.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+  # Imperial Period - History
+  - author: "Tacitus"
+    work: "Historiae 3-4"
+    work_short: "historiae_3_4"
+    period: "imperial"
+    genre: "history"
+    subgenre: "history"
+    date_composed: "100-110 CE"
+    books: 1
+    file_pattern: "Tacitus, Cornelius, Historiae Books 3-4.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+  # Imperial Period - Treatise
+  - author: "Saint Cyprian"
+    work: "De Dominica Oratione 1-36"
+    work_short: "dominica_oratione_1_36"
+    period: "imperial"
+    genre: "treatise"
+    subgenre: "christianity"
+    date_composed: "252 CE"
+    books: 1
+    file_pattern: "Cyprian Saint, Bishop of Carthage, De Dominica Oratione 1-36.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
 
   # Imperial Period - Theology
   - author: "Tertullian"
@@ -248,7 +322,7 @@ works:
     date_composed: "Late 100s-Early 200s CE"
     books: 1
     file_pattern: "Tertullian, Ad Nationes Libri Duo Books 1-2.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
 
   # Imperial Period - Theology
   - author: "Tertullian"
@@ -260,7 +334,7 @@ works:
     date_composed: "197 CE"
     books: 1
     file_pattern: "Tertullian, Apologeticum Chapters 1-20.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
 
   # Imperial Period - Theology
   - author: "Tertullian"
@@ -272,7 +346,9 @@ works:
     date_composed: "197 CE"
     books: 1
     file_pattern: "Tertullian, Apologeticum Chapters 21-40.txt"
-    folder_path: "lemmatized/imperial"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/imperial"
+
+###############################################################################################
 
   # Late Period - Theology
   - author: "Augustine"
@@ -282,18 +358,103 @@ works:
     genre: "theology"
     subgenre: "apologetic"
     date_composed: "413-426 CE"
-    books: 22
+    books: 1
     file_pattern: "Augustine, De civitate dei Books 1-2.txt"
-    folder_path: "lemmatized/late"
-    
-  # Late Period - Theology
-  - author: "Jerome"
-    work: "Epistulae Jerome 1"
-    work_short: "epistulae_jerome_1"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+  
+   # Late Period - Poetry
+  - author: "Ausonius"
+    work: "Mosella"
+    work_short: "mosella"
     period: "late"
-    genre: "theology"
-    subgenre: "translation"
-    date_composed: "382-405 CE"
-    books: 1  
-    file_pattern: "jerome_vulgate.txt"
-    folder_path: "late/theology/jerome/"
+    genre: "poetry"
+    subgenre: "poetry"
+    date_composed: "370-371 CE"
+    books: 1
+    file_pattern: "Ausonius, Decimus Magnus, Mosella.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - Poetry
+  - author: "Ausonius"
+    work: "Ephemeris"
+    work_short: "ephemeris"
+    period: "late"
+    genre: "poetry"
+    subgenre: "poetry"
+    date_composed: "367 CE"
+    books: 1
+    file_pattern: "Ausonius, Decimus Magnus, Ephemeris 1-8.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - Poetry
+  - author: "Prudentius"
+    work: "Psychomachia"
+    work_short: "psychomachia"
+    period: "late"
+    genre: "poetry"
+    subgenre: "christianity"
+    date_composed: "348-405 CE"
+    books: 1
+    file_pattern: "Prudentius, Psychomachia 1.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - Poetry
+  - author: "Prudentius"
+    work: "Contra Orationem Symmachia 1-2"
+    work_short: "orationem_symmachia_1_2"
+    period: "late"
+    genre: "poetry"
+    subgenre: "apologetic"
+    date_composed: "408-432 CE"
+    books: 1
+    file_pattern: "Prudentius, Contra Orationem Symmachia Book 1-2.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - History
+  - author: "Marcellinus"
+    work: "Res Gestae 14"
+    work_short: "res_gestae_14"
+    period: "late"
+    genre: "history"
+    subgenre: "biography"
+    date_composed: "380-392 CE"
+    books: 1
+    file_pattern: "Ammianus Marcellinus, Res Gestae Book 14.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - History
+  - author: "Marcellinus"
+    work: "Res Gestae 15"
+    work_short: "res_gestae_15"
+    period: "late"
+    genre: "history"
+    subgenre: "biography"
+    date_composed: "380-392 CE"
+    books: 1
+    file_pattern: "Ammianus Marcellinus, Res Gestae Book 15.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - History
+  - author: "Marcellinus"
+    work: "Res Gestae 16"
+    work_short: "res_gestae_16"
+    period: "late"
+    genre: "history"
+    subgenre: "biography"
+    date_composed: "380-392 CE"
+    books: 1
+    file_pattern: "Ammianus Marcellinus, Res Gestae Book 16.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - History
+  - author: "Marcellinus"
+    work: "Res Gestae 17"
+    work_short: "res_gestae_17"
+    period: "late"
+    genre: "history"
+    subgenre: "biography"
+    date_composed: "380-392 CE"
+    books: 1
+    file_pattern: "Ammianus Marcellinus, Res Gestae Book 17.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+    
