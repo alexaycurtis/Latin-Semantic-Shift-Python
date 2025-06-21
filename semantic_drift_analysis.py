@@ -2,12 +2,26 @@ import numpy as np
 import pickle
 from gensim.models import Word2Vec
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
 from scipy.linalg import orthogonal_procrustes
+from scipy.spatial.distance import cosine as cosine_distance
+from scipy.stats import spearmanr, pearsonr
 import pandas as pd
 from typing import Dict, List, Set, Tuple
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 class VectorSpaceAligner:
+    # Create genre metadata structure
+    genre_metadata = {
+        'text_id': ['classicus_001', 'imperialis_045', 'tardus_123'],
+        'period': ['classical', 'imperial', 'late'],
+        'genre': ['poetry', 'history', 'theology'],
+        'subgenre': ['epic', 'biography', 'homily'],
+        'author': ['Virgil', 'Tacitus', 'Augustine'],
+        'word_count': [9896, 15432, 8765]
+    }
+
     def __init__(self, model_classical, model_imperial, model_late, shared_vocab):
         self.model_classical = model_classical
         self.model_imperial = model_imperial
@@ -187,67 +201,264 @@ class VectorSpaceAligner:
         else:
             print("⚠ Warning: Alignment may not be optimal - similarities did not improve")
     
-    def measure_semantic_drift(self, aligned_imperial: Dict, aligned_late: Dict, 
-                             target_words: List[str]) -> pd.DataFrame:
+    def calculate_neighborhood_overlap(self, word: str, k: int = 10) -> Dict[str, float]:
         """
-        Measure semantic drift using cosine similarity (higher = less drift).
+        Calculate neighborhood overlap (Jaccard similarity) between periods.
+        Standard measure in computational linguistics for semantic change.
+        """
+        try:
+            # Get k nearest neighbors for each period
+            neighbors_classical = set([w for w, _ in self.model_classical.wv.most_similar(word, topn=k)])
+            neighbors_imperial = set([w for w, _ in self.model_imperial.wv.most_similar(word, topn=k)])
+            neighbors_late = set([w for w, _ in self.model_late.wv.most_similar(word, topn=k)])
+            
+            # Calculate Jaccard similarities
+            jaccard_class_imp = len(neighbors_classical & neighbors_imperial) / len(neighbors_classical | neighbors_imperial)
+            jaccard_class_late = len(neighbors_classical & neighbors_late) / len(neighbors_classical | neighbors_late)
+            jaccard_imp_late = len(neighbors_imperial & neighbors_late) / len(neighbors_imperial | neighbors_late)
+            
+            return {
+                'jaccard_classical_imperial': jaccard_class_imp,
+                'jaccard_classical_late': jaccard_class_late,
+                'jaccard_imperial_late': jaccard_imp_late
+            }
+        except:
+            return {
+                'jaccard_classical_imperial': np.nan,
+                'jaccard_classical_late': np.nan,
+                'jaccard_imperial_late': np.nan
+            }
+    
+    def calculate_vector_distances(self, word: str, aligned_imperial: Dict, aligned_late: Dict) -> Dict[str, float]:
+        """
+        Calculate multiple distance measures commonly used in computational linguistics.
+        """
+        vec_classical = self.model_classical.wv[word]
+        vec_imperial = aligned_imperial[word]
+        vec_late = aligned_late[word]
+        
+        # Cosine similarity (primary metric)
+        cos_sim_class_imp = cosine_similarity([vec_classical], [vec_imperial])[0][0]
+        cos_sim_class_late = cosine_similarity([vec_classical], [vec_late])[0][0]
+        cos_sim_imp_late = cosine_similarity([vec_imperial], [vec_late])[0][0]
+        
+        # Cosine distance (1 - cosine similarity)
+        cos_dist_class_imp = 1 - cos_sim_class_imp
+        cos_dist_class_late = 1 - cos_sim_class_late
+        cos_dist_imp_late = 1 - cos_sim_imp_late
+        
+        # Euclidean distance
+        eucl_dist_class_imp = np.linalg.norm(vec_classical - vec_imperial)
+        eucl_dist_class_late = np.linalg.norm(vec_classical - vec_late)
+        eucl_dist_imp_late = np.linalg.norm(vec_imperial - vec_late)
+        
+        return {
+            'cosine_similarity_class_imp': cos_sim_class_imp,
+            'cosine_similarity_class_late': cos_sim_class_late,
+            'cosine_similarity_imp_late': cos_sim_imp_late,
+            'cosine_distance_class_imp': cos_dist_class_imp,
+            'cosine_distance_class_late': cos_dist_class_late,
+            'cosine_distance_imp_late': cos_dist_imp_late,
+            'euclidean_distance_class_imp': eucl_dist_class_imp,
+            'euclidean_distance_class_late': eucl_dist_class_late,
+            'euclidean_distance_imp_late': eucl_dist_imp_late
+        }
+    
+    def calculate_frequency_statistics(self, word: str) -> Dict[str, float]:
+        """
+        Calculate frequency-based statistics commonly reported in linguistics.
+        """
+        # Get raw frequencies
+        freq_classical = self.model_classical.wv.get_vecattr(word, "count") if hasattr(self.model_classical.wv, 'get_vecattr') else 0
+        freq_imperial = self.model_imperial.wv.get_vecattr(word, "count") if hasattr(self.model_imperial.wv, 'get_vecattr') else 0
+        freq_late = self.model_late.wv.get_vecattr(word, "count") if hasattr(self.model_late.wv, 'get_vecattr') else 0
+        
+        # Calculate relative frequencies (per million words - estimate)
+        # Note: You might want to replace these with actual corpus sizes
+        corpus_size_classical = 1000000  # Replace with actual size
+        corpus_size_imperial = 1000000   # Replace with actual size
+        corpus_size_late = 1000000       # Replace with actual size
+        
+        rel_freq_classical = (freq_classical / corpus_size_classical) * 1000000
+        rel_freq_imperial = (freq_imperial / corpus_size_imperial) * 1000000
+        rel_freq_late = (freq_late / corpus_size_late) * 1000000
+        
+        # Frequency ratios
+        freq_ratio_imp_class = freq_imperial / max(freq_classical, 1)
+        freq_ratio_late_class = freq_late / max(freq_classical, 1)
+        freq_ratio_late_imp = freq_late / max(freq_imperial, 1)
+        
+        return {
+            'freq_classical': freq_classical,
+            'freq_imperial': freq_imperial,
+            'freq_late': freq_late,
+            'rel_freq_classical': rel_freq_classical,
+            'rel_freq_imperial': rel_freq_imperial,
+            'rel_freq_late': rel_freq_late,
+            'freq_ratio_imp_class': freq_ratio_imp_class,
+            'freq_ratio_late_class': freq_ratio_late_class,
+            'freq_ratio_late_imp': freq_ratio_late_imp
+        }
+    
+    def comprehensive_semantic_analysis(self, aligned_imperial: Dict, aligned_late: Dict, 
+                                      target_words: List[str]) -> pd.DataFrame:
+        """
+        Comprehensive semantic drift analysis with all standard computational linguistics metrics.
         """
         results = []
         
-        for word in target_words:
-            if word in self.shared_vocab:
-                # Calculate similarities (higher = less drift)
-                sim_classical_imperial = cosine_similarity(
-                    [self.model_classical.wv[word]], 
-                    [aligned_imperial[word]]
-                )[0][0]
-                
-                sim_classical_late = cosine_similarity(
-                    [self.model_classical.wv[word]], 
-                    [aligned_late[word]]
-                )[0][0]
-                
-                # ALSO calculate original (unaligned) similarities for comparison
-                sim_classical_imperial_orig = cosine_similarity(
-                    [self.model_classical.wv[word]], 
-                    [self.model_imperial.wv[word]]
-                )[0][0]
-                
-                sim_classical_late_orig = cosine_similarity(
-                    [self.model_classical.wv[word]], 
-                    [self.model_late.wv[word]]
-                )[0][0]
-                
-                # Calculate drift as 1 - similarity (higher = more drift)
-                drift_imperial = 1 - sim_classical_imperial
-                drift_late = 1 - sim_classical_late
-                drift_imperial_orig = 1 - sim_classical_imperial_orig
-                drift_late_orig = 1 - sim_classical_late_orig
-                
-                # Get word frequencies for context
-                freq_classical = self.model_classical.wv.get_vecattr(word, "count") if hasattr(self.model_classical.wv, 'get_vecattr') else 0
-                freq_imperial = self.model_imperial.wv.get_vecattr(word, "count") if hasattr(self.model_imperial.wv, 'get_vecattr') else 0
-                freq_late = self.model_late.wv.get_vecattr(word, "count") if hasattr(self.model_late.wv, 'get_vecattr') else 0
-                
-                results.append({
-                    'word': word,
-                    'similarity_classical_imperial': sim_classical_imperial,
-                    'similarity_classical_late': sim_classical_late,
-                    'similarity_classical_imperial_orig': sim_classical_imperial_orig,
-                    'similarity_classical_late_orig': sim_classical_late_orig,
-                    'drift_classical_imperial': drift_imperial,
-                    'drift_classical_late': drift_late,
-                    'drift_classical_imperial_orig': drift_imperial_orig,
-                    'drift_classical_late_orig': drift_late_orig,
-                    'drift_change': drift_late - drift_imperial,
-                    'freq_classical': freq_classical,
-                    'freq_imperial': freq_imperial,
-                    'freq_late': freq_late,
-                    'alignment_improvement_imp': sim_classical_imperial - sim_classical_imperial_orig,
-                    'alignment_improvement_late': sim_classical_late - sim_classical_late_orig
-                })
+        print("Calculating comprehensive semantic drift metrics...")
         
-        return pd.DataFrame(results)
+        for i, word in enumerate(target_words):
+            if word in self.shared_vocab:
+                print(f"Processing word {i+1}/{len(target_words)}: {word}")
+                
+                # Basic information
+                result = {'word': word}
+                
+                # Vector distance measures
+                distance_metrics = self.calculate_vector_distances(word, aligned_imperial, aligned_late)
+                result.update(distance_metrics)
+                
+                # Neighborhood overlap measures
+                neighborhood_metrics = self.calculate_neighborhood_overlap(word)
+                result.update(neighborhood_metrics)
+                
+                # Frequency statistics
+                freq_metrics = self.calculate_frequency_statistics(word)
+                result.update(freq_metrics)
+                
+                # Semantic change indicators
+                result['semantic_change_class_imp'] = distance_metrics['cosine_distance_class_imp']
+                result['semantic_change_class_late'] = distance_metrics['cosine_distance_class_late']
+                result['semantic_change_total'] = distance_metrics['cosine_distance_class_late'] - distance_metrics['cosine_distance_class_imp']
+                
+                # Stability indicators (inverse of change)
+                result['semantic_stability_class_imp'] = distance_metrics['cosine_similarity_class_imp']
+                result['semantic_stability_class_late'] = distance_metrics['cosine_similarity_class_late']
+                
+                results.append(result)
+        
+        df = pd.DataFrame(results)
+        
+        # Add percentile ranks for key metrics (useful for journal reporting)
+        df['cosine_distance_class_late_percentile'] = df['cosine_distance_class_late'].rank(pct=True) * 100
+        df['semantic_change_total_percentile'] = df['semantic_change_total'].rank(pct=True) * 100
+        df['jaccard_classical_late_percentile'] = df['jaccard_classical_late'].rank(pct=True, ascending=False) * 100
+        
+        return df
+    
+    def generate_summary_statistics(self, df: pd.DataFrame) -> Dict:
+        """
+        Generate summary statistics commonly reported in computational linguistics papers.
+        """
+        stats = {}
+        
+        # Cosine similarity statistics
+        stats['cosine_similarity'] = {
+            'classical_imperial': {
+                'mean': df['cosine_similarity_class_imp'].mean(),
+                'std': df['cosine_similarity_class_imp'].std(),
+                'median': df['cosine_similarity_class_imp'].median(),
+                'min': df['cosine_similarity_class_imp'].min(),
+                'max': df['cosine_similarity_class_imp'].max()
+            },
+            'classical_late': {
+                'mean': df['cosine_similarity_class_late'].mean(),
+                'std': df['cosine_similarity_class_late'].std(),
+                'median': df['cosine_similarity_class_late'].median(),
+                'min': df['cosine_similarity_class_late'].min(),
+                'max': df['cosine_similarity_class_late'].max()
+            }
+        }
+        
+        # Semantic change statistics
+        stats['semantic_change'] = {
+            'classical_imperial': {
+                'mean': df['semantic_change_class_imp'].mean(),
+                'std': df['semantic_change_class_imp'].std(),
+                'median': df['semantic_change_class_imp'].median()
+            },
+            'classical_late': {
+                'mean': df['semantic_change_class_late'].mean(),
+                'std': df['semantic_change_class_late'].std(),
+                'median': df['semantic_change_class_late'].median()
+            },
+            'total_change': {
+                'mean': df['semantic_change_total'].mean(),
+                'std': df['semantic_change_total'].std(),
+                'median': df['semantic_change_total'].median()
+            }
+        }
+        
+        # Neighborhood overlap statistics
+        stats['neighborhood_overlap'] = {
+            'classical_imperial': {
+                'mean': df['jaccard_classical_imperial'].mean(),
+                'std': df['jaccard_classical_imperial'].std()
+            },
+            'classical_late': {
+                'mean': df['jaccard_classical_late'].mean(),
+                'std': df['jaccard_classical_late'].std()
+            }
+        }
+        
+        # Correlation between frequency and semantic change
+        freq_change_corr = pearsonr(df['freq_classical'], df['semantic_change_class_late'])
+        stats['frequency_change_correlation'] = {
+            'pearson_r': freq_change_corr[0],
+            'p_value': freq_change_corr[1]
+        }
+        
+        return stats
+    
+    def print_journal_ready_results(self, df: pd.DataFrame, stats: Dict, alignment_method: str):
+        """
+        Print results in a format suitable for computational linguistics journals.
+        """
+        print(f"\n{'='*60}")
+        print(f"COMPUTATIONAL LINGUISTICS ANALYSIS RESULTS")
+        print(f"Alignment Method: {alignment_method.upper()}")
+        print(f"{'='*60}")
+        
+        print(f"\n1. COSINE SIMILARITY ANALYSIS")
+        print(f"   Classical → Imperial: μ={stats['cosine_similarity']['classical_imperial']['mean']:.3f} "
+              f"(σ={stats['cosine_similarity']['classical_imperial']['std']:.3f})")
+        print(f"   Classical → Late:     μ={stats['cosine_similarity']['classical_late']['mean']:.3f} "
+              f"(σ={stats['cosine_similarity']['classical_late']['std']:.3f})")
+        
+        print(f"\n2. SEMANTIC CHANGE ANALYSIS (Cosine Distance)")
+        print(f"   Classical → Imperial: μ={stats['semantic_change']['classical_imperial']['mean']:.3f} "
+              f"(σ={stats['semantic_change']['classical_imperial']['std']:.3f})")
+        print(f"   Classical → Late:     μ={stats['semantic_change']['classical_late']['mean']:.3f} "
+              f"(σ={stats['semantic_change']['classical_late']['std']:.3f})")
+        print(f"   Total Change:         μ={stats['semantic_change']['total_change']['mean']:.3f} "
+              f"(σ={stats['semantic_change']['total_change']['std']:.3f})")
+        
+        print(f"\n3. NEIGHBORHOOD OVERLAP (Jaccard Similarity)")
+        print(f"   Classical ∩ Imperial: μ={stats['neighborhood_overlap']['classical_imperial']['mean']:.3f} "
+              f"(σ={stats['neighborhood_overlap']['classical_imperial']['std']:.3f})")
+        print(f"   Classical ∩ Late:     μ={stats['neighborhood_overlap']['classical_late']['mean']:.3f} "
+              f"(σ={stats['neighborhood_overlap']['classical_late']['std']:.3f})")
+        
+        print(f"\n4. FREQUENCY-CHANGE CORRELATION")
+        print(f"   Pearson r = {stats['frequency_change_correlation']['pearson_r']:.3f} "
+              f"(p = {stats['frequency_change_correlation']['p_value']:.3f})")
+        
+        print(f"\n5. TOP 10 WORDS BY SEMANTIC CHANGE")
+        top_changed = df.nlargest(10, 'semantic_change_class_late')[
+            ['word', 'cosine_similarity_class_late', 'semantic_change_class_late', 
+             'jaccard_classical_late', 'freq_classical']
+        ]
+        print(top_changed.round(3).to_string(index=False))
+        
+        print(f"\n6. MOST STABLE WORDS (Highest Cosine Similarity)")
+        most_stable = df.nlargest(10, 'cosine_similarity_class_late')[
+            ['word', 'cosine_similarity_class_late', 'semantic_change_class_late', 
+             'jaccard_classical_late', 'freq_classical']
+        ]
+        print(most_stable.round(3).to_string(index=False))
+
 
 # Load your models and data
 print("Loading models...")
@@ -263,54 +474,35 @@ print(f"Shared vocabulary size: {len(shared_vocab)}")
 # Initialize aligner
 aligner = VectorSpaceAligner(model_classical, model_imperial, model_late, shared_vocab)
 
-# Try both alignment methods
-print("\n" + "="*50)
-print("ORTHOGONAL ALIGNMENT")
-print("="*50)
-aligned_imp_orth, aligned_late_orth = aligner.orthogonal_alignment()
-
-print("\n" + "="*50)
-print("LINEAR ALIGNMENT") 
-print("="*50)
-aligned_imp_linear, aligned_late_linear = aligner.linear_alignment()
-
 # Target words for semantic drift analysis
 target_words = [
     "puella", "equus", "urbs", "terra", "caritas", "prex", "sacramentum", 
     "sacer", "sacerdos", "sacrificium", "lex", "spiritus", "fides", "pietas", 
-    "fidelus", "gloria", "gratia", "gratus", "honor", "iustus", "magnus", "parvus", "longus", "brevis", "altus", "novus", "vetus",
-            "bonus", "malus", "albus", "niger", "ruber"
+    "fidelus", "gloria", "gratia", "gratus", "honor", "iustus", "magnus", 
+    "parvus", "longus", "brevis", "altus", "novus", "vetus", "bonus", "malus", 
+    "albus", "niger", "ruber"
 ]
 
-# Measure semantic drift with both alignment methods
+# Perform alignments and comprehensive analysis
 print("\n" + "="*50)
-print("SEMANTIC DRIFT ANALYSIS")
+print("ORTHOGONAL ALIGNMENT")
 print("="*50)
+aligned_imp_orth, aligned_late_orth = aligner.orthogonal_alignment()
+results_orth = aligner.comprehensive_semantic_analysis(aligned_imp_orth, aligned_late_orth, target_words)
+stats_orth = aligner.generate_summary_statistics(results_orth)
+aligner.print_journal_ready_results(results_orth, stats_orth, "orthogonal")
 
-print("\n--- Using Orthogonal Alignment ---")
-results_orth = aligner.measure_semantic_drift(aligned_imp_orth, aligned_late_orth, target_words)
-print(results_orth[['word', 'drift_classical_imperial', 'drift_classical_late', 'drift_change']].round(3))
-
-print("\n--- Using Linear Alignment ---")
-results_linear = aligner.measure_semantic_drift(aligned_imp_linear, aligned_late_linear, target_words)
-print(results_linear[['word', 'drift_classical_imperial', 'drift_classical_late', 'drift_change']].round(3))
-
-# Summary statistics
 print("\n" + "="*50)
-print("SUMMARY STATISTICS")
+print("LINEAR ALIGNMENT")
 print("="*50)
+aligned_imp_linear, aligned_late_linear = aligner.linear_alignment()
+results_linear = aligner.comprehensive_semantic_analysis(aligned_imp_linear, aligned_late_linear, target_words)
+stats_linear = aligner.generate_summary_statistics(results_linear)
+aligner.print_journal_ready_results(results_linear, stats_linear, "linear")
 
-print("\nOrthogonal Alignment:")
-print(f"Average drift Classical→Imperial: {results_orth['drift_classical_imperial'].mean():.3f}")
-print(f"Average drift Classical→Late: {results_orth['drift_classical_late'].mean():.3f}")
-print(f"Average drift change (Late - Imperial): {results_orth['drift_change'].mean():.3f}")
+# Save results to CSV for further analysis
+#results_orth.to_csv('semantic_drift_orthogonal.csv', index=False)
+#results_linear.to_csv('semantic_drift_linear.csv', index=False)
 
-print("\nLinear Alignment:")
-print(f"Average drift Classical→Imperial: {results_linear['drift_classical_imperial'].mean():.3f}")
-print(f"Average drift Classical→Late: {results_linear['drift_classical_late'].mean():.3f}")
-print(f"Average drift change (Late - Imperial): {results_linear['drift_change'].mean():.3f}")
-
-# Identify words with highest drift
-print(f"\nTop 5 words with highest drift in Late period (Orth Alignment):")
-top_drift = results_orth.nlargest(5, 'drift_classical_late')[['word', 'drift_classical_late']]
-print(top_drift.round(3))
+print(f"\n\nResults saved to 'semantic_drift_orthogonal.csv' and 'semantic_drift_linear.csv'")
+print("These files contain all metrics commonly used in computational linguistics research.")

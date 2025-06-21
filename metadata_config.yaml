@@ -1,0 +1,299 @@
+# Classical Latin Text Collection Metadata Configuration
+
+# Directory structure settings
+base_directory: "lemmatized/"
+file_extensions: [".txt"]
+
+# Default values
+defaults:
+  language: "Latin"
+  encoding: "utf-8"
+
+# Individual works configuration
+works:
+  # Classical Period - Poetry
+  - author: "Ovid"
+    work: "Metamorphoses 1-2"
+    work_short: "metamorphoses_1_2"
+    period: "classical"
+    genre: "poetry"
+    subgenre: "epic"
+    date_composed: "8 CE"
+    books: 15
+    file_pattern: "Ovid, Metamorphoses Books 1-2.txt"
+    folder_path: "lemmatized/classical/"
+    
+  - author: "Ovid"
+    work: "Metamorphoses 3-5"
+    work_short: "metamorphoses_3_5"
+    period: "classical"
+    genre: "poetry"
+    subgenre: "mythological"
+    date_composed: "8 CE"
+    books: 15
+    file_pattern: "Ovid, Metamorphoses Books 3-5.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - History  
+  - author: "Livy"
+    work: "Ab Urbe Condita 1-2"
+    work_short: "ab_urbe_condita_1_2"
+    period: "classical"
+    genre: "history"
+    subgenre: "annalistic"
+    date_composed: "27-9 BCE"
+    books: 35  # surviving books
+    file_pattern: "Titus Livius (Livy), Ab urbe condita Books 1-2.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - History  
+  - author: "Livy"
+    work: "Ab Urbe Condita 3-4"
+    work_short: "ab_urbe_condita_3_4"
+    period: "classical"
+    genre: "history"
+    subgenre: "annalistic"
+    date_composed: "27-9 BCE"
+    books: 35  # surviving books
+    file_pattern: "Titus Livius (Livy), Ab urbe condita Books 3-4.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - History  
+  - author: "Livy"
+    work: "Ab Urbe Condita 5-6"
+    work_short: "ab_urbe_condita_5_6"
+    period: "classical"
+    genre: "history"
+    subgenre: "annalistic"
+    date_composed: "27-9 BCE"
+    books: 35  # surviving books
+    file_pattern: "Titus Livius (Livy), Ab urbe condita Books 5-6.txt"
+    folder_path: "lemmatized/classical/"
+  
+  # Classical Period - History  
+  - author: "Caesar"
+    work: "Commentarii de Bello Gallico 1-4"
+    work_short: "bello_gallico_1_4"
+    period: "classical"
+    genre: "history"
+    subgenre: "military_history"
+    date_composed: "58-49 BCE"
+    books: 8  # surviving books
+    file_pattern: "Julius Caesar, Gallic War Books 1-4.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - History  
+  - author: "Caesar"
+    work: "Commentarii de Bello Gallico 5-8"
+    work_short: "bello_gallico_5_8"
+    period: "classical"
+    genre: "history"
+    subgenre: "military_history"
+    date_composed: "58-49 BCE"
+    books: 8  # surviving books
+    file_pattern: "Julius Caesar, Gallic War Books 5-8.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - Oratory  
+  - author: "Cicero"
+    work: "Philippicae 1"
+    work_short: "philippicae_1"
+    period: "classical"
+    genre: "oratory"
+    subgenre: "condemnatory_speeches"
+    date_composed: "44-43 BCE"
+    books: 14  
+    file_pattern: "Cicero, Marcus Tullius, Philippicae Speech 1.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - Oratory  
+  - author: "Cicero"
+    work: "Philippicae 2"
+    work_short: "philippicae_2"
+    period: "classical"
+    genre: "oratory"
+    subgenre: "condemnatory_speeches"
+    date_composed: "44-43 BCE"
+    books: 14  
+    file_pattern: "Cicero, Marcus Tullius, Philippicae Speech 2.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Classical Period - Political Philosophy  
+  - author: "Cicero"
+    work: "De Republica 1-2"
+    work_short: "republica_1_2"
+    period: "classical"
+    genre: "political_philosophy"
+    subgenre: "dialogue"
+    date_composed: "54-51 BCE"
+    books: 6 
+    file_pattern: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 1-2.txt"
+    folder_path: "lemmatized/classical/"
+
+# Classical Period - Political Philosophy  
+  - author: "Cicero"
+    work: "De Republica 3-4"
+    work_short: "republica_3_4"
+    period: "classical"
+    genre: "political_philosophy"
+    subgenre: "dialogue"
+    date_composed: "54-51 BCE"
+    books: 6 
+    file_pattern: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 3-4.txt"
+    folder_path: "lemmatized/classical/"
+
+# Classical Period - Political Philosophy  
+  - author: "Cicero"
+    work: "De Republica 5-6"
+    work_short: "republica_5_6"
+    period: "classical"
+    genre: "political_philosophy"
+    subgenre: "dialogue"
+    date_composed: "54-51 BCE"
+    books: 6 
+    file_pattern: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/classical/Cicero, Marcus Tullius, De Republica Books 5-6.txt"
+    folder_path: "lemmatized/classical/"
+
+  # Imperial Period - Oratory
+  - author: "Apuleius"
+    work: "Apologia"
+    work_short: "apologia"
+    period: "imperial"
+    genre: "oratory"
+    subgenre: "defence"
+    date_composed: "158-159 CE"
+    books: 1
+    file_pattern: "Apuleius, Apologia.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Oratory
+  - author: "Apuleius"
+    work: "Florida"
+    work_short: "florida"
+    period: "imperial"
+    genre: "oratory"
+    subgenre: "lecture"
+    date_composed: "160 CE"
+    books: 1
+    file_pattern: "Apuleius, Florida.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Novel
+  - author: "Apuleius"
+    work: "The Golden Ass 1"
+    work_short: "golden_ass_1"
+    period: "imperial"
+    genre: "novel"
+    subgenre: "novel"
+    date_composed: "~150-180 CE"
+    books: 11
+    file_pattern: "Apuleius, Metamorphoses Book 1.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Novel
+  - author: "Apuleius"
+    work: "The Golden Ass 2"
+    work_short: "golden_ass_2"
+    period: "imperial"
+    genre: "novel"
+    subgenre: "novel"
+    date_composed: "~150-180 CE"
+    books: 11
+    file_pattern: "Apuleius, Metamorphoses Book 2.txt"
+    folder_path: "lemmatized/imperial"
+    
+  # Imperial Period - Philosophy
+  - author: "Seneca"
+    work: "Epistulae 1-15"
+    work_short: "epistulae_1_15"
+    period: "imperial"
+    genre: "philosophy"
+    subgenre: "letter"
+    date_composed: "65 CE"
+    books: 124  
+    file_pattern: "Seneca, Lucius Annaeus, Epistulae 1-15.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Philosophy
+  - author: "Seneca"
+    work: "Epistulae 16-30"
+    work_short: "epistulae_16_30"
+    period: "imperial"
+    genre: "philosophy"
+    subgenre: "letter"
+    date_composed: "65 CE"
+    books: 124  
+    file_pattern: "Seneca, Lucius Annaeus, Epistulae 16-30.txt"
+    folder_path: "lemmatized/imperial"
+  
+  # Imperial Period - Philosophy
+  - author: "Seneca"
+    work: "De Brevitate Vitae Ch. 1-20"
+    work_short: "brevitate_vitae_ch1_20"
+    period: "imperial"
+    genre: "philosophy"
+    subgenre: "essay"
+    date_composed: "49 CE"
+    books: 1
+    file_pattern: "Seneca, Lucius Annaeus, de Brevitate Vitae Chapters 1-20.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Theology
+  - author: "Tertullian"
+    work: "Ad Nationes II 1-2"
+    work_short: "nationesii_1_2"
+    period: "imperial"
+    genre: "theology"
+    subgenre: "defence"
+    date_composed: "Late 100s-Early 200s CE"
+    books: 1
+    file_pattern: "Tertullian, Ad Nationes Libri Duo Books 1-2.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Theology
+  - author: "Tertullian"
+    work: "Apologeticum Ch. 1-20"
+    work_short: "apologeticum_ch1_20"
+    period: "imperial"
+    genre: "theology"
+    subgenre: "apology"
+    date_composed: "197 CE"
+    books: 1
+    file_pattern: "Tertullian, Apologeticum Chapters 1-20.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Imperial Period - Theology
+  - author: "Tertullian"
+    work: "Apologeticum Ch. 21-40"
+    work_short: "apologeticum_ch21_40"
+    period: "imperial"
+    genre: "theology"
+    subgenre: "apology"
+    date_composed: "197 CE"
+    books: 1
+    file_pattern: "Tertullian, Apologeticum Chapters 21-40.txt"
+    folder_path: "lemmatized/imperial"
+
+  # Late Period - Theology
+  - author: "Augustine"
+    work: "De Civitate Dei 1-2"
+    work_short: "civitas_dei_1_2"
+    period: "late"
+    genre: "theology"
+    subgenre: "apologetic"
+    date_composed: "413-426 CE"
+    books: 22
+    file_pattern: "Augustine, De civitate dei Books 1-2.txt"
+    folder_path: "lemmatized/late"
+    
+  # Late Period - Theology
+  - author: "Jerome"
+    work: "Epistulae Jerome 1"
+    work_short: "epistulae_jerome_1"
+    period: "late"
+    genre: "theology"
+    subgenre: "translation"
+    date_composed: "382-405 CE"
+    books: 1  
+    file_pattern: "jerome_vulgate.txt"
+    folder_path: "late/theology/jerome/"

@@ -182,9 +182,7 @@ if __name__ == "__main__":
     
     # Process each period
     periods = [
-        ("data/classical", "lemmatized/classical"),
-        ("data/imperial", "lemmatized/imperial"),  
-        ("data/late", "lemmatized/late")
+        ("data/extradata", "lemmatized/extradata")
     ]
     
     for input_dir, output_dir in periods:
