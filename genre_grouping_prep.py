@@ -219,36 +219,6 @@ for group1, group2, description in comparison_pairs:
 # print("  - semantic_groups.py (Python dictionaries)")
 
 # # ==========================================
-# # ANALYSIS RECOMMENDATIONS
-# # ==========================================
-
-# print("\n" + "="*60)
-# print("SEMANTIC DRIFT ANALYSIS RECOMMENDATIONS")
-# print("="*60)
-
-# print("\n🎯 RECOMMENDED ANALYSIS WORKFLOW:")
-# print("1. DIACHRONIC ANALYSIS (Temporal Change):")
-# print("   - Compare poetry across classical → imperial → late periods")
-# print("   - Compare history writing across periods")
-# print("   - Track vocabulary evolution over time")
-
-# print("\n2. SYNCHRONIC ANALYSIS (Genre Differences):")
-# print("   - Compare poetry vs history in same period")
-# print("   - Identify genre-specific vocabulary")
-# print("   - Analyze register differences")
-
-# print("\n3. COMBINED ANALYSIS:")
-# print("   - Period × Genre interactions")
-# print("   - Control for genre when analyzing temporal change")
-# print("   - Control for period when analyzing genre differences")
-
-# print("\n📊 WORD2VEC MODEL TRAINING SUGGESTIONS:")
-# print("   - Train separate models for each period/genre combination")
-# print("   - Use consistent preprocessing across all groups")
-# print("   - Consider minimum word frequency thresholds")
-# print("   - Track semantic neighbors of key terms across groups")
-
-# # ==========================================
 # # STANDARD EXPORTS
 # # ==========================================
 
