@@ -361,6 +361,47 @@ works:
     books: 1
     file_pattern: "Augustine, De civitate dei Books 1-2.txt"
     folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+  # Late Period - Theology
+  - author: "Augustine"
+    work: "Epistulae 32"
+    work_short: "epistulae_32"
+    period: "late"
+    genre: "letter"
+    subgenre: "christianity"
+    date_composed: "396-410 CE"
+    books: 1
+    file_pattern: "Augustine, Epistulae 32.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+#Disregarding confessiones right now because its autobiographical
+
+  # Late Period - Theology
+  - author: "Ambrose"
+    work: "Exameron 1"
+    work_short: "exameron_1"
+    period: "late"
+    genre: "theology"
+    subgenre: "hexaemeral_literature"
+    date_composed: "386-390 CE"
+    books: 1
+    file_pattern: "Ambrose, Saint, Bishop of Milan, Exameron Book 1.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+  # Late Period - Theology
+  - author: "Ambrose"
+    work: "Exameron 2"
+    work_short: "exameron_2"
+    period: "late"
+    genre: "theology"
+    subgenre: "hexaemeral_literature"
+    date_composed: "386-390 CE"
+    books: 1
+    file_pattern: "Ambrose, Saint, Bishop of Milan, Exameron Book 2.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+##Disregarding De Interpellatione because I have enough
+##Disregarding Jerome for reason stated above
   
    # Late Period - Poetry
   - author: "Ausonius"
@@ -385,6 +426,32 @@ works:
     books: 1
     file_pattern: "Ausonius, Decimus Magnus, Ephemeris 1-8.txt"
     folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - Letter
+  - author: "Ausonius"
+    work: "Epistulae Ausonius 1-15"
+    work_short: "epistulae_ausonius_1_15"
+    period: "late"
+    genre: "letter"
+    subgenre: "letter"
+    date_composed: "~360-395 CE"
+    books: 1
+    file_pattern: "Ausonius, Decimus Magnus, Epistulae 1-15.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+   # Late Period - Poetry
+  - author: "Ausonius"
+    work: "Parentalia"
+    work_short: "parentalia"
+    period: "late"
+    genre: "poetry"
+    subgenre: "elegy"
+    date_composed: "~380-395 CE"
+    books: 1
+    file_pattern: "Ausonius, Decimus Magnus, Parentalia 1-30.txt"
+    folder_path: "/workspaces/Latin-Semantic-Shift-Python/lemmatized/late"
+
+#Disregarding Ausonius, Oratio Versibus Rhopalicis
 
    # Late Period - Poetry
   - author: "Prudentius"

@@ -1,0 +1,1370 @@
+2025-06-22 03:54:57,060 - INFO - Loaded configuration from metadata_config.yaml
+2025-06-22 03:54:57,062 - INFO - Loaded metadata for 42 texts
+2025-06-22 03:54:57,071 - INFO - Available genre-period combinations: [('poetry', 'classical'), ('history', 'classical'), ('oratory', 'classical'), ('philosophy', 'classical'), ('poetry', 'imperial'), ('history', 'imperial'), ('oratory', 'imperial'), ('philosophy', 'imperial'), ('novel', 'imperial'), ('treatise', 'imperial'), ('theology', 'imperial'), ('poetry', 'late'), ('history', 'late'), ('theology', 'late'), ('letter', 'late')]
+2025-06-22 03:54:57,071 - INFO - Creating cross-genre alignment vocabularies
+2025-06-22 03:54:57,081 - INFO - Reading 2 texts for poetry (classical)
+2025-06-22 03:54:57,081 - INFO - Processing Ovid - Metamorphoses 1-2
+2025-06-22 03:54:57,086 - INFO - Processing Ovid - Metamorphoses 3-5
+2025-06-22 03:54:57,093 - INFO - poetry (classical): 1633 words above frequency 3
+2025-06-22 03:54:57,094 - INFO - Reading 5 texts for history (classical)
+2025-06-22 03:54:57,094 - INFO - Processing Livy - Ab Urbe Condita 1-2
+2025-06-22 03:54:57,109 - INFO - Processing Livy - Ab Urbe Condita 3-4
+2025-06-22 03:54:57,124 - INFO - Processing Livy - Ab Urbe Condita 5-6
+2025-06-22 03:54:57,137 - INFO - Processing Caesar - Commentarii de Bello Gallico 1-4
+2025-06-22 03:54:57,147 - INFO - Processing Caesar - Commentarii de Bello Gallico 5-8
+2025-06-22 03:54:57,163 - INFO - history (classical): 4580 words above frequency 3
+2025-06-22 03:54:57,164 - INFO - Reading 2 texts for oratory (classical)
+2025-06-22 03:54:57,164 - INFO - Processing Cicero - Philippicae 1
+2025-06-22 03:54:57,167 - INFO - Processing Cicero - Philippicae 2
+2025-06-22 03:54:57,174 - INFO - oratory (classical): 921 words above frequency 3
+2025-06-22 03:54:57,174 - INFO - Reading 3 texts for philosophy (classical)
+2025-06-22 03:54:57,175 - INFO - Processing Cicero - De Republica 1-2
+2025-06-22 03:54:57,179 - INFO - Processing Cicero - De Republica 3-4
+2025-06-22 03:54:57,182 - INFO - Processing Cicero - De Republica 5-6
+2025-06-22 03:54:57,184 - INFO - philosophy (classical): 992 words above frequency 3
+2025-06-22 03:54:57,185 - INFO - Reading 3 texts for poetry (imperial)
+2025-06-22 03:54:57,185 - INFO - Processing Flaccus - Argonautica 1
+2025-06-22 03:54:57,189 - INFO - Processing Flaccus - Argonautica 2
+2025-06-22 03:54:57,191 - INFO - Processing Flaccus - Argonautica 3
+2025-06-22 03:54:57,196 - INFO - poetry (imperial): 1391 words above frequency 3
+2025-06-22 03:54:57,197 - INFO - Reading 2 texts for history (imperial)
+2025-06-22 03:54:57,197 - INFO - Processing Tacitus - Historiae 1-2
+2025-06-22 03:54:57,208 - INFO - Processing Tacitus - Historiae 3-4
+2025-06-22 03:54:57,218 - INFO - history (imperial): 2625 words above frequency 3
+2025-06-22 03:54:57,219 - INFO - Reading 2 texts for oratory (imperial)
+2025-06-22 03:54:57,219 - INFO - Processing Apuleius - Apologia
+2025-06-22 03:54:57,230 - INFO - Processing Apuleius - Florida
+2025-06-22 03:54:57,236 - INFO - oratory (imperial): 1571 words above frequency 3
+2025-06-22 03:54:57,237 - INFO - Reading 3 texts for philosophy (imperial)
+2025-06-22 03:54:57,238 - INFO - Processing Seneca - Epistulae 1-15
+2025-06-22 03:54:57,243 - INFO - Processing Seneca - Epistulae 16-30
+2025-06-22 03:54:57,250 - INFO - Processing Seneca - De Brevitate Vitae Ch. 1-20
+2025-06-22 03:54:57,254 - INFO - philosophy (imperial): 1266 words above frequency 3
+2025-06-22 03:54:57,255 - INFO - Reading 2 texts for novel (imperial)
+2025-06-22 03:54:57,256 - INFO - Processing Apuleius - The Golden Ass 1
+2025-06-22 03:54:57,258 - INFO - Processing Apuleius - The Golden Ass 2
+2025-06-22 03:54:57,262 - INFO - novel (imperial): 582 words above frequency 3
+2025-06-22 03:54:57,263 - INFO - Reading 1 texts for treatise (imperial)
+2025-06-22 03:54:57,263 - INFO - Processing Saint Cyprian - De Dominica Oratione 1-36
+2025-06-22 03:54:57,268 - INFO - treatise (imperial): 430 words above frequency 3
+2025-06-22 03:54:57,269 - INFO - Reading 3 texts for theology (imperial)
+2025-06-22 03:54:57,269 - INFO - Processing Tertullian - Ad Nationes II 1-2
+2025-06-22 03:54:57,278 - INFO - Processing Tertullian - Apologeticum Ch. 1-20
+2025-06-22 03:54:57,282 - INFO - Processing Tertullian - Apologeticum Ch. 21-40
+2025-06-22 03:54:57,287 - INFO - theology (imperial): 1531 words above frequency 3
+2025-06-22 03:54:57,288 - INFO - Reading 5 texts for poetry (late)
+2025-06-22 03:54:57,289 - INFO - Processing Ausonius - Mosella
+2025-06-22 03:54:57,291 - INFO - Processing Ausonius - Ephemeris
+2025-06-22 03:54:57,293 - INFO - Processing Ausonius - Parentalia
+2025-06-22 03:54:57,295 - INFO - Processing Prudentius - Psychomachia
+2025-06-22 03:54:57,300 - INFO - Processing Prudentius - Contra Orationem Symmachia 1-2
+2025-06-22 03:54:57,308 - INFO - poetry (late): 1805 words above frequency 3
+2025-06-22 03:54:57,309 - INFO - Reading 4 texts for history (late)
+2025-06-22 03:54:57,309 - INFO - Processing Marcellinus - Res Gestae 14
+2025-06-22 03:54:57,313 - INFO - Processing Marcellinus - Res Gestae 15
+2025-06-22 03:54:57,317 - INFO - Processing Marcellinus - Res Gestae 16
+2025-06-22 03:54:57,322 - INFO - Processing Marcellinus - Res Gestae 17
+2025-06-22 03:54:57,326 - INFO - history (late): 2288 words above frequency 3
+2025-06-22 03:54:57,327 - INFO - Reading 3 texts for theology (late)
+2025-06-22 03:54:57,328 - INFO - Processing Augustine - De Civitate Dei 1-2
+2025-06-22 03:54:57,341 - INFO - Processing Ambrose - Exameron 1
+2025-06-22 03:54:57,345 - INFO - Processing Ambrose - Exameron 2
+2025-06-22 03:54:57,348 - INFO - theology (late): 1925 words above frequency 3
+2025-06-22 03:54:57,349 - INFO - Reading 2 texts for letter (late)
+2025-06-22 03:54:57,350 - INFO - Processing Augustine - Epistulae 32
+2025-06-22 03:54:57,351 - INFO - Processing Ausonius - Epistulae Ausonius 1-15
+2025-06-22 03:54:57,354 - INFO - letter (late): 376 words above frequency 3
+2025-06-22 03:54:57,354 - INFO - philosophy diachronic alignment: 552 words
+2025-06-22 03:54:57,355 - INFO - theology diachronic alignment: 796 words
+2025-06-22 03:54:57,355 - INFO - oratory diachronic alignment: 477 words
+2025-06-22 03:54:57,356 - INFO - history diachronic alignment: 1130 words
+2025-06-22 03:54:57,356 - INFO - poetry diachronic alignment: 624 words
+2025-06-22 03:54:57,357 - INFO - imperial synchronic alignment: 86 words
+2025-06-22 03:54:57,357 - INFO - classical synchronic alignment: 309 words
+2025-06-22 03:54:57,358 - INFO - late synchronic alignment: 193 words
+2025-06-22 03:54:57,358 - INFO - Universal alignment: 61 words
+2025-06-22 03:54:57,373 - INFO - Found 15 genre-period combinations: [('poetry', 'classical'), ('history', 'classical'), ('oratory', 'classical'), ('philosophy', 'classical'), ('poetry', 'imperial'), ('history', 'imperial'), ('oratory', 'imperial'), ('philosophy', 'imperial'), ('novel', 'imperial'), ('treatise', 'imperial'), ('theology', 'imperial'), ('poetry', 'late'), ('history', 'late'), ('theology', 'late'), ('letter', 'late')]
+2025-06-22 03:54:57,373 - INFO - Training Word2Vec model for poetry (classical)
+2025-06-22 03:54:57,373 - INFO - Using poetry parameters: window=5, min_count=2, epochs=30
+2025-06-22 03:54:57,374 - INFO - Reading 2 texts for poetry (classical)
+2025-06-22 03:54:57,374 - INFO - Processing Ovid - Metamorphoses 1-2
+2025-06-22 03:54:57,378 - INFO - Processing Ovid - Metamorphoses 3-5
+2025-06-22 03:54:57,387 - INFO - Corpus stats for poetry (classical): {'genre': 'poetry', 'period': 'classical', 'num_files': 2, 'num_sentences': 2, 'vocab_size': 5731, 'total_tokens': 21221, 'avg_sentence_length': 10610.5, 'authors': ['Ovid', 'Ovid'], 'works': ['Metamorphoses 1-2', 'Metamorphoses 3-5']}
+2025-06-22 03:54:57,388 - INFO - Reading 2 texts for poetry (classical)
+2025-06-22 03:54:57,389 - INFO - Processing Ovid - Metamorphoses 1-2
+2025-06-22 03:54:57,393 - INFO - Processing Ovid - Metamorphoses 3-5
+2025-06-22 03:54:57,400 - INFO - collecting all words and their counts
+2025-06-22 03:54:57,400 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:54:57,405 - INFO - collected 5731 word types from a corpus of 21221 raw words and 2 sentences
+2025-06-22 03:54:57,405 - INFO - Creating a fresh vocabulary
+2025-06-22 03:54:57,417 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 1633 unique words (28.49% of original 5731, drops 4098)', 'datetime': '2025-06-22T03:54:57.415197', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:54:57,417 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 16238 word corpus (76.52% of original 21221, drops 4983)', 'datetime': '2025-06-22T03:54:57.417620', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:54:57,434 - INFO - deleting the raw counts dictionary of 5731 items
+2025-06-22 03:54:57,434 - INFO - sample=1e-05 downsamples 1633 most-common words
+2025-06-22 03:54:57,435 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 2090.7214183125566 word corpus (12.9%% of prior 16238)', 'datetime': '2025-06-22T03:54:57.435229', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:54:57,460 - INFO - estimated required memory for 1633 words and 300 dimensions: 4735700 bytes
+2025-06-22 03:54:57,460 - INFO - resetting layer weights
+2025-06-22 03:54:57,464 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:54:57.464944', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:54:57,465 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1633 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=5 shrink_windows=True', 'datetime': '2025-06-22T03:54:57.465265', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:54:57,502 - INFO - EPOCH 0: training on 21221 raw words (2057 effective words) took 0.0s, 57555 effective words/s
+2025-06-22 03:54:57,502 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:54:57,544 - INFO - EPOCH 1: training on 21221 raw words (2116 effective words) took 0.0s, 52212 effective words/s
+2025-06-22 03:54:57,545 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:54:57,577 - INFO - EPOCH 2: training on 21221 raw words (2056 effective words) took 0.0s, 65369 effective words/s
+2025-06-22 03:54:57,578 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:54:57,610 - INFO - EPOCH 3: training on 21221 raw words (2079 effective words) took 0.0s, 66752 effective words/s
+2025-06-22 03:54:57,610 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:54:57,651 - INFO - EPOCH 4: training on 21221 raw words (2050 effective words) took 0.0s, 51506 effective words/s
+2025-06-22 03:54:57,652 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:54:57,688 - INFO - EPOCH 5: training on 21221 raw words (2098 effective words) took 0.0s, 60005 effective words/s
+2025-06-22 03:54:57,688 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:54:57,723 - INFO - EPOCH 6: training on 21221 raw words (2084 effective words) took 0.0s, 61255 effective words/s
+2025-06-22 03:54:57,724 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:54:57,764 - INFO - EPOCH 7: training on 21221 raw words (2123 effective words) took 0.0s, 54534 effective words/s
+2025-06-22 03:54:57,764 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:54:57,815 - INFO - EPOCH 8: training on 21221 raw words (2118 effective words) took 0.1s, 42145 effective words/s
+2025-06-22 03:54:57,815 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:54:57,855 - INFO - EPOCH 9: training on 21221 raw words (2085 effective words) took 0.0s, 53527 effective words/s
+2025-06-22 03:54:57,856 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:54:57,888 - INFO - EPOCH 10: training on 21221 raw words (2150 effective words) took 0.0s, 68060 effective words/s
+2025-06-22 03:54:57,889 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:54:57,921 - INFO - EPOCH 11: training on 21221 raw words (2079 effective words) took 0.0s, 67428 effective words/s
+2025-06-22 03:54:57,921 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:54:57,952 - INFO - EPOCH 12: training on 21221 raw words (2064 effective words) took 0.0s, 70191 effective words/s
+2025-06-22 03:54:57,952 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:54:57,985 - INFO - EPOCH 13: training on 21221 raw words (2060 effective words) took 0.0s, 64223 effective words/s
+2025-06-22 03:54:57,985 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:54:58,030 - INFO - EPOCH 14: training on 21221 raw words (2129 effective words) took 0.0s, 63559 effective words/s
+2025-06-22 03:54:58,030 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:54:58,073 - INFO - EPOCH 15: training on 21221 raw words (2061 effective words) took 0.0s, 49236 effective words/s
+2025-06-22 03:54:58,073 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:54:58,121 - INFO - EPOCH 16: training on 21221 raw words (2092 effective words) took 0.0s, 45539 effective words/s
+2025-06-22 03:54:58,121 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:54:58,152 - INFO - EPOCH 17: training on 21221 raw words (2032 effective words) took 0.0s, 68222 effective words/s
+2025-06-22 03:54:58,152 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:54:58,183 - INFO - EPOCH 18: training on 21221 raw words (2088 effective words) took 0.0s, 70951 effective words/s
+2025-06-22 03:54:58,184 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:54:58,218 - INFO - EPOCH 19: training on 21221 raw words (2099 effective words) took 0.0s, 62662 effective words/s
+2025-06-22 03:54:58,218 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:54:58,250 - INFO - EPOCH 20: training on 21221 raw words (2095 effective words) took 0.0s, 68911 effective words/s
+2025-06-22 03:54:58,250 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:54:58,281 - INFO - EPOCH 21: training on 21221 raw words (2063 effective words) took 0.0s, 67827 effective words/s
+2025-06-22 03:54:58,282 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:54:58,312 - INFO - EPOCH 22: training on 21221 raw words (2011 effective words) took 0.0s, 68289 effective words/s
+2025-06-22 03:54:58,312 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:54:58,344 - INFO - EPOCH 23: training on 21221 raw words (2121 effective words) took 0.0s, 69942 effective words/s
+2025-06-22 03:54:58,344 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:54:58,379 - INFO - EPOCH 24: training on 21221 raw words (2162 effective words) took 0.0s, 64485 effective words/s
+2025-06-22 03:54:58,379 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:54:58,410 - INFO - EPOCH 25: training on 21221 raw words (2113 effective words) took 0.0s, 71970 effective words/s
+2025-06-22 03:54:58,410 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:54:58,446 - INFO - EPOCH 26: training on 21221 raw words (2083 effective words) took 0.0s, 60180 effective words/s
+2025-06-22 03:54:58,446 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:54:58,522 - INFO - EPOCH 27: training on 21221 raw words (2070 effective words) took 0.1s, 27578 effective words/s
+2025-06-22 03:54:58,523 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:54:58,573 - INFO - EPOCH 28: training on 21221 raw words (2154 effective words) took 0.0s, 44317 effective words/s
+2025-06-22 03:54:58,573 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:54:58,607 - INFO - EPOCH 29: training on 21221 raw words (2129 effective words) took 0.0s, 65922 effective words/s
+2025-06-22 03:54:58,607 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:54:58,607 - INFO - Word2Vec lifecycle event {'msg': 'training on 636630 raw words (62721 effective words) took 1.1s, 54903 effective words/s', 'datetime': '2025-06-22T03:54:58.607929', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:54:58,608 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=1633, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:54:58.608131', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:54:58,608 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_poetry_classical.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:54:58.608394', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:54:58,608 - INFO - not storing attribute cum_table
+2025-06-22 03:54:58,615 - INFO - saved models_by_genre/word2vec_poetry_classical.model
+2025-06-22 03:54:58,615 - INFO - Model saved to models_by_genre/word2vec_poetry_classical.model
+2025-06-22 03:54:58,617 - INFO - Training Word2Vec model for history (classical)
+2025-06-22 03:54:58,617 - INFO - Using history parameters: window=7, min_count=3
+2025-06-22 03:54:58,619 - INFO - Reading 5 texts for history (classical)
+2025-06-22 03:54:58,619 - INFO - Processing Livy - Ab Urbe Condita 1-2
+2025-06-22 03:54:58,633 - INFO - Processing Livy - Ab Urbe Condita 3-4
+2025-06-22 03:54:58,645 - INFO - Processing Livy - Ab Urbe Condita 5-6
+2025-06-22 03:54:58,656 - INFO - Processing Caesar - Commentarii de Bello Gallico 1-4
+2025-06-22 03:54:58,662 - INFO - Processing Caesar - Commentarii de Bello Gallico 5-8
+2025-06-22 03:54:58,680 - INFO - Corpus stats for history (classical): {'genre': 'history', 'period': 'classical', 'num_files': 5, 'num_sentences': 5, 'vocab_size': 11004, 'total_tokens': 122453, 'avg_sentence_length': 24490.6, 'authors': ['Livy', 'Livy', 'Livy', 'Caesar', 'Caesar'], 'works': ['Ab Urbe Condita 1-2', 'Ab Urbe Condita 3-4', 'Ab Urbe Condita 5-6', 'Commentarii de Bello Gallico 1-4', 'Commentarii de Bello Gallico 5-8']}
+2025-06-22 03:54:58,681 - INFO - Reading 5 texts for history (classical)
+2025-06-22 03:54:58,681 - INFO - Processing Livy - Ab Urbe Condita 1-2
+2025-06-22 03:54:58,694 - INFO - Processing Livy - Ab Urbe Condita 3-4
+2025-06-22 03:54:58,708 - INFO - Processing Livy - Ab Urbe Condita 5-6
+2025-06-22 03:54:58,718 - INFO - Processing Caesar - Commentarii de Bello Gallico 1-4
+2025-06-22 03:54:58,724 - INFO - Processing Caesar - Commentarii de Bello Gallico 5-8
+2025-06-22 03:54:58,735 - INFO - collecting all words and their counts
+2025-06-22 03:54:58,735 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:54:58,752 - INFO - collected 11004 word types from a corpus of 122453 raw words and 5 sentences
+2025-06-22 03:54:58,753 - INFO - Creating a fresh vocabulary
+2025-06-22 03:54:58,770 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 4580 unique words (41.62% of original 11004, drops 6424)', 'datetime': '2025-06-22T03:54:58.769977', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:54:58,770 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 114485 word corpus (93.49% of original 122453, drops 7968)', 'datetime': '2025-06-22T03:54:58.770161', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:54:58,801 - INFO - deleting the raw counts dictionary of 11004 items
+2025-06-22 03:54:58,801 - INFO - sample=1e-05 downsamples 4580 most-common words
+2025-06-22 03:54:58,801 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 23959.216174627538 word corpus (20.9%% of prior 114485)', 'datetime': '2025-06-22T03:54:58.801586', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:54:58,841 - INFO - estimated required memory for 4580 words and 300 dimensions: 13282000 bytes
+2025-06-22 03:54:58,841 - INFO - resetting layer weights
+2025-06-22 03:54:58,846 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:54:58.846868', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:54:58,847 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 4580 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=7 shrink_windows=True', 'datetime': '2025-06-22T03:54:58.847037', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:54:59,275 - INFO - EPOCH 0: training on 122453 raw words (23876 effective words) took 0.4s, 55936 effective words/s
+2025-06-22 03:54:59,275 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:54:59,755 - INFO - EPOCH 1: training on 122453 raw words (23988 effective words) took 0.5s, 50081 effective words/s
+2025-06-22 03:54:59,755 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:00,310 - INFO - EPOCH 2: training on 122453 raw words (23877 effective words) took 0.6s, 43179 effective words/s
+2025-06-22 03:55:00,310 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:00,805 - INFO - EPOCH 3: training on 122453 raw words (23931 effective words) took 0.5s, 48480 effective words/s
+2025-06-22 03:55:00,806 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:01,252 - INFO - EPOCH 4: training on 122453 raw words (23754 effective words) took 0.4s, 53380 effective words/s
+2025-06-22 03:55:01,252 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:01,708 - INFO - EPOCH 5: training on 122453 raw words (23935 effective words) took 0.5s, 52592 effective words/s
+2025-06-22 03:55:01,709 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:02,165 - INFO - EPOCH 6: training on 122453 raw words (24033 effective words) took 0.5s, 52845 effective words/s
+2025-06-22 03:55:02,165 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:02,615 - INFO - EPOCH 7: training on 122453 raw words (23804 effective words) took 0.4s, 55013 effective words/s
+2025-06-22 03:55:02,615 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:03,036 - INFO - EPOCH 8: training on 122453 raw words (23884 effective words) took 0.4s, 56873 effective words/s
+2025-06-22 03:55:03,037 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:03,469 - INFO - EPOCH 9: training on 122453 raw words (24093 effective words) took 0.4s, 59655 effective words/s
+2025-06-22 03:55:03,469 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:03,907 - INFO - EPOCH 10: training on 122453 raw words (24027 effective words) took 0.4s, 57701 effective words/s
+2025-06-22 03:55:03,907 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:04,348 - INFO - EPOCH 11: training on 122453 raw words (24061 effective words) took 0.4s, 55305 effective words/s
+2025-06-22 03:55:04,349 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:04,799 - INFO - EPOCH 12: training on 122453 raw words (23996 effective words) took 0.4s, 53920 effective words/s
+2025-06-22 03:55:04,800 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:05,255 - INFO - EPOCH 13: training on 122453 raw words (24151 effective words) took 0.4s, 54931 effective words/s
+2025-06-22 03:55:05,255 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:05,727 - INFO - EPOCH 14: training on 122453 raw words (23816 effective words) took 0.5s, 50644 effective words/s
+2025-06-22 03:55:05,727 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:06,203 - INFO - EPOCH 15: training on 122453 raw words (23744 effective words) took 0.5s, 52543 effective words/s
+2025-06-22 03:55:06,204 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:06,690 - INFO - EPOCH 16: training on 122453 raw words (23892 effective words) took 0.5s, 49770 effective words/s
+2025-06-22 03:55:06,690 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:07,117 - INFO - EPOCH 17: training on 122453 raw words (24009 effective words) took 0.4s, 57060 effective words/s
+2025-06-22 03:55:07,117 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:07,531 - INFO - EPOCH 18: training on 122453 raw words (23761 effective words) took 0.4s, 58325 effective words/s
+2025-06-22 03:55:07,531 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:07,957 - INFO - EPOCH 19: training on 122453 raw words (24185 effective words) took 0.4s, 60047 effective words/s
+2025-06-22 03:55:07,957 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:08,390 - INFO - EPOCH 20: training on 122453 raw words (23723 effective words) took 0.4s, 55461 effective words/s
+2025-06-22 03:55:08,391 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:08,931 - INFO - EPOCH 21: training on 122453 raw words (23970 effective words) took 0.5s, 44485 effective words/s
+2025-06-22 03:55:08,931 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:09,356 - INFO - EPOCH 22: training on 122453 raw words (23964 effective words) took 0.4s, 57576 effective words/s
+2025-06-22 03:55:09,356 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:09,790 - INFO - EPOCH 23: training on 122453 raw words (24085 effective words) took 0.4s, 55623 effective words/s
+2025-06-22 03:55:09,790 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:10,199 - INFO - EPOCH 24: training on 122453 raw words (24036 effective words) took 0.4s, 59623 effective words/s
+2025-06-22 03:55:10,200 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:10,200 - INFO - Word2Vec lifecycle event {'msg': 'training on 3061325 raw words (598595 effective words) took 11.4s, 52725 effective words/s', 'datetime': '2025-06-22T03:55:10.200398', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:10,200 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=4580, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:10.200594', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:10,201 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_history_classical.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:10.201016', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:10,201 - INFO - not storing attribute cum_table
+2025-06-22 03:55:10,214 - INFO - saved models_by_genre/word2vec_history_classical.model
+2025-06-22 03:55:10,214 - INFO - Model saved to models_by_genre/word2vec_history_classical.model
+2025-06-22 03:55:10,218 - INFO - Training Word2Vec model for oratory (classical)
+2025-06-22 03:55:10,218 - INFO - Using oratory parameters: window=6, min_count=2
+2025-06-22 03:55:10,219 - INFO - Reading 2 texts for oratory (classical)
+2025-06-22 03:55:10,219 - INFO - Processing Cicero - Philippicae 1
+2025-06-22 03:55:10,222 - INFO - Processing Cicero - Philippicae 2
+2025-06-22 03:55:10,227 - INFO - Corpus stats for oratory (classical): {'genre': 'oratory', 'period': 'classical', 'num_files': 2, 'num_sentences': 2, 'vocab_size': 3097, 'total_tokens': 13184, 'avg_sentence_length': 6592.0, 'authors': ['Cicero', 'Cicero'], 'works': ['Philippicae 1', 'Philippicae 2']}
+2025-06-22 03:55:10,228 - INFO - Reading 2 texts for oratory (classical)
+2025-06-22 03:55:10,229 - INFO - Processing Cicero - Philippicae 1
+2025-06-22 03:55:10,231 - INFO - Processing Cicero - Philippicae 2
+2025-06-22 03:55:10,236 - INFO - collecting all words and their counts
+2025-06-22 03:55:10,236 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:10,238 - INFO - collected 3097 word types from a corpus of 13184 raw words and 2 sentences
+2025-06-22 03:55:10,238 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:10,241 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 921 unique words (29.74% of original 3097, drops 2176)', 'datetime': '2025-06-22T03:55:10.241482', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:10,241 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 10460 word corpus (79.34% of original 13184, drops 2724)', 'datetime': '2025-06-22T03:55:10.241638', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:10,247 - INFO - deleting the raw counts dictionary of 3097 items
+2025-06-22 03:55:10,247 - INFO - sample=1e-05 downsamples 921 most-common words
+2025-06-22 03:55:10,248 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 941.1961346393899 word corpus (9.0%% of prior 10460)', 'datetime': '2025-06-22T03:55:10.248087', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:10,257 - INFO - estimated required memory for 921 words and 300 dimensions: 2670900 bytes
+2025-06-22 03:55:10,257 - INFO - resetting layer weights
+2025-06-22 03:55:10,259 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:10.259629', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:10,259 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 921 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=6 shrink_windows=True', 'datetime': '2025-06-22T03:55:10.259845', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:10,280 - INFO - EPOCH 0: training on 13184 raw words (972 effective words) took 0.0s, 48993 effective words/s
+2025-06-22 03:55:10,281 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:10,299 - INFO - EPOCH 1: training on 13184 raw words (947 effective words) took 0.0s, 54819 effective words/s
+2025-06-22 03:55:10,299 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:10,319 - INFO - EPOCH 2: training on 13184 raw words (944 effective words) took 0.0s, 51719 effective words/s
+2025-06-22 03:55:10,319 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:10,342 - INFO - EPOCH 3: training on 13184 raw words (943 effective words) took 0.0s, 41886 effective words/s
+2025-06-22 03:55:10,343 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:10,366 - INFO - EPOCH 4: training on 13184 raw words (1000 effective words) took 0.0s, 59089 effective words/s
+2025-06-22 03:55:10,366 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:10,384 - INFO - EPOCH 5: training on 13184 raw words (937 effective words) took 0.0s, 53659 effective words/s
+2025-06-22 03:55:10,384 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:10,402 - INFO - EPOCH 6: training on 13184 raw words (919 effective words) took 0.0s, 70123 effective words/s
+2025-06-22 03:55:10,403 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:10,422 - INFO - EPOCH 7: training on 13184 raw words (936 effective words) took 0.0s, 52600 effective words/s
+2025-06-22 03:55:10,422 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:10,442 - INFO - EPOCH 8: training on 13184 raw words (973 effective words) took 0.0s, 49748 effective words/s
+2025-06-22 03:55:10,443 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:10,462 - INFO - EPOCH 9: training on 13184 raw words (917 effective words) took 0.0s, 49895 effective words/s
+2025-06-22 03:55:10,463 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:10,494 - INFO - EPOCH 10: training on 13184 raw words (901 effective words) took 0.0s, 32141 effective words/s
+2025-06-22 03:55:10,494 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:10,523 - INFO - EPOCH 11: training on 13184 raw words (1016 effective words) took 0.0s, 36765 effective words/s
+2025-06-22 03:55:10,525 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:10,551 - INFO - EPOCH 12: training on 13184 raw words (958 effective words) took 0.0s, 41274 effective words/s
+2025-06-22 03:55:10,551 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:10,571 - INFO - EPOCH 13: training on 13184 raw words (947 effective words) took 0.0s, 52444 effective words/s
+2025-06-22 03:55:10,571 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:10,593 - INFO - EPOCH 14: training on 13184 raw words (944 effective words) took 0.0s, 46484 effective words/s
+2025-06-22 03:55:10,593 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:10,612 - INFO - EPOCH 15: training on 13184 raw words (964 effective words) took 0.0s, 68316 effective words/s
+2025-06-22 03:55:10,613 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:10,631 - INFO - EPOCH 16: training on 13184 raw words (970 effective words) took 0.0s, 54376 effective words/s
+2025-06-22 03:55:10,632 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:10,652 - INFO - EPOCH 17: training on 13184 raw words (929 effective words) took 0.0s, 50781 effective words/s
+2025-06-22 03:55:10,652 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:10,672 - INFO - EPOCH 18: training on 13184 raw words (943 effective words) took 0.0s, 64221 effective words/s
+2025-06-22 03:55:10,672 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:10,700 - INFO - EPOCH 19: training on 13184 raw words (964 effective words) took 0.0s, 41581 effective words/s
+2025-06-22 03:55:10,700 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:10,734 - INFO - EPOCH 20: training on 13184 raw words (882 effective words) took 0.0s, 26734 effective words/s
+2025-06-22 03:55:10,734 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:10,764 - INFO - EPOCH 21: training on 13184 raw words (980 effective words) took 0.0s, 38456 effective words/s
+2025-06-22 03:55:10,764 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:10,791 - INFO - EPOCH 22: training on 13184 raw words (915 effective words) took 0.0s, 45392 effective words/s
+2025-06-22 03:55:10,791 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:10,812 - INFO - EPOCH 23: training on 13184 raw words (969 effective words) took 0.0s, 48258 effective words/s
+2025-06-22 03:55:10,813 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:10,835 - INFO - EPOCH 24: training on 13184 raw words (943 effective words) took 0.0s, 44194 effective words/s
+2025-06-22 03:55:10,836 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:10,836 - INFO - Word2Vec lifecycle event {'msg': 'training on 329600 raw words (23713 effective words) took 0.6s, 41139 effective words/s', 'datetime': '2025-06-22T03:55:10.836408', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:10,836 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=921, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:10.836815', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:10,837 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_oratory_classical.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:10.837254', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:10,837 - INFO - not storing attribute cum_table
+2025-06-22 03:55:10,846 - INFO - saved models_by_genre/word2vec_oratory_classical.model
+2025-06-22 03:55:10,846 - INFO - Model saved to models_by_genre/word2vec_oratory_classical.model
+2025-06-22 03:55:10,848 - INFO - Training Word2Vec model for philosophy (classical)
+2025-06-22 03:55:10,848 - INFO - Using philosophy parameters: window=8, min_count=3
+2025-06-22 03:55:10,849 - INFO - Reading 3 texts for philosophy (classical)
+2025-06-22 03:55:10,850 - INFO - Processing Cicero - De Republica 1-2
+2025-06-22 03:55:10,860 - INFO - Processing Cicero - De Republica 3-4
+2025-06-22 03:55:10,864 - INFO - Processing Cicero - De Republica 5-6
+2025-06-22 03:55:10,870 - INFO - Corpus stats for philosophy (classical): {'genre': 'philosophy', 'period': 'classical', 'num_files': 3, 'num_sentences': 3, 'vocab_size': 3643, 'total_tokens': 15986, 'avg_sentence_length': 5328.666666666667, 'authors': ['Cicero', 'Cicero', 'Cicero'], 'works': ['De Republica 1-2', 'De Republica 3-4', 'De Republica 5-6']}
+2025-06-22 03:55:10,874 - INFO - Reading 3 texts for philosophy (classical)
+2025-06-22 03:55:10,875 - INFO - Processing Cicero - De Republica 1-2
+2025-06-22 03:55:10,888 - INFO - Processing Cicero - De Republica 3-4
+2025-06-22 03:55:10,893 - INFO - Processing Cicero - De Republica 5-6
+2025-06-22 03:55:10,900 - INFO - collecting all words and their counts
+2025-06-22 03:55:10,900 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:10,909 - INFO - collected 3643 word types from a corpus of 15986 raw words and 3 sentences
+2025-06-22 03:55:10,910 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:10,924 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 992 unique words (27.23% of original 3643, drops 2651)', 'datetime': '2025-06-22T03:55:10.924204', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:10,924 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 12772 word corpus (79.89% of original 15986, drops 3214)', 'datetime': '2025-06-22T03:55:10.924963', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:10,938 - INFO - deleting the raw counts dictionary of 3643 items
+2025-06-22 03:55:10,939 - INFO - sample=1e-05 downsamples 992 most-common words
+2025-06-22 03:55:10,939 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 1183.562381130258 word corpus (9.3%% of prior 12772)', 'datetime': '2025-06-22T03:55:10.939663', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:10,960 - INFO - estimated required memory for 992 words and 300 dimensions: 2876800 bytes
+2025-06-22 03:55:10,960 - INFO - resetting layer weights
+2025-06-22 03:55:10,962 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:10.962771', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:10,963 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 992 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=8 shrink_windows=True', 'datetime': '2025-06-22T03:55:10.963193', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:11,014 - INFO - EPOCH 0: training on 15986 raw words (1229 effective words) took 0.0s, 24724 effective words/s
+2025-06-22 03:55:11,015 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:11,042 - INFO - EPOCH 1: training on 15986 raw words (1178 effective words) took 0.0s, 44739 effective words/s
+2025-06-22 03:55:11,043 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:11,069 - INFO - EPOCH 2: training on 15986 raw words (1176 effective words) took 0.0s, 55903 effective words/s
+2025-06-22 03:55:11,070 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:11,115 - INFO - EPOCH 3: training on 15986 raw words (1139 effective words) took 0.0s, 25601 effective words/s
+2025-06-22 03:55:11,115 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:11,161 - INFO - EPOCH 4: training on 15986 raw words (1236 effective words) took 0.0s, 28239 effective words/s
+2025-06-22 03:55:11,161 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:11,211 - INFO - EPOCH 5: training on 15986 raw words (1181 effective words) took 0.0s, 24227 effective words/s
+2025-06-22 03:55:11,211 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:11,236 - INFO - EPOCH 6: training on 15986 raw words (1173 effective words) took 0.0s, 60594 effective words/s
+2025-06-22 03:55:11,236 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:11,265 - INFO - EPOCH 7: training on 15986 raw words (1201 effective words) took 0.0s, 43087 effective words/s
+2025-06-22 03:55:11,265 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:11,294 - INFO - EPOCH 8: training on 15986 raw words (1174 effective words) took 0.0s, 41490 effective words/s
+2025-06-22 03:55:11,295 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:11,322 - INFO - EPOCH 9: training on 15986 raw words (1205 effective words) took 0.0s, 46061 effective words/s
+2025-06-22 03:55:11,322 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:11,351 - INFO - EPOCH 10: training on 15986 raw words (1189 effective words) took 0.0s, 43228 effective words/s
+2025-06-22 03:55:11,351 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:11,380 - INFO - EPOCH 11: training on 15986 raw words (1219 effective words) took 0.0s, 48636 effective words/s
+2025-06-22 03:55:11,380 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:11,409 - INFO - EPOCH 12: training on 15986 raw words (1251 effective words) took 0.0s, 53303 effective words/s
+2025-06-22 03:55:11,409 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:11,439 - INFO - EPOCH 13: training on 15986 raw words (1256 effective words) took 0.0s, 43185 effective words/s
+2025-06-22 03:55:11,439 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:11,469 - INFO - EPOCH 14: training on 15986 raw words (1276 effective words) took 0.0s, 43752 effective words/s
+2025-06-22 03:55:11,470 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:11,497 - INFO - EPOCH 15: training on 15986 raw words (1211 effective words) took 0.0s, 45621 effective words/s
+2025-06-22 03:55:11,497 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:11,527 - INFO - EPOCH 16: training on 15986 raw words (1141 effective words) took 0.0s, 40401 effective words/s
+2025-06-22 03:55:11,527 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:11,557 - INFO - EPOCH 17: training on 15986 raw words (1200 effective words) took 0.0s, 47334 effective words/s
+2025-06-22 03:55:11,557 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:11,584 - INFO - EPOCH 18: training on 15986 raw words (1156 effective words) took 0.0s, 43616 effective words/s
+2025-06-22 03:55:11,585 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:11,610 - INFO - EPOCH 19: training on 15986 raw words (1181 effective words) took 0.0s, 48134 effective words/s
+2025-06-22 03:55:11,611 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:11,638 - INFO - EPOCH 20: training on 15986 raw words (1093 effective words) took 0.0s, 41411 effective words/s
+2025-06-22 03:55:11,638 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:11,667 - INFO - EPOCH 21: training on 15986 raw words (1207 effective words) took 0.0s, 44041 effective words/s
+2025-06-22 03:55:11,667 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:11,694 - INFO - EPOCH 22: training on 15986 raw words (1210 effective words) took 0.0s, 53325 effective words/s
+2025-06-22 03:55:11,695 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:11,722 - INFO - EPOCH 23: training on 15986 raw words (1137 effective words) took 0.0s, 43630 effective words/s
+2025-06-22 03:55:11,722 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:11,753 - INFO - EPOCH 24: training on 15986 raw words (1179 effective words) took 0.0s, 39701 effective words/s
+2025-06-22 03:55:11,753 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:11,753 - INFO - Word2Vec lifecycle event {'msg': 'training on 399650 raw words (29798 effective words) took 0.8s, 37707 effective words/s', 'datetime': '2025-06-22T03:55:11.753835', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:11,754 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=992, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:11.754122', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:11,754 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_philosophy_classical.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:11.754458', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:11,754 - INFO - not storing attribute cum_table
+2025-06-22 03:55:11,759 - INFO - saved models_by_genre/word2vec_philosophy_classical.model
+2025-06-22 03:55:11,759 - INFO - Model saved to models_by_genre/word2vec_philosophy_classical.model
+2025-06-22 03:55:11,760 - INFO - Training Word2Vec model for poetry (imperial)
+2025-06-22 03:55:11,760 - INFO - Using poetry parameters: window=5, min_count=2, epochs=30
+2025-06-22 03:55:11,762 - INFO - Reading 3 texts for poetry (imperial)
+2025-06-22 03:55:11,762 - INFO - Processing Flaccus - Argonautica 1
+2025-06-22 03:55:11,766 - INFO - Processing Flaccus - Argonautica 2
+2025-06-22 03:55:11,769 - INFO - Processing Flaccus - Argonautica 3
+2025-06-22 03:55:11,773 - INFO - Corpus stats for poetry (imperial): {'genre': 'poetry', 'period': 'imperial', 'num_files': 3, 'num_sentences': 3, 'vocab_size': 5055, 'total_tokens': 16074, 'avg_sentence_length': 5358.0, 'authors': ['Flaccus', 'Flaccus', 'Flaccus'], 'works': ['Argonautica 1', 'Argonautica 2', 'Argonautica 3']}
+2025-06-22 03:55:11,774 - INFO - Reading 3 texts for poetry (imperial)
+2025-06-22 03:55:11,774 - INFO - Processing Flaccus - Argonautica 1
+2025-06-22 03:55:11,777 - INFO - Processing Flaccus - Argonautica 2
+2025-06-22 03:55:11,779 - INFO - Processing Flaccus - Argonautica 3
+2025-06-22 03:55:11,782 - INFO - collecting all words and their counts
+2025-06-22 03:55:11,783 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:11,787 - INFO - collected 5055 word types from a corpus of 16074 raw words and 3 sentences
+2025-06-22 03:55:11,787 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:11,796 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 2198 unique words (43.48% of original 5055, drops 2857)', 'datetime': '2025-06-22T03:55:11.796484', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:11,796 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 13217 word corpus (82.23% of original 16074, drops 2857)', 'datetime': '2025-06-22T03:55:11.796752', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:11,809 - INFO - deleting the raw counts dictionary of 5055 items
+2025-06-22 03:55:11,809 - INFO - sample=1e-05 downsamples 2198 most-common words
+2025-06-22 03:55:11,809 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 2038.534461350127 word corpus (15.4%% of prior 13217)', 'datetime': '2025-06-22T03:55:11.809694', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:11,833 - INFO - estimated required memory for 2198 words and 300 dimensions: 6374200 bytes
+2025-06-22 03:55:11,833 - INFO - resetting layer weights
+2025-06-22 03:55:11,836 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:11.836035', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:11,836 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 2198 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=5 shrink_windows=True', 'datetime': '2025-06-22T03:55:11.836238', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:11,877 - INFO - EPOCH 0: training on 16074 raw words (2088 effective words) took 0.0s, 51787 effective words/s
+2025-06-22 03:55:11,877 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:11,909 - INFO - EPOCH 1: training on 16074 raw words (2006 effective words) took 0.0s, 66517 effective words/s
+2025-06-22 03:55:11,909 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:11,939 - INFO - EPOCH 2: training on 16074 raw words (2053 effective words) took 0.0s, 70718 effective words/s
+2025-06-22 03:55:11,939 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:11,969 - INFO - EPOCH 3: training on 16074 raw words (2038 effective words) took 0.0s, 71291 effective words/s
+2025-06-22 03:55:11,969 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:12,002 - INFO - EPOCH 4: training on 16074 raw words (2025 effective words) took 0.0s, 64407 effective words/s
+2025-06-22 03:55:12,002 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:12,038 - INFO - EPOCH 5: training on 16074 raw words (1958 effective words) took 0.0s, 55651 effective words/s
+2025-06-22 03:55:12,039 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:12,070 - INFO - EPOCH 6: training on 16074 raw words (2037 effective words) took 0.0s, 67404 effective words/s
+2025-06-22 03:55:12,070 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:12,100 - INFO - EPOCH 7: training on 16074 raw words (2020 effective words) took 0.0s, 69573 effective words/s
+2025-06-22 03:55:12,100 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:12,132 - INFO - EPOCH 8: training on 16074 raw words (2042 effective words) took 0.0s, 66828 effective words/s
+2025-06-22 03:55:12,133 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:12,165 - INFO - EPOCH 9: training on 16074 raw words (2058 effective words) took 0.0s, 66596 effective words/s
+2025-06-22 03:55:12,165 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:12,197 - INFO - EPOCH 10: training on 16074 raw words (2049 effective words) took 0.0s, 65280 effective words/s
+2025-06-22 03:55:12,198 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:12,228 - INFO - EPOCH 11: training on 16074 raw words (2068 effective words) took 0.0s, 71210 effective words/s
+2025-06-22 03:55:12,228 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:12,257 - INFO - EPOCH 12: training on 16074 raw words (2052 effective words) took 0.0s, 72208 effective words/s
+2025-06-22 03:55:12,258 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:12,288 - INFO - EPOCH 13: training on 16074 raw words (2034 effective words) took 0.0s, 68552 effective words/s
+2025-06-22 03:55:12,289 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:12,322 - INFO - EPOCH 14: training on 16074 raw words (1990 effective words) took 0.0s, 64572 effective words/s
+2025-06-22 03:55:12,322 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:12,350 - INFO - EPOCH 15: training on 16074 raw words (2059 effective words) took 0.0s, 76386 effective words/s
+2025-06-22 03:55:12,351 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:12,381 - INFO - EPOCH 16: training on 16074 raw words (1964 effective words) took 0.0s, 65813 effective words/s
+2025-06-22 03:55:12,382 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:12,413 - INFO - EPOCH 17: training on 16074 raw words (2027 effective words) took 0.0s, 66693 effective words/s
+2025-06-22 03:55:12,414 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:12,448 - INFO - EPOCH 18: training on 16074 raw words (1966 effective words) took 0.0s, 59280 effective words/s
+2025-06-22 03:55:12,449 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:12,478 - INFO - EPOCH 19: training on 16074 raw words (2075 effective words) took 0.0s, 73557 effective words/s
+2025-06-22 03:55:12,478 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:12,512 - INFO - EPOCH 20: training on 16074 raw words (2047 effective words) took 0.0s, 85686 effective words/s
+2025-06-22 03:55:12,512 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:12,541 - INFO - EPOCH 21: training on 16074 raw words (2086 effective words) took 0.0s, 73937 effective words/s
+2025-06-22 03:55:12,542 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:12,579 - INFO - EPOCH 22: training on 16074 raw words (2006 effective words) took 0.0s, 54688 effective words/s
+2025-06-22 03:55:12,579 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:12,622 - INFO - EPOCH 23: training on 16074 raw words (1986 effective words) took 0.0s, 47856 effective words/s
+2025-06-22 03:55:12,622 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:12,662 - INFO - EPOCH 24: training on 16074 raw words (2052 effective words) took 0.0s, 53769 effective words/s
+2025-06-22 03:55:12,662 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:12,692 - INFO - EPOCH 25: training on 16074 raw words (2054 effective words) took 0.0s, 72289 effective words/s
+2025-06-22 03:55:12,692 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:55:12,724 - INFO - EPOCH 26: training on 16074 raw words (2058 effective words) took 0.0s, 66470 effective words/s
+2025-06-22 03:55:12,724 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:55:12,759 - INFO - EPOCH 27: training on 16074 raw words (2089 effective words) took 0.0s, 60720 effective words/s
+2025-06-22 03:55:12,760 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:55:12,792 - INFO - EPOCH 28: training on 16074 raw words (2051 effective words) took 0.0s, 64433 effective words/s
+2025-06-22 03:55:12,793 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:55:12,826 - INFO - EPOCH 29: training on 16074 raw words (2106 effective words) took 0.0s, 68970 effective words/s
+2025-06-22 03:55:12,826 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:55:12,826 - INFO - Word2Vec lifecycle event {'msg': 'training on 482220 raw words (61144 effective words) took 1.0s, 61752 effective words/s', 'datetime': '2025-06-22T03:55:12.826601', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:12,827 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=2198, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:12.827079', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:12,827 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_poetry_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:12.827329', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:12,827 - INFO - not storing attribute cum_table
+2025-06-22 03:55:12,836 - INFO - saved models_by_genre/word2vec_poetry_imperial.model
+2025-06-22 03:55:12,837 - INFO - Model saved to models_by_genre/word2vec_poetry_imperial.model
+2025-06-22 03:55:12,838 - INFO - Training Word2Vec model for history (imperial)
+2025-06-22 03:55:12,838 - INFO - Using history parameters: window=7, min_count=3
+2025-06-22 03:55:12,839 - INFO - Reading 2 texts for history (imperial)
+2025-06-22 03:55:12,839 - INFO - Processing Tacitus - Historiae 1-2
+2025-06-22 03:55:12,848 - INFO - Processing Tacitus - Historiae 3-4
+2025-06-22 03:55:12,859 - INFO - Corpus stats for history (imperial): {'genre': 'history', 'period': 'imperial', 'num_files': 2, 'num_sentences': 2, 'vocab_size': 6954, 'total_tokens': 39920, 'avg_sentence_length': 19960.0, 'authors': ['Tacitus', 'Tacitus'], 'works': ['Historiae 1-2', 'Historiae 3-4']}
+2025-06-22 03:55:12,860 - INFO - Reading 2 texts for history (imperial)
+2025-06-22 03:55:12,860 - INFO - Processing Tacitus - Historiae 1-2
+2025-06-22 03:55:12,870 - INFO - Processing Tacitus - Historiae 3-4
+2025-06-22 03:55:12,877 - INFO - collecting all words and their counts
+2025-06-22 03:55:12,877 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:12,884 - INFO - collected 6954 word types from a corpus of 39920 raw words and 2 sentences
+2025-06-22 03:55:12,884 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:12,893 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 2625 unique words (37.75% of original 6954, drops 4329)', 'datetime': '2025-06-22T03:55:12.892983', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:12,893 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 34506 word corpus (86.44% of original 39920, drops 5414)', 'datetime': '2025-06-22T03:55:12.893173', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:12,913 - INFO - deleting the raw counts dictionary of 6954 items
+2025-06-22 03:55:12,913 - INFO - sample=1e-05 downsamples 2625 most-common words
+2025-06-22 03:55:12,913 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 5698.773081127933 word corpus (16.5%% of prior 34506)', 'datetime': '2025-06-22T03:55:12.913399', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:12,945 - INFO - estimated required memory for 2625 words and 300 dimensions: 7612500 bytes
+2025-06-22 03:55:12,945 - INFO - resetting layer weights
+2025-06-22 03:55:12,950 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:12.950509', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:12,950 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 2625 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=7 shrink_windows=True', 'datetime': '2025-06-22T03:55:12.950965', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:13,085 - INFO - EPOCH 0: training on 39920 raw words (5741 effective words) took 0.1s, 43005 effective words/s
+2025-06-22 03:55:13,086 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:13,192 - INFO - EPOCH 1: training on 39920 raw words (5776 effective words) took 0.1s, 54650 effective words/s
+2025-06-22 03:55:13,193 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:13,301 - INFO - EPOCH 2: training on 39920 raw words (5710 effective words) took 0.1s, 53362 effective words/s
+2025-06-22 03:55:13,301 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:13,410 - INFO - EPOCH 3: training on 39920 raw words (5508 effective words) took 0.1s, 51101 effective words/s
+2025-06-22 03:55:13,410 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:13,522 - INFO - EPOCH 4: training on 39920 raw words (5721 effective words) took 0.1s, 51803 effective words/s
+2025-06-22 03:55:13,522 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:13,625 - INFO - EPOCH 5: training on 39920 raw words (5711 effective words) took 0.1s, 55809 effective words/s
+2025-06-22 03:55:13,626 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:13,732 - INFO - EPOCH 6: training on 39920 raw words (5740 effective words) took 0.1s, 54241 effective words/s
+2025-06-22 03:55:13,733 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:13,845 - INFO - EPOCH 7: training on 39920 raw words (5744 effective words) took 0.1s, 51570 effective words/s
+2025-06-22 03:55:13,845 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:13,944 - INFO - EPOCH 8: training on 39920 raw words (5579 effective words) took 0.1s, 57268 effective words/s
+2025-06-22 03:55:13,944 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:14,048 - INFO - EPOCH 9: training on 39920 raw words (5794 effective words) took 0.1s, 56517 effective words/s
+2025-06-22 03:55:14,048 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:14,153 - INFO - EPOCH 10: training on 39920 raw words (5605 effective words) took 0.1s, 53683 effective words/s
+2025-06-22 03:55:14,154 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:14,256 - INFO - EPOCH 11: training on 39920 raw words (5648 effective words) took 0.1s, 55762 effective words/s
+2025-06-22 03:55:14,257 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:14,361 - INFO - EPOCH 12: training on 39920 raw words (5652 effective words) took 0.1s, 54544 effective words/s
+2025-06-22 03:55:14,361 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:14,463 - INFO - EPOCH 13: training on 39920 raw words (5746 effective words) took 0.1s, 57019 effective words/s
+2025-06-22 03:55:14,463 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:14,569 - INFO - EPOCH 14: training on 39920 raw words (5659 effective words) took 0.1s, 54373 effective words/s
+2025-06-22 03:55:14,569 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:14,686 - INFO - EPOCH 15: training on 39920 raw words (5786 effective words) took 0.1s, 55408 effective words/s
+2025-06-22 03:55:14,686 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:14,820 - INFO - EPOCH 16: training on 39920 raw words (5722 effective words) took 0.1s, 43098 effective words/s
+2025-06-22 03:55:14,821 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:14,920 - INFO - EPOCH 17: training on 39920 raw words (5521 effective words) took 0.1s, 55906 effective words/s
+2025-06-22 03:55:14,921 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:15,048 - INFO - EPOCH 18: training on 39920 raw words (5737 effective words) took 0.1s, 45641 effective words/s
+2025-06-22 03:55:15,050 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:15,214 - INFO - EPOCH 19: training on 39920 raw words (5680 effective words) took 0.2s, 37686 effective words/s
+2025-06-22 03:55:15,215 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:15,319 - INFO - EPOCH 20: training on 39920 raw words (5769 effective words) took 0.1s, 55628 effective words/s
+2025-06-22 03:55:15,320 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:15,427 - INFO - EPOCH 21: training on 39920 raw words (5747 effective words) took 0.1s, 54112 effective words/s
+2025-06-22 03:55:15,427 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:15,538 - INFO - EPOCH 22: training on 39920 raw words (5727 effective words) took 0.1s, 53597 effective words/s
+2025-06-22 03:55:15,538 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:15,652 - INFO - EPOCH 23: training on 39920 raw words (5676 effective words) took 0.1s, 50462 effective words/s
+2025-06-22 03:55:15,652 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:15,765 - INFO - EPOCH 24: training on 39920 raw words (5685 effective words) took 0.1s, 52427 effective words/s
+2025-06-22 03:55:15,766 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:15,766 - INFO - Word2Vec lifecycle event {'msg': 'training on 998000 raw words (142384 effective words) took 2.8s, 50579 effective words/s', 'datetime': '2025-06-22T03:55:15.766467', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:15,766 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=2625, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:15.766943', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:15,767 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_history_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:15.767458', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:15,768 - INFO - not storing attribute cum_table
+2025-06-22 03:55:15,778 - INFO - saved models_by_genre/word2vec_history_imperial.model
+2025-06-22 03:55:15,779 - INFO - Model saved to models_by_genre/word2vec_history_imperial.model
+2025-06-22 03:55:15,782 - INFO - Training Word2Vec model for oratory (imperial)
+2025-06-22 03:55:15,782 - INFO - Using oratory parameters: window=6, min_count=2
+2025-06-22 03:55:15,783 - INFO - Reading 2 texts for oratory (imperial)
+2025-06-22 03:55:15,784 - INFO - Processing Apuleius - Apologia
+2025-06-22 03:55:15,800 - INFO - Processing Apuleius - Florida
+2025-06-22 03:55:15,808 - INFO - Corpus stats for oratory (imperial): {'genre': 'oratory', 'period': 'imperial', 'num_files': 2, 'num_sentences': 2, 'vocab_size': 6342, 'total_tokens': 23096, 'avg_sentence_length': 11548.0, 'authors': ['Apuleius', 'Apuleius'], 'works': ['Apologia', 'Florida']}
+2025-06-22 03:55:15,809 - INFO - Reading 2 texts for oratory (imperial)
+2025-06-22 03:55:15,809 - INFO - Processing Apuleius - Apologia
+2025-06-22 03:55:15,816 - INFO - Processing Apuleius - Florida
+2025-06-22 03:55:15,820 - INFO - collecting all words and their counts
+2025-06-22 03:55:15,820 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:15,824 - INFO - collected 6342 word types from a corpus of 23096 raw words and 2 sentences
+2025-06-22 03:55:15,824 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:15,835 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 2561 unique words (40.38% of original 6342, drops 3781)', 'datetime': '2025-06-22T03:55:15.835891', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:15,836 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 19315 word corpus (83.63% of original 23096, drops 3781)', 'datetime': '2025-06-22T03:55:15.836085', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:15,853 - INFO - deleting the raw counts dictionary of 6342 items
+2025-06-22 03:55:15,853 - INFO - sample=1e-05 downsamples 2561 most-common words
+2025-06-22 03:55:15,853 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 3058.098507873963 word corpus (15.8%% of prior 19315)', 'datetime': '2025-06-22T03:55:15.853800', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:15,881 - INFO - estimated required memory for 2561 words and 300 dimensions: 7426900 bytes
+2025-06-22 03:55:15,881 - INFO - resetting layer weights
+2025-06-22 03:55:15,885 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:15.885829', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:15,886 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 2561 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=6 shrink_windows=True', 'datetime': '2025-06-22T03:55:15.886053', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:15,946 - INFO - EPOCH 0: training on 23096 raw words (3037 effective words) took 0.1s, 56684 effective words/s
+2025-06-22 03:55:15,946 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:16,003 - INFO - EPOCH 1: training on 23096 raw words (3028 effective words) took 0.1s, 54086 effective words/s
+2025-06-22 03:55:16,003 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:16,080 - INFO - EPOCH 2: training on 23096 raw words (3066 effective words) took 0.1s, 40505 effective words/s
+2025-06-22 03:55:16,080 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:16,160 - INFO - EPOCH 3: training on 23096 raw words (2995 effective words) took 0.1s, 38400 effective words/s
+2025-06-22 03:55:16,160 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:16,238 - INFO - EPOCH 4: training on 23096 raw words (3009 effective words) took 0.1s, 39158 effective words/s
+2025-06-22 03:55:16,238 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:16,320 - INFO - EPOCH 5: training on 23096 raw words (3075 effective words) took 0.1s, 38383 effective words/s
+2025-06-22 03:55:16,321 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:16,391 - INFO - EPOCH 6: training on 23096 raw words (3093 effective words) took 0.1s, 44865 effective words/s
+2025-06-22 03:55:16,391 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:16,445 - INFO - EPOCH 7: training on 23096 raw words (2980 effective words) took 0.1s, 56332 effective words/s
+2025-06-22 03:55:16,446 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:16,504 - INFO - EPOCH 8: training on 23096 raw words (2979 effective words) took 0.0s, 60048 effective words/s
+2025-06-22 03:55:16,504 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:16,568 - INFO - EPOCH 9: training on 23096 raw words (3136 effective words) took 0.1s, 53094 effective words/s
+2025-06-22 03:55:16,569 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:16,624 - INFO - EPOCH 10: training on 23096 raw words (3072 effective words) took 0.1s, 59100 effective words/s
+2025-06-22 03:55:16,624 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:16,679 - INFO - EPOCH 11: training on 23096 raw words (3052 effective words) took 0.1s, 56939 effective words/s
+2025-06-22 03:55:16,680 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:16,766 - INFO - EPOCH 12: training on 23096 raw words (2979 effective words) took 0.1s, 35264 effective words/s
+2025-06-22 03:55:16,766 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:16,840 - INFO - EPOCH 13: training on 23096 raw words (3048 effective words) took 0.1s, 41951 effective words/s
+2025-06-22 03:55:16,840 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:16,902 - INFO - EPOCH 14: training on 23096 raw words (3121 effective words) took 0.1s, 60275 effective words/s
+2025-06-22 03:55:16,903 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:16,959 - INFO - EPOCH 15: training on 23096 raw words (3020 effective words) took 0.1s, 58750 effective words/s
+2025-06-22 03:55:16,959 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:17,021 - INFO - EPOCH 16: training on 23096 raw words (3187 effective words) took 0.1s, 59667 effective words/s
+2025-06-22 03:55:17,022 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:17,079 - INFO - EPOCH 17: training on 23096 raw words (3018 effective words) took 0.1s, 53558 effective words/s
+2025-06-22 03:55:17,079 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:17,136 - INFO - EPOCH 18: training on 23096 raw words (3078 effective words) took 0.1s, 58228 effective words/s
+2025-06-22 03:55:17,137 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:17,205 - INFO - EPOCH 19: training on 23096 raw words (3025 effective words) took 0.1s, 45071 effective words/s
+2025-06-22 03:55:17,205 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:17,276 - INFO - EPOCH 20: training on 23096 raw words (3055 effective words) took 0.1s, 43865 effective words/s
+2025-06-22 03:55:17,277 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:17,331 - INFO - EPOCH 21: training on 23096 raw words (3053 effective words) took 0.1s, 57344 effective words/s
+2025-06-22 03:55:17,331 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:17,385 - INFO - EPOCH 22: training on 23096 raw words (3085 effective words) took 0.1s, 58359 effective words/s
+2025-06-22 03:55:17,385 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:17,441 - INFO - EPOCH 23: training on 23096 raw words (3115 effective words) took 0.1s, 59036 effective words/s
+2025-06-22 03:55:17,441 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:17,495 - INFO - EPOCH 24: training on 23096 raw words (3053 effective words) took 0.1s, 57774 effective words/s
+2025-06-22 03:55:17,495 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:17,495 - INFO - Word2Vec lifecycle event {'msg': 'training on 577400 raw words (76359 effective words) took 1.6s, 47438 effective words/s', 'datetime': '2025-06-22T03:55:17.495882', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:17,496 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=2561, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:17.496068', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:17,496 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_oratory_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:17.496313', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:17,496 - INFO - not storing attribute cum_table
+2025-06-22 03:55:17,506 - INFO - saved models_by_genre/word2vec_oratory_imperial.model
+2025-06-22 03:55:17,506 - INFO - Model saved to models_by_genre/word2vec_oratory_imperial.model
+2025-06-22 03:55:17,509 - INFO - Training Word2Vec model for philosophy (imperial)
+2025-06-22 03:55:17,509 - INFO - Using philosophy parameters: window=8, min_count=3
+2025-06-22 03:55:17,510 - INFO - Reading 3 texts for philosophy (imperial)
+2025-06-22 03:55:17,510 - INFO - Processing Seneca - Epistulae 1-15
+2025-06-22 03:55:17,514 - INFO - Processing Seneca - Epistulae 16-30
+2025-06-22 03:55:17,518 - INFO - Processing Seneca - De Brevitate Vitae Ch. 1-20
+2025-06-22 03:55:17,522 - INFO - Corpus stats for philosophy (imperial): {'genre': 'philosophy', 'period': 'imperial', 'num_files': 3, 'num_sentences': 3, 'vocab_size': 4317, 'total_tokens': 19790, 'avg_sentence_length': 6596.666666666667, 'authors': ['Seneca', 'Seneca', 'Seneca'], 'works': ['Epistulae 1-15', 'Epistulae 16-30', 'De Brevitate Vitae Ch. 1-20']}
+2025-06-22 03:55:17,523 - INFO - Reading 3 texts for philosophy (imperial)
+2025-06-22 03:55:17,523 - INFO - Processing Seneca - Epistulae 1-15
+2025-06-22 03:55:17,526 - INFO - Processing Seneca - Epistulae 16-30
+2025-06-22 03:55:17,531 - INFO - Processing Seneca - De Brevitate Vitae Ch. 1-20
+2025-06-22 03:55:17,533 - INFO - collecting all words and their counts
+2025-06-22 03:55:17,533 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:17,536 - INFO - collected 4317 word types from a corpus of 19790 raw words and 3 sentences
+2025-06-22 03:55:17,536 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:17,541 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 1266 unique words (29.33% of original 4317, drops 3051)', 'datetime': '2025-06-22T03:55:17.541893', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:17,542 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 16059 word corpus (81.15% of original 19790, drops 3731)', 'datetime': '2025-06-22T03:55:17.542071', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:17,550 - INFO - deleting the raw counts dictionary of 4317 items
+2025-06-22 03:55:17,551 - INFO - sample=1e-05 downsamples 1266 most-common words
+2025-06-22 03:55:17,551 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 1710.53031453738 word corpus (10.7%% of prior 16059)', 'datetime': '2025-06-22T03:55:17.551218', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:17,564 - INFO - estimated required memory for 1266 words and 300 dimensions: 3671400 bytes
+2025-06-22 03:55:17,564 - INFO - resetting layer weights
+2025-06-22 03:55:17,566 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:17.566363', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:17,566 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 1266 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=8 shrink_windows=True', 'datetime': '2025-06-22T03:55:17.566558', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:17,607 - INFO - EPOCH 0: training on 19790 raw words (1707 effective words) took 0.0s, 42868 effective words/s
+2025-06-22 03:55:17,607 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:17,648 - INFO - EPOCH 1: training on 19790 raw words (1719 effective words) took 0.0s, 49306 effective words/s
+2025-06-22 03:55:17,648 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:17,686 - INFO - EPOCH 2: training on 19790 raw words (1766 effective words) took 0.0s, 53240 effective words/s
+2025-06-22 03:55:17,687 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:17,722 - INFO - EPOCH 3: training on 19790 raw words (1717 effective words) took 0.0s, 49825 effective words/s
+2025-06-22 03:55:17,722 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:17,757 - INFO - EPOCH 4: training on 19790 raw words (1736 effective words) took 0.0s, 52296 effective words/s
+2025-06-22 03:55:17,757 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:17,791 - INFO - EPOCH 5: training on 19790 raw words (1707 effective words) took 0.0s, 51221 effective words/s
+2025-06-22 03:55:17,791 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:17,831 - INFO - EPOCH 6: training on 19790 raw words (1747 effective words) took 0.0s, 44884 effective words/s
+2025-06-22 03:55:17,832 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:17,874 - INFO - EPOCH 7: training on 19790 raw words (1659 effective words) took 0.0s, 39890 effective words/s
+2025-06-22 03:55:17,875 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:17,910 - INFO - EPOCH 8: training on 19790 raw words (1715 effective words) took 0.0s, 49837 effective words/s
+2025-06-22 03:55:17,910 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:17,948 - INFO - EPOCH 9: training on 19790 raw words (1668 effective words) took 0.0s, 46544 effective words/s
+2025-06-22 03:55:17,948 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:17,980 - INFO - EPOCH 10: training on 19790 raw words (1634 effective words) took 0.0s, 52035 effective words/s
+2025-06-22 03:55:17,980 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:18,016 - INFO - EPOCH 11: training on 19790 raw words (1747 effective words) took 0.0s, 50529 effective words/s
+2025-06-22 03:55:18,016 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:18,058 - INFO - EPOCH 12: training on 19790 raw words (1729 effective words) took 0.0s, 56963 effective words/s
+2025-06-22 03:55:18,058 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:18,106 - INFO - EPOCH 13: training on 19790 raw words (1732 effective words) took 0.0s, 38575 effective words/s
+2025-06-22 03:55:18,106 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:18,140 - INFO - EPOCH 14: training on 19790 raw words (1705 effective words) took 0.0s, 51853 effective words/s
+2025-06-22 03:55:18,140 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:18,177 - INFO - EPOCH 15: training on 19790 raw words (1561 effective words) took 0.0s, 43488 effective words/s
+2025-06-22 03:55:18,177 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:18,219 - INFO - EPOCH 16: training on 19790 raw words (1709 effective words) took 0.0s, 42753 effective words/s
+2025-06-22 03:55:18,219 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:18,253 - INFO - EPOCH 17: training on 19790 raw words (1684 effective words) took 0.0s, 62466 effective words/s
+2025-06-22 03:55:18,253 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:18,288 - INFO - EPOCH 18: training on 19790 raw words (1623 effective words) took 0.0s, 47282 effective words/s
+2025-06-22 03:55:18,288 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:18,325 - INFO - EPOCH 19: training on 19790 raw words (1713 effective words) took 0.0s, 48130 effective words/s
+2025-06-22 03:55:18,325 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:18,360 - INFO - EPOCH 20: training on 19790 raw words (1641 effective words) took 0.0s, 48786 effective words/s
+2025-06-22 03:55:18,360 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:18,396 - INFO - EPOCH 21: training on 19790 raw words (1720 effective words) took 0.0s, 50228 effective words/s
+2025-06-22 03:55:18,396 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:18,435 - INFO - EPOCH 22: training on 19790 raw words (1715 effective words) took 0.0s, 48239 effective words/s
+2025-06-22 03:55:18,436 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:18,468 - INFO - EPOCH 23: training on 19790 raw words (1603 effective words) took 0.0s, 50422 effective words/s
+2025-06-22 03:55:18,469 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:18,503 - INFO - EPOCH 24: training on 19790 raw words (1685 effective words) took 0.0s, 50008 effective words/s
+2025-06-22 03:55:18,504 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:18,504 - INFO - Word2Vec lifecycle event {'msg': 'training on 494750 raw words (42342 effective words) took 0.9s, 45155 effective words/s', 'datetime': '2025-06-22T03:55:18.504455', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:18,504 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=1266, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:18.504762', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:18,505 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_philosophy_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:18.505114', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:18,505 - INFO - not storing attribute cum_table
+2025-06-22 03:55:18,509 - INFO - saved models_by_genre/word2vec_philosophy_imperial.model
+2025-06-22 03:55:18,509 - INFO - Model saved to models_by_genre/word2vec_philosophy_imperial.model
+2025-06-22 03:55:18,511 - INFO - Training Word2Vec model for novel (imperial)
+2025-06-22 03:55:18,512 - INFO - Reading 2 texts for novel (imperial)
+2025-06-22 03:55:18,513 - INFO - Processing Apuleius - The Golden Ass 1
+2025-06-22 03:55:18,515 - INFO - Processing Apuleius - The Golden Ass 2
+2025-06-22 03:55:18,519 - INFO - Corpus stats for novel (imperial): {'genre': 'novel', 'period': 'imperial', 'num_files': 2, 'num_sentences': 2, 'vocab_size': 3240, 'total_tokens': 7226, 'avg_sentence_length': 3613.0, 'authors': ['Apuleius', 'Apuleius'], 'works': ['The Golden Ass 1', 'The Golden Ass 2']}
+2025-06-22 03:55:18,520 - INFO - Reading 2 texts for novel (imperial)
+2025-06-22 03:55:18,520 - INFO - Processing Apuleius - The Golden Ass 1
+2025-06-22 03:55:18,522 - INFO - Processing Apuleius - The Golden Ass 2
+2025-06-22 03:55:18,524 - INFO - collecting all words and their counts
+2025-06-22 03:55:18,525 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:18,526 - INFO - collected 3240 word types from a corpus of 7226 raw words and 2 sentences
+2025-06-22 03:55:18,526 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:18,529 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 582 unique words (17.96% of original 3240, drops 2658)', 'datetime': '2025-06-22T03:55:18.529790', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:18,530 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 4003 word corpus (55.40% of original 7226, drops 3223)', 'datetime': '2025-06-22T03:55:18.530273', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:18,535 - INFO - deleting the raw counts dictionary of 3240 items
+2025-06-22 03:55:18,535 - INFO - sample=1e-05 downsamples 582 most-common words
+2025-06-22 03:55:18,535 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 302.04237962332934 word corpus (7.5%% of prior 4003)', 'datetime': '2025-06-22T03:55:18.535807', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:18,541 - INFO - estimated required memory for 582 words and 300 dimensions: 1687800 bytes
+2025-06-22 03:55:18,542 - INFO - resetting layer weights
+2025-06-22 03:55:18,543 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:18.543223', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:18,543 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 582 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=5 shrink_windows=True', 'datetime': '2025-06-22T03:55:18.543435', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:18,550 - INFO - EPOCH 0: training on 7226 raw words (308 effective words) took 0.0s, 59693 effective words/s
+2025-06-22 03:55:18,551 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:18,556 - INFO - EPOCH 1: training on 7226 raw words (271 effective words) took 0.0s, 56969 effective words/s
+2025-06-22 03:55:18,557 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:18,564 - INFO - EPOCH 2: training on 7226 raw words (310 effective words) took 0.0s, 49990 effective words/s
+2025-06-22 03:55:18,565 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:18,572 - INFO - EPOCH 3: training on 7226 raw words (311 effective words) took 0.0s, 63998 effective words/s
+2025-06-22 03:55:18,572 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:18,579 - INFO - EPOCH 4: training on 7226 raw words (311 effective words) took 0.0s, 53128 effective words/s
+2025-06-22 03:55:18,580 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:18,587 - INFO - EPOCH 5: training on 7226 raw words (345 effective words) took 0.0s, 51632 effective words/s
+2025-06-22 03:55:18,588 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:18,594 - INFO - EPOCH 6: training on 7226 raw words (317 effective words) took 0.0s, 57502 effective words/s
+2025-06-22 03:55:18,594 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:18,602 - INFO - EPOCH 7: training on 7226 raw words (279 effective words) took 0.0s, 46630 effective words/s
+2025-06-22 03:55:18,602 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:18,612 - INFO - EPOCH 8: training on 7226 raw words (333 effective words) took 0.0s, 51285 effective words/s
+2025-06-22 03:55:18,612 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:18,620 - INFO - EPOCH 9: training on 7226 raw words (319 effective words) took 0.0s, 49384 effective words/s
+2025-06-22 03:55:18,621 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:18,630 - INFO - EPOCH 10: training on 7226 raw words (308 effective words) took 0.0s, 51351 effective words/s
+2025-06-22 03:55:18,630 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:18,638 - INFO - EPOCH 11: training on 7226 raw words (300 effective words) took 0.0s, 45343 effective words/s
+2025-06-22 03:55:18,638 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:18,646 - INFO - EPOCH 12: training on 7226 raw words (296 effective words) took 0.0s, 62119 effective words/s
+2025-06-22 03:55:18,646 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:18,655 - INFO - EPOCH 13: training on 7226 raw words (296 effective words) took 0.0s, 45326 effective words/s
+2025-06-22 03:55:18,655 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:18,664 - INFO - EPOCH 14: training on 7226 raw words (312 effective words) took 0.0s, 56871 effective words/s
+2025-06-22 03:55:18,664 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:18,670 - INFO - EPOCH 15: training on 7226 raw words (292 effective words) took 0.0s, 69272 effective words/s
+2025-06-22 03:55:18,670 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:18,677 - INFO - EPOCH 16: training on 7226 raw words (279 effective words) took 0.0s, 72333 effective words/s
+2025-06-22 03:55:18,678 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:18,685 - INFO - EPOCH 17: training on 7226 raw words (313 effective words) took 0.0s, 48575 effective words/s
+2025-06-22 03:55:18,685 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:18,691 - INFO - EPOCH 18: training on 7226 raw words (308 effective words) took 0.0s, 57225 effective words/s
+2025-06-22 03:55:18,692 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:18,702 - INFO - EPOCH 19: training on 7226 raw words (328 effective words) took 0.0s, 39965 effective words/s
+2025-06-22 03:55:18,702 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:18,710 - INFO - EPOCH 20: training on 7226 raw words (284 effective words) took 0.0s, 39853 effective words/s
+2025-06-22 03:55:18,710 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:18,718 - INFO - EPOCH 21: training on 7226 raw words (305 effective words) took 0.0s, 41857 effective words/s
+2025-06-22 03:55:18,719 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:18,726 - INFO - EPOCH 22: training on 7226 raw words (290 effective words) took 0.0s, 46271 effective words/s
+2025-06-22 03:55:18,727 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:18,735 - INFO - EPOCH 23: training on 7226 raw words (311 effective words) took 0.0s, 53191 effective words/s
+2025-06-22 03:55:18,735 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:18,743 - INFO - EPOCH 24: training on 7226 raw words (298 effective words) took 0.0s, 41324 effective words/s
+2025-06-22 03:55:18,744 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:18,744 - INFO - Word2Vec lifecycle event {'msg': 'training on 180650 raw words (7624 effective words) took 0.2s, 38008 effective words/s', 'datetime': '2025-06-22T03:55:18.744189', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:18,744 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=582, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:18.744353', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:18,744 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_novel_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:18.744577', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:18,744 - INFO - not storing attribute cum_table
+2025-06-22 03:55:18,747 - INFO - saved models_by_genre/word2vec_novel_imperial.model
+2025-06-22 03:55:18,747 - INFO - Model saved to models_by_genre/word2vec_novel_imperial.model
+2025-06-22 03:55:18,748 - INFO - Training Word2Vec model for treatise (imperial)
+2025-06-22 03:55:18,749 - INFO - Reading 1 texts for treatise (imperial)
+2025-06-22 03:55:18,749 - INFO - Processing Saint Cyprian - De Dominica Oratione 1-36
+2025-06-22 03:55:18,755 - INFO - Corpus stats for treatise (imperial): {'genre': 'treatise', 'period': 'imperial', 'num_files': 1, 'num_sentences': 1, 'vocab_size': 1566, 'total_tokens': 5845, 'avg_sentence_length': 5845.0, 'authors': ['Saint Cyprian'], 'works': ['De Dominica Oratione 1-36']}
+2025-06-22 03:55:18,756 - INFO - Reading 1 texts for treatise (imperial)
+2025-06-22 03:55:18,756 - INFO - Processing Saint Cyprian - De Dominica Oratione 1-36
+2025-06-22 03:55:18,761 - INFO - collecting all words and their counts
+2025-06-22 03:55:18,761 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:18,762 - INFO - collected 1566 word types from a corpus of 5845 raw words and 1 sentences
+2025-06-22 03:55:18,762 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:18,765 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 430 unique words (27.46% of original 1566, drops 1136)', 'datetime': '2025-06-22T03:55:18.765424', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:18,765 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 4454 word corpus (76.20% of original 5845, drops 1391)', 'datetime': '2025-06-22T03:55:18.765785', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:18,776 - INFO - deleting the raw counts dictionary of 1566 items
+2025-06-22 03:55:18,777 - INFO - sample=1e-05 downsamples 430 most-common words
+2025-06-22 03:55:18,777 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 274.62321432914274 word corpus (6.2%% of prior 4454)', 'datetime': '2025-06-22T03:55:18.777559', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:18,786 - INFO - estimated required memory for 430 words and 300 dimensions: 1247000 bytes
+2025-06-22 03:55:18,786 - INFO - resetting layer weights
+2025-06-22 03:55:18,787 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:18.787500', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:18,787 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 430 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=5 shrink_windows=True', 'datetime': '2025-06-22T03:55:18.787749', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:18,796 - INFO - EPOCH 0: training on 5845 raw words (299 effective words) took 0.0s, 38079 effective words/s
+2025-06-22 03:55:18,796 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:18,813 - INFO - EPOCH 1: training on 5845 raw words (239 effective words) took 0.0s, 22789 effective words/s
+2025-06-22 03:55:18,813 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:18,821 - INFO - EPOCH 2: training on 5845 raw words (264 effective words) took 0.0s, 39486 effective words/s
+2025-06-22 03:55:18,821 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:18,834 - INFO - EPOCH 3: training on 5845 raw words (266 effective words) took 0.0s, 26205 effective words/s
+2025-06-22 03:55:18,835 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:18,848 - INFO - EPOCH 4: training on 5845 raw words (266 effective words) took 0.0s, 20891 effective words/s
+2025-06-22 03:55:18,849 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:18,869 - INFO - EPOCH 5: training on 5845 raw words (256 effective words) took 0.0s, 14267 effective words/s
+2025-06-22 03:55:18,869 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:18,889 - INFO - EPOCH 6: training on 5845 raw words (246 effective words) took 0.0s, 12801 effective words/s
+2025-06-22 03:55:18,889 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:18,903 - INFO - EPOCH 7: training on 5845 raw words (277 effective words) took 0.0s, 21746 effective words/s
+2025-06-22 03:55:18,904 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:18,918 - INFO - EPOCH 8: training on 5845 raw words (272 effective words) took 0.0s, 23747 effective words/s
+2025-06-22 03:55:18,918 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:18,932 - INFO - EPOCH 9: training on 5845 raw words (286 effective words) took 0.0s, 23660 effective words/s
+2025-06-22 03:55:18,933 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:18,941 - INFO - EPOCH 10: training on 5845 raw words (290 effective words) took 0.0s, 39126 effective words/s
+2025-06-22 03:55:18,942 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:18,952 - INFO - EPOCH 11: training on 5845 raw words (280 effective words) took 0.0s, 31092 effective words/s
+2025-06-22 03:55:18,953 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:18,967 - INFO - EPOCH 12: training on 5845 raw words (270 effective words) took 0.0s, 27699 effective words/s
+2025-06-22 03:55:18,967 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:18,972 - INFO - EPOCH 13: training on 5845 raw words (260 effective words) took 0.0s, 59097 effective words/s
+2025-06-22 03:55:18,973 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:18,981 - INFO - EPOCH 14: training on 5845 raw words (294 effective words) took 0.0s, 39635 effective words/s
+2025-06-22 03:55:18,981 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:18,994 - INFO - EPOCH 15: training on 5845 raw words (278 effective words) took 0.0s, 30918 effective words/s
+2025-06-22 03:55:18,994 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:19,002 - INFO - EPOCH 16: training on 5845 raw words (280 effective words) took 0.0s, 37325 effective words/s
+2025-06-22 03:55:19,002 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:19,009 - INFO - EPOCH 17: training on 5845 raw words (278 effective words) took 0.0s, 71406 effective words/s
+2025-06-22 03:55:19,009 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:19,017 - INFO - EPOCH 18: training on 5845 raw words (273 effective words) took 0.0s, 38140 effective words/s
+2025-06-22 03:55:19,018 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:19,023 - INFO - EPOCH 19: training on 5845 raw words (262 effective words) took 0.0s, 74338 effective words/s
+2025-06-22 03:55:19,023 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:19,030 - INFO - EPOCH 20: training on 5845 raw words (267 effective words) took 0.0s, 52487 effective words/s
+2025-06-22 03:55:19,030 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:19,036 - INFO - EPOCH 21: training on 5845 raw words (255 effective words) took 0.0s, 46981 effective words/s
+2025-06-22 03:55:19,036 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:19,044 - INFO - EPOCH 22: training on 5845 raw words (290 effective words) took 0.0s, 43287 effective words/s
+2025-06-22 03:55:19,044 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:19,051 - INFO - EPOCH 23: training on 5845 raw words (278 effective words) took 0.0s, 53471 effective words/s
+2025-06-22 03:55:19,051 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:19,058 - INFO - EPOCH 24: training on 5845 raw words (264 effective words) took 0.0s, 47657 effective words/s
+2025-06-22 03:55:19,058 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:19,058 - INFO - Word2Vec lifecycle event {'msg': 'training on 146125 raw words (6790 effective words) took 0.3s, 25070 effective words/s', 'datetime': '2025-06-22T03:55:19.058827', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:19,059 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=430, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:19.059174', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:19,059 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_treatise_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:19.059446', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:19,060 - INFO - not storing attribute cum_table
+2025-06-22 03:55:19,063 - INFO - saved models_by_genre/word2vec_treatise_imperial.model
+2025-06-22 03:55:19,063 - INFO - Model saved to models_by_genre/word2vec_treatise_imperial.model
+2025-06-22 03:55:19,063 - INFO - Training Word2Vec model for theology (imperial)
+2025-06-22 03:55:19,063 - INFO - Using theology parameters: window=9, min_count=2, epochs=30
+2025-06-22 03:55:19,065 - INFO - Reading 3 texts for theology (imperial)
+2025-06-22 03:55:19,065 - INFO - Processing Tertullian - Ad Nationes II 1-2
+2025-06-22 03:55:19,074 - INFO - Processing Tertullian - Apologeticum Ch. 1-20
+2025-06-22 03:55:19,079 - INFO - Processing Tertullian - Apologeticum Ch. 21-40
+2025-06-22 03:55:19,085 - INFO - Corpus stats for theology (imperial): {'genre': 'theology', 'period': 'imperial', 'num_files': 3, 'num_sentences': 3, 'vocab_size': 5216, 'total_tokens': 22980, 'avg_sentence_length': 7660.0, 'authors': ['Tertullian', 'Tertullian', 'Tertullian'], 'works': ['Ad Nationes II 1-2', 'Apologeticum Ch. 1-20', 'Apologeticum Ch. 21-40']}
+2025-06-22 03:55:19,086 - INFO - Reading 3 texts for theology (imperial)
+2025-06-22 03:55:19,087 - INFO - Processing Tertullian - Ad Nationes II 1-2
+2025-06-22 03:55:19,092 - INFO - Processing Tertullian - Apologeticum Ch. 1-20
+2025-06-22 03:55:19,098 - INFO - Processing Tertullian - Apologeticum Ch. 21-40
+2025-06-22 03:55:19,104 - INFO - collecting all words and their counts
+2025-06-22 03:55:19,104 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:19,109 - INFO - collected 5216 word types from a corpus of 22980 raw words and 3 sentences
+2025-06-22 03:55:19,110 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:19,122 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 2405 unique words (46.11% of original 5216, drops 2811)', 'datetime': '2025-06-22T03:55:19.122482', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:19,122 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 20169 word corpus (87.77% of original 22980, drops 2811)', 'datetime': '2025-06-22T03:55:19.122716', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:19,139 - INFO - deleting the raw counts dictionary of 5216 items
+2025-06-22 03:55:19,139 - INFO - sample=1e-05 downsamples 2405 most-common words
+2025-06-22 03:55:19,139 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 3064.5746515704923 word corpus (15.2%% of prior 20169)', 'datetime': '2025-06-22T03:55:19.139607', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:19,167 - INFO - estimated required memory for 2405 words and 300 dimensions: 6974500 bytes
+2025-06-22 03:55:19,167 - INFO - resetting layer weights
+2025-06-22 03:55:19,170 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:19.170685', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:19,170 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 2405 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=9 shrink_windows=True', 'datetime': '2025-06-22T03:55:19.170855', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:19,256 - INFO - EPOCH 0: training on 22980 raw words (3038 effective words) took 0.1s, 35741 effective words/s
+2025-06-22 03:55:19,257 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:19,358 - INFO - EPOCH 1: training on 22980 raw words (3140 effective words) took 0.1s, 32261 effective words/s
+2025-06-22 03:55:19,358 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:19,429 - INFO - EPOCH 2: training on 22980 raw words (3042 effective words) took 0.1s, 43347 effective words/s
+2025-06-22 03:55:19,429 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:19,503 - INFO - EPOCH 3: training on 22980 raw words (3090 effective words) took 0.1s, 42736 effective words/s
+2025-06-22 03:55:19,503 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:19,574 - INFO - EPOCH 4: training on 22980 raw words (3068 effective words) took 0.1s, 44162 effective words/s
+2025-06-22 03:55:19,574 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:19,644 - INFO - EPOCH 5: training on 22980 raw words (3070 effective words) took 0.1s, 44126 effective words/s
+2025-06-22 03:55:19,645 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:19,722 - INFO - EPOCH 6: training on 22980 raw words (3103 effective words) took 0.1s, 40950 effective words/s
+2025-06-22 03:55:19,722 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:19,791 - INFO - EPOCH 7: training on 22980 raw words (2999 effective words) took 0.1s, 43951 effective words/s
+2025-06-22 03:55:19,791 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:19,865 - INFO - EPOCH 8: training on 22980 raw words (2987 effective words) took 0.1s, 41227 effective words/s
+2025-06-22 03:55:19,865 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:19,939 - INFO - EPOCH 9: training on 22980 raw words (3129 effective words) took 0.1s, 42457 effective words/s
+2025-06-22 03:55:19,940 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:20,042 - INFO - EPOCH 10: training on 22980 raw words (3026 effective words) took 0.1s, 29806 effective words/s
+2025-06-22 03:55:20,043 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:20,117 - INFO - EPOCH 11: training on 22980 raw words (3080 effective words) took 0.1s, 47203 effective words/s
+2025-06-22 03:55:20,118 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:20,187 - INFO - EPOCH 12: training on 22980 raw words (3062 effective words) took 0.1s, 44710 effective words/s
+2025-06-22 03:55:20,188 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:20,254 - INFO - EPOCH 13: training on 22980 raw words (2928 effective words) took 0.1s, 44727 effective words/s
+2025-06-22 03:55:20,254 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:20,325 - INFO - EPOCH 14: training on 22980 raw words (3108 effective words) took 0.1s, 44492 effective words/s
+2025-06-22 03:55:20,325 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:20,395 - INFO - EPOCH 15: training on 22980 raw words (3043 effective words) took 0.1s, 44347 effective words/s
+2025-06-22 03:55:20,395 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:20,466 - INFO - EPOCH 16: training on 22980 raw words (3142 effective words) took 0.1s, 46446 effective words/s
+2025-06-22 03:55:20,466 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:20,538 - INFO - EPOCH 17: training on 22980 raw words (3004 effective words) took 0.1s, 42579 effective words/s
+2025-06-22 03:55:20,538 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:20,607 - INFO - EPOCH 18: training on 22980 raw words (2988 effective words) took 0.1s, 44193 effective words/s
+2025-06-22 03:55:20,607 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:20,679 - INFO - EPOCH 19: training on 22980 raw words (3050 effective words) took 0.1s, 43140 effective words/s
+2025-06-22 03:55:20,679 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:20,747 - INFO - EPOCH 20: training on 22980 raw words (2969 effective words) took 0.1s, 44412 effective words/s
+2025-06-22 03:55:20,747 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:20,816 - INFO - EPOCH 21: training on 22980 raw words (3051 effective words) took 0.1s, 45094 effective words/s
+2025-06-22 03:55:20,816 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:20,889 - INFO - EPOCH 22: training on 22980 raw words (3027 effective words) took 0.1s, 42195 effective words/s
+2025-06-22 03:55:20,889 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:20,968 - INFO - EPOCH 23: training on 22980 raw words (3011 effective words) took 0.1s, 38551 effective words/s
+2025-06-22 03:55:20,968 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:21,065 - INFO - EPOCH 24: training on 22980 raw words (3066 effective words) took 0.1s, 32989 effective words/s
+2025-06-22 03:55:21,065 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:21,149 - INFO - EPOCH 25: training on 22980 raw words (2982 effective words) took 0.1s, 36362 effective words/s
+2025-06-22 03:55:21,149 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:55:21,239 - INFO - EPOCH 26: training on 22980 raw words (3110 effective words) took 0.1s, 36453 effective words/s
+2025-06-22 03:55:21,239 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:55:21,343 - INFO - EPOCH 27: training on 22980 raw words (3074 effective words) took 0.1s, 29843 effective words/s
+2025-06-22 03:55:21,343 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:55:21,432 - INFO - EPOCH 28: training on 22980 raw words (3025 effective words) took 0.1s, 35873 effective words/s
+2025-06-22 03:55:21,432 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:55:21,505 - INFO - EPOCH 29: training on 22980 raw words (3069 effective words) took 0.1s, 43108 effective words/s
+2025-06-22 03:55:21,505 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:55:21,505 - INFO - Word2Vec lifecycle event {'msg': 'training on 689400 raw words (91481 effective words) took 2.3s, 39188 effective words/s', 'datetime': '2025-06-22T03:55:21.505399', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:21,505 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=2405, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:21.505607', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:21,509 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_theology_imperial.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:21.509862', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:21,510 - INFO - not storing attribute cum_table
+2025-06-22 03:55:21,528 - INFO - saved models_by_genre/word2vec_theology_imperial.model
+2025-06-22 03:55:21,528 - INFO - Model saved to models_by_genre/word2vec_theology_imperial.model
+2025-06-22 03:55:21,530 - INFO - Training Word2Vec model for poetry (late)
+2025-06-22 03:55:21,530 - INFO - Using poetry parameters: window=5, min_count=2, epochs=30
+2025-06-22 03:55:21,531 - INFO - Reading 5 texts for poetry (late)
+2025-06-22 03:55:21,531 - INFO - Processing Ausonius - Mosella
+2025-06-22 03:55:21,532 - INFO - Processing Ausonius - Ephemeris
+2025-06-22 03:55:21,533 - INFO - Processing Ausonius - Parentalia
+2025-06-22 03:55:21,535 - INFO - Processing Prudentius - Psychomachia
+2025-06-22 03:55:21,539 - INFO - Processing Prudentius - Contra Orationem Symmachia 1-2
+2025-06-22 03:55:21,547 - INFO - Corpus stats for poetry (late): {'genre': 'poetry', 'period': 'late', 'num_files': 5, 'num_sentences': 5, 'vocab_size': 6725, 'total_tokens': 21284, 'avg_sentence_length': 4256.8, 'authors': ['Ausonius', 'Ausonius', 'Ausonius', 'Prudentius', 'Prudentius'], 'works': ['Mosella', 'Ephemeris', 'Parentalia', 'Psychomachia', 'Contra Orationem Symmachia 1-2']}
+2025-06-22 03:55:21,548 - INFO - Reading 5 texts for poetry (late)
+2025-06-22 03:55:21,548 - INFO - Processing Ausonius - Mosella
+2025-06-22 03:55:21,550 - INFO - Processing Ausonius - Ephemeris
+2025-06-22 03:55:21,550 - INFO - Processing Ausonius - Parentalia
+2025-06-22 03:55:21,551 - INFO - Processing Prudentius - Psychomachia
+2025-06-22 03:55:21,554 - INFO - Processing Prudentius - Contra Orationem Symmachia 1-2
+2025-06-22 03:55:21,561 - INFO - collecting all words and their counts
+2025-06-22 03:55:21,562 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:21,567 - INFO - collected 6725 word types from a corpus of 21284 raw words and 5 sentences
+2025-06-22 03:55:21,567 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:21,592 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 6725 unique words (100.00% of original 6725, drops 0)', 'datetime': '2025-06-22T03:55:21.592122', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:21,592 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 21284 word corpus (100.00% of original 21284, drops 0)', 'datetime': '2025-06-22T03:55:21.592303', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:21,639 - INFO - deleting the raw counts dictionary of 6725 items
+2025-06-22 03:55:21,639 - INFO - sample=1e-05 downsamples 6725 most-common words
+2025-06-22 03:55:21,639 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 6098.136401650144 word corpus (28.7%% of prior 21284)', 'datetime': '2025-06-22T03:55:21.639685', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:21,693 - INFO - estimated required memory for 6725 words and 300 dimensions: 19502500 bytes
+2025-06-22 03:55:21,693 - INFO - resetting layer weights
+2025-06-22 03:55:21,701 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:21.701257', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:21,701 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 6725 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=5 shrink_windows=True', 'datetime': '2025-06-22T03:55:21.701459', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:21,847 - INFO - EPOCH 0: training on 21284 raw words (6121 effective words) took 0.1s, 43478 effective words/s
+2025-06-22 03:55:21,848 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:21,942 - INFO - EPOCH 1: training on 21284 raw words (6006 effective words) took 0.1s, 66216 effective words/s
+2025-06-22 03:55:21,943 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:22,063 - INFO - EPOCH 2: training on 21284 raw words (6134 effective words) took 0.1s, 53025 effective words/s
+2025-06-22 03:55:22,064 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:22,162 - INFO - EPOCH 3: training on 21284 raw words (6105 effective words) took 0.1s, 62836 effective words/s
+2025-06-22 03:55:22,163 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:22,259 - INFO - EPOCH 4: training on 21284 raw words (5942 effective words) took 0.1s, 62014 effective words/s
+2025-06-22 03:55:22,260 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:22,361 - INFO - EPOCH 5: training on 21284 raw words (6071 effective words) took 0.1s, 63453 effective words/s
+2025-06-22 03:55:22,361 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:22,456 - INFO - EPOCH 6: training on 21284 raw words (6086 effective words) took 0.1s, 64807 effective words/s
+2025-06-22 03:55:22,456 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:22,549 - INFO - EPOCH 7: training on 21284 raw words (6144 effective words) took 0.1s, 67108 effective words/s
+2025-06-22 03:55:22,549 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:22,647 - INFO - EPOCH 8: training on 21284 raw words (6124 effective words) took 0.1s, 62936 effective words/s
+2025-06-22 03:55:22,648 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:22,744 - INFO - EPOCH 9: training on 21284 raw words (6169 effective words) took 0.1s, 64678 effective words/s
+2025-06-22 03:55:22,744 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:22,837 - INFO - EPOCH 10: training on 21284 raw words (5961 effective words) took 0.1s, 65230 effective words/s
+2025-06-22 03:55:22,837 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:22,930 - INFO - EPOCH 11: training on 21284 raw words (6137 effective words) took 0.1s, 67529 effective words/s
+2025-06-22 03:55:22,930 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:23,029 - INFO - EPOCH 12: training on 21284 raw words (6003 effective words) took 0.1s, 60856 effective words/s
+2025-06-22 03:55:23,030 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:23,152 - INFO - EPOCH 13: training on 21284 raw words (6118 effective words) took 0.1s, 50346 effective words/s
+2025-06-22 03:55:23,152 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:23,247 - INFO - EPOCH 14: training on 21284 raw words (6113 effective words) took 0.1s, 65554 effective words/s
+2025-06-22 03:55:23,247 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:23,343 - INFO - EPOCH 15: training on 21284 raw words (6107 effective words) took 0.1s, 64157 effective words/s
+2025-06-22 03:55:23,343 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:23,468 - INFO - EPOCH 16: training on 21284 raw words (6086 effective words) took 0.1s, 49249 effective words/s
+2025-06-22 03:55:23,469 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:23,563 - INFO - EPOCH 17: training on 21284 raw words (6139 effective words) took 0.1s, 65760 effective words/s
+2025-06-22 03:55:23,563 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:23,657 - INFO - EPOCH 18: training on 21284 raw words (6082 effective words) took 0.1s, 65940 effective words/s
+2025-06-22 03:55:23,657 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:23,753 - INFO - EPOCH 19: training on 21284 raw words (6065 effective words) took 0.1s, 63767 effective words/s
+2025-06-22 03:55:23,753 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:23,852 - INFO - EPOCH 20: training on 21284 raw words (6190 effective words) took 0.1s, 63255 effective words/s
+2025-06-22 03:55:23,853 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:23,949 - INFO - EPOCH 21: training on 21284 raw words (6133 effective words) took 0.1s, 64165 effective words/s
+2025-06-22 03:55:23,950 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:24,051 - INFO - EPOCH 22: training on 21284 raw words (6116 effective words) took 0.1s, 61166 effective words/s
+2025-06-22 03:55:24,051 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:24,147 - INFO - EPOCH 23: training on 21284 raw words (6155 effective words) took 0.1s, 64629 effective words/s
+2025-06-22 03:55:24,148 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:24,243 - INFO - EPOCH 24: training on 21284 raw words (6122 effective words) took 0.1s, 64618 effective words/s
+2025-06-22 03:55:24,244 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:24,337 - INFO - EPOCH 25: training on 21284 raw words (6161 effective words) took 0.1s, 66639 effective words/s
+2025-06-22 03:55:24,338 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:55:24,435 - INFO - EPOCH 26: training on 21284 raw words (6118 effective words) took 0.1s, 63198 effective words/s
+2025-06-22 03:55:24,436 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:55:24,532 - INFO - EPOCH 27: training on 21284 raw words (6093 effective words) took 0.1s, 63969 effective words/s
+2025-06-22 03:55:24,532 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:55:24,628 - INFO - EPOCH 28: training on 21284 raw words (6178 effective words) took 0.1s, 65295 effective words/s
+2025-06-22 03:55:24,628 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:55:24,722 - INFO - EPOCH 29: training on 21284 raw words (6047 effective words) took 0.1s, 65336 effective words/s
+2025-06-22 03:55:24,722 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:55:24,819 - INFO - EPOCH 30: training on 21284 raw words (6078 effective words) took 0.1s, 63421 effective words/s
+2025-06-22 03:55:24,819 - INFO - Epoch 30: Loss = 0.0
+2025-06-22 03:55:24,915 - INFO - EPOCH 31: training on 21284 raw words (6158 effective words) took 0.1s, 64896 effective words/s
+2025-06-22 03:55:24,915 - INFO - Epoch 31: Loss = 0.0
+2025-06-22 03:55:25,014 - INFO - EPOCH 32: training on 21284 raw words (6138 effective words) took 0.1s, 62582 effective words/s
+2025-06-22 03:55:25,014 - INFO - Epoch 32: Loss = 0.0
+2025-06-22 03:55:25,110 - INFO - EPOCH 33: training on 21284 raw words (6121 effective words) took 0.1s, 64735 effective words/s
+2025-06-22 03:55:25,110 - INFO - Epoch 33: Loss = 0.0
+2025-06-22 03:55:25,217 - INFO - EPOCH 34: training on 21284 raw words (6035 effective words) took 0.1s, 56990 effective words/s
+2025-06-22 03:55:25,218 - INFO - Epoch 34: Loss = 0.0
+2025-06-22 03:55:25,218 - INFO - Word2Vec lifecycle event {'msg': 'training on 744940 raw words (213556 effective words) took 3.5s, 60721 effective words/s', 'datetime': '2025-06-22T03:55:25.218623', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:25,218 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=6725, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:25.218927', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:25,219 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_poetry_late.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:25.219454', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:25,219 - INFO - not storing attribute cum_table
+2025-06-22 03:55:25,249 - INFO - saved models_by_genre/word2vec_poetry_late.model
+2025-06-22 03:55:25,250 - INFO - Model saved to models_by_genre/word2vec_poetry_late.model
+2025-06-22 03:55:25,252 - INFO - Training Word2Vec model for history (late)
+2025-06-22 03:55:25,252 - INFO - Using history parameters: window=7, min_count=3
+2025-06-22 03:55:25,253 - INFO - Reading 4 texts for history (late)
+2025-06-22 03:55:25,253 - INFO - Processing Marcellinus - Res Gestae 14
+2025-06-22 03:55:25,257 - INFO - Processing Marcellinus - Res Gestae 15
+2025-06-22 03:55:25,260 - INFO - Processing Marcellinus - Res Gestae 16
+2025-06-22 03:55:25,263 - INFO - Processing Marcellinus - Res Gestae 17
+2025-06-22 03:55:25,268 - INFO - Corpus stats for history (late): {'genre': 'history', 'period': 'late', 'num_files': 4, 'num_sentences': 4, 'vocab_size': 7664, 'total_tokens': 27223, 'avg_sentence_length': 6805.75, 'authors': ['Marcellinus', 'Marcellinus', 'Marcellinus', 'Marcellinus'], 'works': ['Res Gestae 14', 'Res Gestae 15', 'Res Gestae 16', 'Res Gestae 17']}
+2025-06-22 03:55:25,269 - INFO - Reading 4 texts for history (late)
+2025-06-22 03:55:25,270 - INFO - Processing Marcellinus - Res Gestae 14
+2025-06-22 03:55:25,273 - INFO - Processing Marcellinus - Res Gestae 15
+2025-06-22 03:55:25,276 - INFO - Processing Marcellinus - Res Gestae 16
+2025-06-22 03:55:25,280 - INFO - Processing Marcellinus - Res Gestae 17
+2025-06-22 03:55:25,284 - INFO - collecting all words and their counts
+2025-06-22 03:55:25,284 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:25,290 - INFO - collected 7664 word types from a corpus of 27223 raw words and 4 sentences
+2025-06-22 03:55:25,291 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:25,302 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 3527 unique words (46.02% of original 7664, drops 4137)', 'datetime': '2025-06-22T03:55:25.302577', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:25,302 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 23086 word corpus (84.80% of original 27223, drops 4137)', 'datetime': '2025-06-22T03:55:25.302792', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:25,327 - INFO - deleting the raw counts dictionary of 7664 items
+2025-06-22 03:55:25,327 - INFO - sample=1e-05 downsamples 3527 most-common words
+2025-06-22 03:55:25,327 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 4612.136410930371 word corpus (20.0%% of prior 23086)', 'datetime': '2025-06-22T03:55:25.327931', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:25,365 - INFO - estimated required memory for 3527 words and 300 dimensions: 10228300 bytes
+2025-06-22 03:55:25,366 - INFO - resetting layer weights
+2025-06-22 03:55:25,369 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:25.369466', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:25,369 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 3527 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=7 shrink_windows=True', 'datetime': '2025-06-22T03:55:25.369660', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:25,455 - INFO - EPOCH 0: training on 27223 raw words (4619 effective words) took 0.1s, 54535 effective words/s
+2025-06-22 03:55:25,455 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:25,571 - INFO - EPOCH 1: training on 27223 raw words (4711 effective words) took 0.1s, 40925 effective words/s
+2025-06-22 03:55:25,572 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:25,664 - INFO - EPOCH 2: training on 27223 raw words (4632 effective words) took 0.1s, 51644 effective words/s
+2025-06-22 03:55:25,665 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:25,750 - INFO - EPOCH 3: training on 27223 raw words (4566 effective words) took 0.1s, 54257 effective words/s
+2025-06-22 03:55:25,750 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:25,830 - INFO - EPOCH 4: training on 27223 raw words (4540 effective words) took 0.1s, 57517 effective words/s
+2025-06-22 03:55:25,830 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:25,917 - INFO - EPOCH 5: training on 27223 raw words (4497 effective words) took 0.1s, 52854 effective words/s
+2025-06-22 03:55:25,917 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:26,003 - INFO - EPOCH 6: training on 27223 raw words (4571 effective words) took 0.1s, 54646 effective words/s
+2025-06-22 03:55:26,003 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:26,098 - INFO - EPOCH 7: training on 27223 raw words (4699 effective words) took 0.1s, 50130 effective words/s
+2025-06-22 03:55:26,099 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:26,188 - INFO - EPOCH 8: training on 27223 raw words (4658 effective words) took 0.1s, 52511 effective words/s
+2025-06-22 03:55:26,189 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:26,313 - INFO - EPOCH 9: training on 27223 raw words (4798 effective words) took 0.1s, 38999 effective words/s
+2025-06-22 03:55:26,313 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:26,417 - INFO - EPOCH 10: training on 27223 raw words (4508 effective words) took 0.1s, 43874 effective words/s
+2025-06-22 03:55:26,417 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:26,503 - INFO - EPOCH 11: training on 27223 raw words (4663 effective words) took 0.1s, 55347 effective words/s
+2025-06-22 03:55:26,503 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:26,588 - INFO - EPOCH 12: training on 27223 raw words (4641 effective words) took 0.1s, 55153 effective words/s
+2025-06-22 03:55:26,589 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:26,674 - INFO - EPOCH 13: training on 27223 raw words (4586 effective words) took 0.1s, 62057 effective words/s
+2025-06-22 03:55:26,674 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:26,759 - INFO - EPOCH 14: training on 27223 raw words (4618 effective words) took 0.1s, 55184 effective words/s
+2025-06-22 03:55:26,759 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:26,844 - INFO - EPOCH 15: training on 27223 raw words (4554 effective words) took 0.1s, 54235 effective words/s
+2025-06-22 03:55:26,845 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:26,932 - INFO - EPOCH 16: training on 27223 raw words (4634 effective words) took 0.1s, 53765 effective words/s
+2025-06-22 03:55:26,932 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:27,026 - INFO - EPOCH 17: training on 27223 raw words (4586 effective words) took 0.1s, 49736 effective words/s
+2025-06-22 03:55:27,026 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:27,124 - INFO - EPOCH 18: training on 27223 raw words (4542 effective words) took 0.1s, 49714 effective words/s
+2025-06-22 03:55:27,124 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:27,211 - INFO - EPOCH 19: training on 27223 raw words (4568 effective words) took 0.1s, 52840 effective words/s
+2025-06-22 03:55:27,212 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:27,336 - INFO - EPOCH 20: training on 27223 raw words (4568 effective words) took 0.1s, 37013 effective words/s
+2025-06-22 03:55:27,337 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:27,464 - INFO - EPOCH 21: training on 27223 raw words (4570 effective words) took 0.1s, 39124 effective words/s
+2025-06-22 03:55:27,464 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:27,549 - INFO - EPOCH 22: training on 27223 raw words (4654 effective words) took 0.1s, 57211 effective words/s
+2025-06-22 03:55:27,549 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:27,671 - INFO - EPOCH 23: training on 27223 raw words (4540 effective words) took 0.1s, 37690 effective words/s
+2025-06-22 03:55:27,671 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:27,765 - INFO - EPOCH 24: training on 27223 raw words (4631 effective words) took 0.1s, 54188 effective words/s
+2025-06-22 03:55:27,766 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:27,876 - INFO - EPOCH 25: training on 27223 raw words (4605 effective words) took 0.1s, 42234 effective words/s
+2025-06-22 03:55:27,876 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:55:27,957 - INFO - EPOCH 26: training on 27223 raw words (4485 effective words) took 0.1s, 55695 effective words/s
+2025-06-22 03:55:27,958 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:55:28,044 - INFO - EPOCH 27: training on 27223 raw words (4639 effective words) took 0.1s, 54367 effective words/s
+2025-06-22 03:55:28,044 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:55:28,149 - INFO - EPOCH 28: training on 27223 raw words (4518 effective words) took 0.1s, 44686 effective words/s
+2025-06-22 03:55:28,150 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:55:28,235 - INFO - EPOCH 29: training on 27223 raw words (4490 effective words) took 0.1s, 53019 effective words/s
+2025-06-22 03:55:28,236 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:55:28,236 - INFO - Word2Vec lifecycle event {'msg': 'training on 816690 raw words (137891 effective words) took 2.9s, 48106 effective words/s', 'datetime': '2025-06-22T03:55:28.236221', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:28,236 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=3527, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:28.236472', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:28,236 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_history_late.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:28.236843', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:28,237 - INFO - not storing attribute cum_table
+2025-06-22 03:55:28,247 - INFO - saved models_by_genre/word2vec_history_late.model
+2025-06-22 03:55:28,247 - INFO - Model saved to models_by_genre/word2vec_history_late.model
+2025-06-22 03:55:28,249 - INFO - Training Word2Vec model for theology (late)
+2025-06-22 03:55:28,249 - INFO - Using theology parameters: window=9, min_count=2, epochs=30
+2025-06-22 03:55:28,250 - INFO - Reading 3 texts for theology (late)
+2025-06-22 03:55:28,250 - INFO - Processing Augustine - De Civitate Dei 1-2
+2025-06-22 03:55:28,262 - INFO - Processing Ambrose - Exameron 1
+2025-06-22 03:55:28,265 - INFO - Processing Ambrose - Exameron 2
+2025-06-22 03:55:28,270 - INFO - Corpus stats for theology (late): {'genre': 'theology', 'period': 'late', 'num_files': 3, 'num_sentences': 3, 'vocab_size': 6565, 'total_tokens': 32249, 'avg_sentence_length': 10749.666666666666, 'authors': ['Augustine', 'Ambrose', 'Ambrose'], 'works': ['De Civitate Dei 1-2', 'Exameron 1', 'Exameron 2']}
+2025-06-22 03:55:28,271 - INFO - Reading 3 texts for theology (late)
+2025-06-22 03:55:28,271 - INFO - Processing Augustine - De Civitate Dei 1-2
+2025-06-22 03:55:28,280 - INFO - Processing Ambrose - Exameron 1
+2025-06-22 03:55:28,284 - INFO - Processing Ambrose - Exameron 2
+2025-06-22 03:55:28,286 - INFO - collecting all words and their counts
+2025-06-22 03:55:28,286 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:28,291 - INFO - collected 6565 word types from a corpus of 32249 raw words and 3 sentences
+2025-06-22 03:55:28,291 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:28,315 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=1 retains 6565 unique words (100.00% of original 6565, drops 0)', 'datetime': '2025-06-22T03:55:28.315153', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:28,315 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=1 leaves 32249 word corpus (100.00% of original 32249, drops 0)', 'datetime': '2025-06-22T03:55:28.315336', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:28,360 - INFO - deleting the raw counts dictionary of 6565 items
+2025-06-22 03:55:28,360 - INFO - sample=1e-05 downsamples 6565 most-common words
+2025-06-22 03:55:28,360 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 8351.594326849283 word corpus (25.9%% of prior 32249)', 'datetime': '2025-06-22T03:55:28.360805', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:28,413 - INFO - estimated required memory for 6565 words and 300 dimensions: 19038500 bytes
+2025-06-22 03:55:28,413 - INFO - resetting layer weights
+2025-06-22 03:55:28,421 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:28.421585', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:28,421 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 6565 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=9 shrink_windows=True', 'datetime': '2025-06-22T03:55:28.421817', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:28,633 - INFO - EPOCH 0: training on 32249 raw words (8245 effective words) took 0.2s, 39178 effective words/s
+2025-06-22 03:55:28,633 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:28,836 - INFO - EPOCH 1: training on 32249 raw words (8300 effective words) took 0.2s, 41190 effective words/s
+2025-06-22 03:55:28,836 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:29,123 - INFO - EPOCH 2: training on 32249 raw words (8358 effective words) took 0.3s, 29695 effective words/s
+2025-06-22 03:55:29,124 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:29,342 - INFO - EPOCH 3: training on 32249 raw words (8439 effective words) took 0.2s, 38827 effective words/s
+2025-06-22 03:55:29,342 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:29,577 - INFO - EPOCH 4: training on 32249 raw words (8354 effective words) took 0.2s, 35770 effective words/s
+2025-06-22 03:55:29,577 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:29,798 - INFO - EPOCH 5: training on 32249 raw words (8429 effective words) took 0.2s, 38433 effective words/s
+2025-06-22 03:55:29,798 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:30,008 - INFO - EPOCH 6: training on 32249 raw words (8313 effective words) took 0.2s, 39920 effective words/s
+2025-06-22 03:55:30,008 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:30,219 - INFO - EPOCH 7: training on 32249 raw words (8429 effective words) took 0.2s, 40046 effective words/s
+2025-06-22 03:55:30,220 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:30,425 - INFO - EPOCH 8: training on 32249 raw words (8436 effective words) took 0.2s, 41270 effective words/s
+2025-06-22 03:55:30,426 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:30,631 - INFO - EPOCH 9: training on 32249 raw words (8457 effective words) took 0.2s, 41349 effective words/s
+2025-06-22 03:55:30,631 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:30,830 - INFO - EPOCH 10: training on 32249 raw words (8319 effective words) took 0.2s, 42046 effective words/s
+2025-06-22 03:55:30,831 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:31,034 - INFO - EPOCH 11: training on 32249 raw words (8308 effective words) took 0.2s, 41106 effective words/s
+2025-06-22 03:55:31,034 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:31,247 - INFO - EPOCH 12: training on 32249 raw words (8356 effective words) took 0.2s, 39520 effective words/s
+2025-06-22 03:55:31,247 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:31,493 - INFO - EPOCH 13: training on 32249 raw words (8313 effective words) took 0.2s, 34021 effective words/s
+2025-06-22 03:55:31,493 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:31,727 - INFO - EPOCH 14: training on 32249 raw words (8402 effective words) took 0.2s, 36387 effective words/s
+2025-06-22 03:55:31,727 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:31,959 - INFO - EPOCH 15: training on 32249 raw words (8259 effective words) took 0.2s, 35800 effective words/s
+2025-06-22 03:55:31,959 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:32,183 - INFO - EPOCH 16: training on 32249 raw words (8466 effective words) took 0.2s, 38113 effective words/s
+2025-06-22 03:55:32,183 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:32,382 - INFO - EPOCH 17: training on 32249 raw words (8392 effective words) took 0.2s, 42411 effective words/s
+2025-06-22 03:55:32,382 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:32,587 - INFO - EPOCH 18: training on 32249 raw words (8298 effective words) took 0.2s, 40809 effective words/s
+2025-06-22 03:55:32,587 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:32,793 - INFO - EPOCH 19: training on 32249 raw words (8367 effective words) took 0.2s, 40905 effective words/s
+2025-06-22 03:55:32,793 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:33,028 - INFO - EPOCH 20: training on 32249 raw words (8239 effective words) took 0.2s, 35228 effective words/s
+2025-06-22 03:55:33,028 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:33,264 - INFO - EPOCH 21: training on 32249 raw words (8354 effective words) took 0.2s, 35570 effective words/s
+2025-06-22 03:55:33,265 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:33,503 - INFO - EPOCH 22: training on 32249 raw words (8393 effective words) took 0.2s, 35360 effective words/s
+2025-06-22 03:55:33,504 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:33,739 - INFO - EPOCH 23: training on 32249 raw words (8314 effective words) took 0.2s, 35464 effective words/s
+2025-06-22 03:55:33,739 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:33,957 - INFO - EPOCH 24: training on 32249 raw words (8330 effective words) took 0.2s, 38545 effective words/s
+2025-06-22 03:55:33,957 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:34,170 - INFO - EPOCH 25: training on 32249 raw words (8434 effective words) took 0.2s, 39760 effective words/s
+2025-06-22 03:55:34,170 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:55:34,380 - INFO - EPOCH 26: training on 32249 raw words (8389 effective words) took 0.2s, 40340 effective words/s
+2025-06-22 03:55:34,380 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:55:34,584 - INFO - EPOCH 27: training on 32249 raw words (8399 effective words) took 0.2s, 41293 effective words/s
+2025-06-22 03:55:34,585 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:55:34,789 - INFO - EPOCH 28: training on 32249 raw words (8326 effective words) took 0.2s, 40957 effective words/s
+2025-06-22 03:55:34,789 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:55:35,002 - INFO - EPOCH 29: training on 32249 raw words (8312 effective words) took 0.2s, 39231 effective words/s
+2025-06-22 03:55:35,002 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:55:35,210 - INFO - EPOCH 30: training on 32249 raw words (8398 effective words) took 0.2s, 40683 effective words/s
+2025-06-22 03:55:35,210 - INFO - Epoch 30: Loss = 0.0
+2025-06-22 03:55:35,422 - INFO - EPOCH 31: training on 32249 raw words (8307 effective words) took 0.2s, 39340 effective words/s
+2025-06-22 03:55:35,422 - INFO - Epoch 31: Loss = 0.0
+2025-06-22 03:55:35,632 - INFO - EPOCH 32: training on 32249 raw words (8390 effective words) took 0.2s, 40171 effective words/s
+2025-06-22 03:55:35,633 - INFO - Epoch 32: Loss = 0.0
+2025-06-22 03:55:35,871 - INFO - EPOCH 33: training on 32249 raw words (8511 effective words) took 0.2s, 35940 effective words/s
+2025-06-22 03:55:35,871 - INFO - Epoch 33: Loss = 0.0
+2025-06-22 03:55:36,104 - INFO - EPOCH 34: training on 32249 raw words (8374 effective words) took 0.2s, 36186 effective words/s
+2025-06-22 03:55:36,104 - INFO - Epoch 34: Loss = 0.0
+2025-06-22 03:55:36,104 - INFO - Word2Vec lifecycle event {'msg': 'training on 1128715 raw words (292710 effective words) took 7.7s, 38100 effective words/s', 'datetime': '2025-06-22T03:55:36.104615', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:36,104 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=6565, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:36.104805', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:36,105 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_theology_late.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:36.105042', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:36,105 - INFO - not storing attribute cum_table
+2025-06-22 03:55:36,128 - INFO - saved models_by_genre/word2vec_theology_late.model
+2025-06-22 03:55:36,128 - INFO - Model saved to models_by_genre/word2vec_theology_late.model
+2025-06-22 03:55:36,130 - INFO - Training Word2Vec model for letter (late)
+2025-06-22 03:55:36,131 - INFO - Reading 2 texts for letter (late)
+2025-06-22 03:55:36,132 - INFO - Processing Augustine - Epistulae 32
+2025-06-22 03:55:36,133 - INFO - Processing Ausonius - Epistulae Ausonius 1-15
+2025-06-22 03:55:36,136 - INFO - Corpus stats for letter (late): {'genre': 'letter', 'period': 'late', 'num_files': 2, 'num_sentences': 2, 'vocab_size': 2786, 'total_tokens': 5201, 'avg_sentence_length': 2600.5, 'authors': ['Augustine', 'Ausonius'], 'works': ['Epistulae 32', 'Epistulae Ausonius 1-15']}
+2025-06-22 03:55:36,137 - INFO - Reading 2 texts for letter (late)
+2025-06-22 03:55:36,137 - INFO - Processing Augustine - Epistulae 32
+2025-06-22 03:55:36,138 - INFO - Processing Ausonius - Epistulae Ausonius 1-15
+2025-06-22 03:55:36,140 - INFO - collecting all words and their counts
+2025-06-22 03:55:36,140 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-06-22 03:55:36,141 - INFO - collected 2786 word types from a corpus of 5201 raw words and 2 sentences
+2025-06-22 03:55:36,142 - INFO - Creating a fresh vocabulary
+2025-06-22 03:55:36,145 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 772 unique words (27.71% of original 2786, drops 2014)', 'datetime': '2025-06-22T03:55:36.145838', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:36,146 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 3187 word corpus (61.28% of original 5201, drops 2014)', 'datetime': '2025-06-22T03:55:36.146035', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:36,151 - INFO - deleting the raw counts dictionary of 2786 items
+2025-06-22 03:55:36,151 - INFO - sample=1e-05 downsamples 772 most-common words
+2025-06-22 03:55:36,151 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 281.11083424492506 word corpus (8.8%% of prior 3187)', 'datetime': '2025-06-22T03:55:36.151866', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'prepare_vocab'}
+2025-06-22 03:55:36,157 - INFO - estimated required memory for 772 words and 300 dimensions: 2238800 bytes
+2025-06-22 03:55:36,158 - INFO - resetting layer weights
+2025-06-22 03:55:36,159 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-06-22T03:55:36.159932', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'build_vocab'}
+2025-06-22 03:55:36,160 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 772 vocabulary and 300 features, using sg=1 hs=0 sample=1e-05 negative=15 window=5 shrink_windows=True', 'datetime': '2025-06-22T03:55:36.160125', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:36,175 - INFO - EPOCH 0: training on 5201 raw words (285 effective words) took 0.0s, 19853 effective words/s
+2025-06-22 03:55:36,175 - INFO - Epoch 0: Loss = 0.0
+2025-06-22 03:55:36,181 - INFO - EPOCH 1: training on 5201 raw words (282 effective words) took 0.0s, 57235 effective words/s
+2025-06-22 03:55:36,182 - INFO - Epoch 1: Loss = 0.0
+2025-06-22 03:55:36,190 - INFO - EPOCH 2: training on 5201 raw words (279 effective words) took 0.0s, 62964 effective words/s
+2025-06-22 03:55:36,190 - INFO - Epoch 2: Loss = 0.0
+2025-06-22 03:55:36,198 - INFO - EPOCH 3: training on 5201 raw words (279 effective words) took 0.0s, 53753 effective words/s
+2025-06-22 03:55:36,198 - INFO - Epoch 3: Loss = 0.0
+2025-06-22 03:55:36,206 - INFO - EPOCH 4: training on 5201 raw words (303 effective words) took 0.0s, 46639 effective words/s
+2025-06-22 03:55:36,206 - INFO - Epoch 4: Loss = 0.0
+2025-06-22 03:55:36,213 - INFO - EPOCH 5: training on 5201 raw words (290 effective words) took 0.0s, 50910 effective words/s
+2025-06-22 03:55:36,213 - INFO - Epoch 5: Loss = 0.0
+2025-06-22 03:55:36,221 - INFO - EPOCH 6: training on 5201 raw words (281 effective words) took 0.0s, 41859 effective words/s
+2025-06-22 03:55:36,221 - INFO - Epoch 6: Loss = 0.0
+2025-06-22 03:55:36,228 - INFO - EPOCH 7: training on 5201 raw words (271 effective words) took 0.0s, 71465 effective words/s
+2025-06-22 03:55:36,228 - INFO - Epoch 7: Loss = 0.0
+2025-06-22 03:55:36,235 - INFO - EPOCH 8: training on 5201 raw words (266 effective words) took 0.0s, 62538 effective words/s
+2025-06-22 03:55:36,235 - INFO - Epoch 8: Loss = 0.0
+2025-06-22 03:55:36,243 - INFO - EPOCH 9: training on 5201 raw words (286 effective words) took 0.0s, 44256 effective words/s
+2025-06-22 03:55:36,243 - INFO - Epoch 9: Loss = 0.0
+2025-06-22 03:55:36,251 - INFO - EPOCH 10: training on 5201 raw words (285 effective words) took 0.0s, 45275 effective words/s
+2025-06-22 03:55:36,251 - INFO - Epoch 10: Loss = 0.0
+2025-06-22 03:55:36,258 - INFO - EPOCH 11: training on 5201 raw words (270 effective words) took 0.0s, 44608 effective words/s
+2025-06-22 03:55:36,259 - INFO - Epoch 11: Loss = 0.0
+2025-06-22 03:55:36,265 - INFO - EPOCH 12: training on 5201 raw words (271 effective words) took 0.0s, 48472 effective words/s
+2025-06-22 03:55:36,266 - INFO - Epoch 12: Loss = 0.0
+2025-06-22 03:55:36,274 - INFO - EPOCH 13: training on 5201 raw words (299 effective words) took 0.0s, 53410 effective words/s
+2025-06-22 03:55:36,274 - INFO - Epoch 13: Loss = 0.0
+2025-06-22 03:55:36,283 - INFO - EPOCH 14: training on 5201 raw words (309 effective words) took 0.0s, 41236 effective words/s
+2025-06-22 03:55:36,283 - INFO - Epoch 14: Loss = 0.0
+2025-06-22 03:55:36,292 - INFO - EPOCH 15: training on 5201 raw words (320 effective words) took 0.0s, 63251 effective words/s
+2025-06-22 03:55:36,292 - INFO - Epoch 15: Loss = 0.0
+2025-06-22 03:55:36,299 - INFO - EPOCH 16: training on 5201 raw words (268 effective words) took 0.0s, 44443 effective words/s
+2025-06-22 03:55:36,299 - INFO - Epoch 16: Loss = 0.0
+2025-06-22 03:55:36,307 - INFO - EPOCH 17: training on 5201 raw words (291 effective words) took 0.0s, 57926 effective words/s
+2025-06-22 03:55:36,308 - INFO - Epoch 17: Loss = 0.0
+2025-06-22 03:55:36,315 - INFO - EPOCH 18: training on 5201 raw words (308 effective words) took 0.0s, 61920 effective words/s
+2025-06-22 03:55:36,316 - INFO - Epoch 18: Loss = 0.0
+2025-06-22 03:55:36,323 - INFO - EPOCH 19: training on 5201 raw words (268 effective words) took 0.0s, 45446 effective words/s
+2025-06-22 03:55:36,324 - INFO - Epoch 19: Loss = 0.0
+2025-06-22 03:55:36,332 - INFO - EPOCH 20: training on 5201 raw words (275 effective words) took 0.0s, 45632 effective words/s
+2025-06-22 03:55:36,333 - INFO - Epoch 20: Loss = 0.0
+2025-06-22 03:55:36,340 - INFO - EPOCH 21: training on 5201 raw words (282 effective words) took 0.0s, 45344 effective words/s
+2025-06-22 03:55:36,340 - INFO - Epoch 21: Loss = 0.0
+2025-06-22 03:55:36,346 - INFO - EPOCH 22: training on 5201 raw words (250 effective words) took 0.0s, 48779 effective words/s
+2025-06-22 03:55:36,347 - INFO - Epoch 22: Loss = 0.0
+2025-06-22 03:55:36,354 - INFO - EPOCH 23: training on 5201 raw words (321 effective words) took 0.0s, 55561 effective words/s
+2025-06-22 03:55:36,354 - INFO - Epoch 23: Loss = 0.0
+2025-06-22 03:55:36,361 - INFO - EPOCH 24: training on 5201 raw words (265 effective words) took 0.0s, 49509 effective words/s
+2025-06-22 03:55:36,361 - INFO - Epoch 24: Loss = 0.0
+2025-06-22 03:55:36,368 - INFO - EPOCH 25: training on 5201 raw words (256 effective words) took 0.0s, 47579 effective words/s
+2025-06-22 03:55:36,368 - INFO - Epoch 25: Loss = 0.0
+2025-06-22 03:55:36,375 - INFO - EPOCH 26: training on 5201 raw words (270 effective words) took 0.0s, 43400 effective words/s
+2025-06-22 03:55:36,376 - INFO - Epoch 26: Loss = 0.0
+2025-06-22 03:55:36,383 - INFO - EPOCH 27: training on 5201 raw words (270 effective words) took 0.0s, 45286 effective words/s
+2025-06-22 03:55:36,383 - INFO - Epoch 27: Loss = 0.0
+2025-06-22 03:55:36,391 - INFO - EPOCH 28: training on 5201 raw words (291 effective words) took 0.0s, 41190 effective words/s
+2025-06-22 03:55:36,392 - INFO - Epoch 28: Loss = 0.0
+2025-06-22 03:55:36,400 - INFO - EPOCH 29: training on 5201 raw words (294 effective words) took 0.0s, 53550 effective words/s
+2025-06-22 03:55:36,402 - INFO - Epoch 29: Loss = 0.0
+2025-06-22 03:55:36,402 - INFO - Word2Vec lifecycle event {'msg': 'training on 156030 raw words (8485 effective words) took 0.2s, 35079 effective words/s', 'datetime': '2025-06-22T03:55:36.402157', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'train'}
+2025-06-22 03:55:36,402 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=772, vector_size=300, alpha=0.025>', 'datetime': '2025-06-22T03:55:36.402335', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'created'}
+2025-06-22 03:55:36,403 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models_by_genre/word2vec_letter_late.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-06-22T03:55:36.403856', 'gensim': '4.3.3', 'python': '3.12.10 (main, May 22 2025, 01:28:35) [GCC 10.2.1 20210110]', 'platform': 'Linux-6.8.0-1027-azure-x86_64-with-glibc2.31', 'event': 'saving'}
+2025-06-22 03:55:36,404 - INFO - not storing attribute cum_table
+2025-06-22 03:55:36,416 - INFO - saved models_by_genre/word2vec_letter_late.model
+2025-06-22 03:55:36,416 - INFO - Model saved to models_by_genre/word2vec_letter_late.model
+2025-06-22 03:55:36,429 - INFO - Training complete!
+2025-06-22 03:55:36,429 - INFO - Trained 15 models for genre-period combinations
+2025-06-22 03:55:36,429 - INFO - Models saved in: models_by_genre
