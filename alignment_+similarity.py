@@ -12,15 +12,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 class VectorSpaceAligner:
-    # Create genre metadata structure
-    genre_metadata = {
-        'text_id': ['classicus_001', 'imperialis_045', 'tardus_123'],
-        'period': ['classical', 'imperial', 'late'],
-        'genre': ['poetry', 'history', 'theology'],
-        'subgenre': ['epic', 'biography', 'homily'],
-        'author': ['Virgil', 'Tacitus', 'Augustine'],
-        'word_count': [9896, 15432, 8765]
-    }
+    # # Create genre metadata structure
+    # genre_metadata = {
+    #     'text_id': ['classicus_001', 'imperialis_045', 'tardus_123'],
+    #     'period': ['classical', 'imperial', 'late'],
+    #     'genre': ['poetry', 'history', 'theology'],
+    #     'subgenre': ['epic', 'biography', 'homily'],
+    #     'author': ['Virgil', 'Tacitus', 'Augustine'],
+    #     'word_count': [9896, 15432, 8765]
+    # }
 
     def __init__(self, model_classical, model_imperial, model_late, shared_vocab):
         self.model_classical = model_classical
