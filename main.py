@@ -19,7 +19,7 @@ try:
         processors='tokenize,pos,lemma', 
         use_gpu=False, 
         verbose=False,
-        download_method=None  # Skip auto-download prompts
+        download_method=None 
     )
     print("Stanza pipeline initialized successfully!")
 except Exception as e:
@@ -191,5 +191,4 @@ if __name__ == "__main__":
     
     print("\n" + "="*60)
     print("LEMMATIZATION COMPLETE!")
-    print("Pure Stanza approach - no CLTK UD feature conflicts")
     print("="*60)

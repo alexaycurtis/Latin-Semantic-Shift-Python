@@ -5,9 +5,6 @@ Metadata-Driven Word2Vec Model Training for Latin Semantic Drift Analysis
 
 This script trains Word2Vec models on lemmatized Latin texts organized by genre and period
 using YAML metadata configuration for systematic semantic drift analysis.
-
-Author: [Your Name]
-Date: [Current Date]
 """
 
 import os
@@ -199,7 +196,7 @@ class MetadataCorpusReader:
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     for line_num, line in enumerate(f, 1):
-                        # Split by sentences (assuming one sentence per line)
+                        # Split by sentences
                         tokens = line.strip().split()
                         # Filter tokens
                         filtered_tokens = []
@@ -347,11 +344,6 @@ class GenrePeriodWord2VecTrainer:
         stats = corpus_reader.get_corpus_stats(genre, period)
         logger.info(f"Corpus stats for {genre} ({period}): {stats}")
         
-        # Check if we have enough data
-        # if stats['num_sentences'] < 100:
-        #     logger.warning(f"Too few sentences ({stats['num_sentences']}) for {genre} ({period}). Skipping.")
-        #     return None
-        
         # Prepare sentences
         sentences = list(corpus_reader.read_sentences_for_group(genre, period))
         
@@ -472,7 +464,7 @@ def main():
     Main training pipeline using metadata
     """
     # Configuration
-    CONFIG_FILE = "metadata_config.yaml"  # Adjust path as needed
+    CONFIG_FILE = "metadata_config.yaml"
     
     # Initialize metadata loader
     metadata_loader = LatinTextMetadataLoader(CONFIG_FILE)

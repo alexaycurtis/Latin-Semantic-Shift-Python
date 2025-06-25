@@ -6,8 +6,6 @@ Word2Vec Model Training for Latin Semantic Drift Analysis
 This script trains Word2Vec models on lemmatized Latin texts from different periods
 (Classical, Imperial, Late Roman) to enable semantic drift analysis.
 
-Author: [Your Name]
-Date: [Current Date]
 """
 
 import os
@@ -81,7 +79,7 @@ class LatinCorpusReader:
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     for line in f:
-                        # Split by sentences (assuming one sentence per line)
+                        # Split by sentences
                         tokens = line.strip().split()
                         # Filter tokens
                         filtered_tokens = []

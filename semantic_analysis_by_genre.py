@@ -1,4 +1,8 @@
 '''
+IN PROGRESS
+'''
+
+'''
 Temporal Analysis:
 
 -Map your aligned embeddings across time periods (Classical → Imperial → Late Latin if available)

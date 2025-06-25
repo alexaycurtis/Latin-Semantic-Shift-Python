@@ -14,10 +14,6 @@ import os
 from itertools import combinations
 
 class GenreVectorSpaceAligner:
-    """
-    Extends the original VectorSpaceAligner methodology for genre-based semantic drift analysis.
-    Maintains the same interface and metrics as the original temporal analysis.
-    """
     
     def __init__(self, models_dict: Dict[str, Word2Vec], shared_vocab: Set[str]):
         """
@@ -396,7 +392,7 @@ class GenreVectorSpaceAligner:
         """
         stats = {}
         
-        # Get all target genres (excluding reference)
+        # Get all target genres (exclude reference)
         target_genres = [genre for genre in self.genre_names if genre != reference_genre]
         
         # Cosine similarity statistics for each genre pair
@@ -503,7 +499,7 @@ def load_genre_models(models_dir: str = "models_by_genre") -> Dict[str, Word2Vec
     print(f"Loading models from {models_dir}...")
     for model_file in model_files:
         model_path = os.path.join(models_dir, model_file)
-        # Extract model name (remove word2vec_ prefix and .model suffix)
+        # Extract model name
         model_name = model_file.replace('word2vec_', '').replace('.model', '')
         
         try:
@@ -515,14 +511,14 @@ def load_genre_models(models_dir: str = "models_by_genre") -> Dict[str, Word2Vec
     return models
 
 
-# MAIN ANALYSIS SCRIPT - Similar structure to your original
+# MAIN
 if __name__ == "__main__":
     
     # Load your models and data
     print("Loading genre models...")
     genre_models = load_genre_models("models_by_genre")
     
-    # Load shared vocabulary (create if doesn't exist)
+    # Load shared vocabulary 
     vocab_path = "models/alignment_vocab.pkl"
     if os.path.exists(vocab_path):
         with open(vocab_path, "rb") as f:
@@ -596,4 +592,3 @@ if __name__ == "__main__":
     results_linear.to_csv('genre_semantic_drift_linear.csv', index=False)
     
     print(f"\n\nResults saved to 'genre_semantic_drift_orthogonal.csv' and 'genre_semantic_drift_linear.csv'")
-    print("These files contain all metrics commonly used in computational linguistics research.")
