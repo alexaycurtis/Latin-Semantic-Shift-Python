@@ -1205,17 +1205,20 @@ if __name__ == "__main__":
     # Load your models and aligned embeddings
     print("Loading models and aligned embeddings...")
     
-    # Load models
-    model_classical = Word2Vec.load("models/word2vec_classical.model")
-    model_imperial = Word2Vec.load("models/word2vec_imperial.model")
-    model_late = Word2Vec.load("models/word2vec_late.model")
-    # 
-    with open("models/aligned_imperial_orthogonal.pkl", "rb") as f:
-        aligned_imperial = pickle.load(f)
-    with open("models/aligned_late_orthogonal.pkl", "rb") as f:
-        aligned_late = pickle.load(f)
-    with open("models/alignment_vocab.pkl", "rb") as f:
-        shared_vocab = pickle.load(f)
+    # Load models (NON-GENRE TESTING APPROACH)
+    # model_classical = Word2Vec.load("models/word2vec_classical.model")
+    # model_imperial = Word2Vec.load("models/word2vec_imperial.model")
+    # model_late = Word2Vec.load("models/word2vec_late.model")
+    # # 
+    # with open("models/aligned_imperial_orthogonal.pkl", "rb") as f:
+    #     aligned_imperial = pickle.load(f)
+    # with open("models/aligned_late_orthogonal.pkl", "rb") as f:
+    #     aligned_late = pickle.load(f)
+    # with open("models/alignment_vocab.pkl", "rb") as f:
+    #     shared_vocab = pickle.load(f)
+
+    # Load models (GENRE APPROACH)
+    
     
     # Target words for analysis
     target_words = [
@@ -1243,4 +1246,3 @@ if __name__ == "__main__":
     print("• Co-occurrence pattern changes")
     print("• Drift magnitude and direction analysis")
     print("• Bootstrap confidence intervals and hypothesis tests")
-    print("• Publication-ready figures and statistical reports")

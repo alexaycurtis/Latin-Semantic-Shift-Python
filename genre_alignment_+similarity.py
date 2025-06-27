@@ -579,16 +579,28 @@ if __name__ == "__main__":
     stats_orth = aligner.generate_summary_statistics(results_orth, reference_genre)
     aligner.print_journal_ready_results(results_orth, stats_orth, reference_genre, "orthogonal")
     
+    # Create models directory if it doesn't exist
+    os.makedirs("models", exist_ok=True)
+
     print("\n" + "="*50)
-    print("LINEAR ALIGNMENT")
+    print("SAVING ALIGNED EMBEDDINGS")
     print("="*50)
-    aligned_genres_linear = aligner.linear_alignment(reference_genre)
-    results_linear = aligner.comprehensive_semantic_analysis(aligned_genres_linear, target_words, reference_genre)
-    stats_linear = aligner.generate_summary_statistics(results_linear, reference_genre)
-    aligner.print_journal_ready_results(results_linear, stats_linear, reference_genre, "linear")
     
-    # Save results to CSV for further analysis
-    results_orth.to_csv('genre_semantic_drift_orthogonal.csv', index=False)
-    results_linear.to_csv('genre_semantic_drift_linear.csv', index=False)
+    # Save orthogonal alignment results
+    print("Saving orthogonal alignment results...")
+    with open("models/aligned_genres_orthogonal.pkl", "wb") as f:
+        pickle.dump(aligned_genres_orth, f)
+
+    # print("\n" + "="*50)
+    # print("LINEAR ALIGNMENT")
+    # print("="*50)
+    # aligned_genres_linear = aligner.linear_alignment(reference_genre)
+    # results_linear = aligner.comprehensive_semantic_analysis(aligned_genres_linear, target_words, reference_genre)
+    # stats_linear = aligner.generate_summary_statistics(results_linear, reference_genre)
+    # aligner.print_journal_ready_results(results_linear, stats_linear, reference_genre, "linear")
+    
+    # # Save results to CSV for further analysis
+    # results_orth.to_csv('genre_semantic_drift_orthogonal.csv', index=False)
+    # results_linear.to_csv('genre_semantic_drift_linear.csv', index=False)
     
     print(f"\n\nResults saved to 'genre_semantic_drift_orthogonal.csv' and 'genre_semantic_drift_linear.csv'")
