@@ -47,7 +47,7 @@ import pandas as pd
 import pickle
 from gensim.models import Word2Vec
 from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN
+from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.manifold import MDS
 from sklearn.metrics import silhouette_score, adjusted_rand_score
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances
@@ -67,6 +67,8 @@ class TemporalSemanticAnalyzer:
     Comprehensive temporal semantic analysis for computational linguistics research.
     Implements methods from Kutuzov et al. (2018), Hamilton et al. (2016), 
     and Schlechtweg et al. (2020).
+    
+    Compatible with standard scipy/sklearn installations - no t-SNE dependency.
     """
     
     def __init__(self, model_classical, model_imperial, model_late, 
@@ -79,7 +81,7 @@ class TemporalSemanticAnalyzer:
         self.shared_vocab = shared_vocab
         
         # Set up plotting style for publication
-        plt.style.use('seaborn-v0_8-whitegrid')
+        plt.style.use('default')  # More compatible than seaborn-v0_8
         sns.set_palette("husl")
         self.setup_plotting()
     
@@ -93,7 +95,7 @@ class TemporalSemanticAnalyzer:
             'ytick.labelsize': 10,
             'legend.fontsize': 10,
             'figure.titlesize': 16,
-            'figure.dpi': 300,
+            'figure.dpi': 100,  # Reduced for compatibility
             'savefig.dpi': 300,
             'savefig.bbox': 'tight',
             'axes.spines.top': False,
@@ -107,7 +109,7 @@ class TemporalSemanticAnalyzer:
         
         Args:
             target_words: List of words to analyze
-            method: 'pca', 'tsne', 'mds', or 'umap'
+            method: 'pca' or 'mds' (t-SNE removed for compatibility)
             n_components: Number of dimensions for visualization
             save_plots: Whether to save visualization plots
         """
@@ -137,14 +139,11 @@ class TemporalSemanticAnalyzer:
         # Apply dimensionality reduction
         if method == 'pca':
             reducer = PCA(n_components=n_components, random_state=42)
-        elif method == 'tsne':
-            reducer = TSNE(n_components=n_components, random_state=42, 
-                          perplexity=min(30, len(all_vectors)//3))
         elif method == 'mds':
             reducer = MDS(n_components=n_components, random_state=42, 
                          dissimilarity='euclidean')
         else:
-            raise ValueError(f"Unknown method: {method}")
+            raise ValueError(f"Unknown method: {method}. Use 'pca' or 'mds'.")
         
         reduced_vectors = reducer.fit_transform(all_vectors)
         
@@ -241,7 +240,10 @@ class TemporalSemanticAnalyzer:
         ax1.set_title('Semantic Trajectories Across Periods')
         ax1.set_xlabel(f'{method.upper()} Component 1')
         ax1.set_ylabel(f'{method.upper()} Component 2')
-        ax1.legend(colors.keys(), loc='best')
+        legend_elements = [plt.Line2D([0], [0], marker='o', color='w', 
+                                    markerfacecolor=color, markersize=10, label=period)
+                         for period, color in colors.items()]
+        ax1.legend(handles=legend_elements, loc='best')
         
         # Plot 2: Trajectory lengths distribution
         ax2 = axes[0, 1]
@@ -265,15 +267,17 @@ class TemporalSemanticAnalyzer:
                 transform=ax3.transAxes, verticalalignment='top', 
                 bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
         
-        # Plot 4: Trajectory angles (polar plot)
+        # Plot 4: Trajectory angles histogram
         ax4 = axes[1, 1]
-        ax4.remove()
-        ax4 = fig.add_subplot(2, 2, 4, projection='polar')
-        ax4.scatter(trajectories['trajectory_angle'], trajectories['direct_distance'], 
-                   alpha=0.7, s=50, edgecolors='black', linewidth=0.5)
-        ax4.set_title('Trajectory Directions', pad=20)
-        ax4.set_theta_zero_location('E')
-        ax4.set_theta_direction(1)
+        ax4.hist(trajectories['trajectory_angle_degrees'], bins=20, alpha=0.7, 
+                edgecolor='black')
+        ax4.set_title('Distribution of Trajectory Directions')
+        ax4.set_xlabel('Trajectory Angle (degrees)')
+        ax4.set_ylabel('Frequency')
+        ax4.axvline(0, color='red', linestyle='--', alpha=0.5, label='0°')
+        ax4.axvline(90, color='red', linestyle='--', alpha=0.5, label='90°')
+        ax4.axvline(-90, color='red', linestyle='--', alpha=0.5, label='-90°')
+        ax4.legend()
         
         plt.tight_layout()
         plt.savefig(f'temporal_trajectories_{method}.png', dpi=300, bbox_inches='tight')
@@ -290,10 +294,13 @@ class TemporalSemanticAnalyzer:
         
         clustering_results = {}
         
-        for period, vectors in [('Classical', {w: self.model_classical.wv[w] for w in target_words if w in self.shared_vocab}),
-                              ('Imperial', self.aligned_imperial),
-                              ('Late', self.aligned_late)]:
-            
+        periods_data = [
+            ('Classical', {w: self.model_classical.wv[w] for w in target_words if w in self.shared_vocab}),
+            ('Imperial', self.aligned_imperial),
+            ('Late', self.aligned_late)
+        ]
+        
+        for period, vectors in periods_data:
             # Filter vectors for target words
             period_vectors = {w: v for w, v in vectors.items() if w in target_words}
             
@@ -444,7 +451,7 @@ class TemporalSemanticAnalyzer:
         for comparison, metrics in stability_metrics.items():
             print(f"{comparison}: ARI = {metrics['adjusted_rand_index']:.3f} "
                   f"({metrics['common_words']} common words)")
-    
+            
     def calculate_cooccurrence_matrices(self, target_words, window_size=5):
         """
         Calculate co-occurrence matrices for each time period.
@@ -559,7 +566,7 @@ class TemporalSemanticAnalyzer:
         plt.tight_layout()
         plt.savefig('cooccurrence_analysis.png', dpi=300, bbox_inches='tight')
         plt.show()
-    
+
     def analyze_drift_magnitude_direction(self, target_words):
         """
         Comprehensive analysis of semantic drift magnitude and direction.
@@ -602,6 +609,11 @@ class TemporalSemanticAnalyzer:
                 # Acceleration/deceleration
                 acceleration = mag_imp_late - mag_class_imp
                 
+                # Cosine similarities for additional insight
+                cos_class_imp = cosine_similarity([vec_classical], [vec_imperial])[0][0]
+                cos_class_late = cosine_similarity([vec_classical], [vec_late])[0][0]
+                cos_imp_late = cosine_similarity([vec_imperial], [vec_late])[0][0]
+                
                 drift_results.append({
                     'word': word,
                     'magnitude_class_imp': mag_class_imp,
@@ -613,7 +625,10 @@ class TemporalSemanticAnalyzer:
                     'consistency': consistency_class_late,
                     'acceleration': acceleration,
                     'total_drift_magnitude': mag_class_late,
-                    'drift_direction_consistency': consistency_class_late
+                    'drift_direction_consistency': consistency_class_late,
+                    'cosine_sim_class_imp': cos_class_imp,
+                    'cosine_sim_class_late': cos_class_late,
+                    'cosine_sim_imp_late': cos_imp_late
                 })
         
         drift_df = pd.DataFrame(drift_results)
@@ -725,14 +740,17 @@ class TemporalSemanticAnalyzer:
                 horizontalalignment='right',
                 bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
         
-        # Plot 5: Drift trajectory components
+        # Plot 5: Cosine similarity changes
         ax5 = axes[1, 1]
-        ax5.scatter(drift_df['magnitude_class_imp'], drift_df['magnitude_imp_late'],
-                   alpha=0.7, s=50, edgecolors='black')
-        ax5.plot([0, ax5.get_xlim()[1]], [0, ax5.get_ylim()[1]], 'r--', alpha=0.5)
-        ax5.set_title('Early vs Late Period Drift')
-        ax5.set_xlabel('Classical → Imperial Drift')
-        ax5.set_ylabel('Imperial → Late Drift')
+        cosine_changes = [
+            1 - drift_df['cosine_sim_class_imp'].mean(),
+            1 - drift_df['cosine_sim_imp_late'].mean(),
+            1 - drift_df['cosine_sim_class_late'].mean()
+        ]
+        ax5.bar(periods, cosine_changes, alpha=0.7, edgecolor='black')
+        ax5.set_title('Average Cosine Distance by Period')
+        ax5.set_ylabel('Cosine Distance')
+        ax5.tick_params(axis='x', rotation=45)
         
         # Plot 6: Pattern classification
         ax6 = axes[1, 2]
@@ -753,7 +771,7 @@ class TemporalSemanticAnalyzer:
         plt.show()
     
     def bootstrap_statistical_significance(self, target_words, n_bootstrap=1000, 
-                                         confidence_level=0.95):
+                                     confidence_level=0.95):
         """
         Perform bootstrap analysis for statistical significance testing.
         Implements methods from Efron & Tibshirani (1993) for computational linguistics.
@@ -775,8 +793,8 @@ class TemporalSemanticAnalyzer:
             
             # Sample with replacement
             bootstrap_sample = np.random.choice(target_words, 
-                                              size=len(target_words), 
-                                              replace=True)
+                                            size=len(target_words), 
+                                            replace=True)
             
             # Calculate statistics for bootstrap sample
             bootstrap_stats = self._calculate_observed_statistics(bootstrap_sample)
@@ -790,7 +808,7 @@ class TemporalSemanticAnalyzer:
             if len(distribution) > 0:
                 distribution = np.array(distribution)
                 
-                # Calculate confidence intervals
+                # Calculate basic confidence intervals
                 lower_percentile = (alpha / 2) * 100
                 upper_percentile = (1 - alpha / 2) * 100
                 ci_lower = np.percentile(distribution, lower_percentile)
@@ -798,29 +816,68 @@ class TemporalSemanticAnalyzer:
                 
                 # Calculate bias-corrected confidence intervals (BCa)
                 observed_value = observed_stats[metric]
-                bias_correction = stats.norm.ppf((distribution < observed_value).mean())
                 
-                # Calculate acceleration
-                jackknife_stats = self._jackknife_statistic(target_words, metric)
-                acceleration = self._calculate_acceleration(jackknife_stats)
+                # Handle edge cases for bias correction
+                prop_less = (distribution < observed_value).mean()
+                if prop_less == 0:
+                    prop_less = 1 / (2 * len(distribution))  # Add small epsilon
+                elif prop_less == 1:
+                    prop_less = 1 - 1 / (2 * len(distribution))  # Subtract small epsilon
                 
-                # BCa confidence intervals
+                bias_correction = stats.norm.ppf(prop_less)
+                
+                # Calculate acceleration with error handling
+                try:
+                    jackknife_stats = self._jackknife_statistic(target_words, metric)
+                    acceleration = self._calculate_acceleration(jackknife_stats)
+                    
+                    # Limit acceleration to prevent extreme values
+                    acceleration = np.clip(acceleration, -0.5, 0.5)
+                    
+                except (ValueError, ZeroDivisionError):
+                    # Fallback to no acceleration correction
+                    acceleration = 0
+                    print(f"Warning: Could not calculate acceleration for {metric}, using standard BCa")
+                
+                # BCa confidence intervals with bounds checking
                 z_alpha_2 = stats.norm.ppf(alpha / 2)
                 z_1_alpha_2 = stats.norm.ppf(1 - alpha / 2)
                 
-                alpha_1 = stats.norm.cdf(bias_correction + 
-                                       (bias_correction + z_alpha_2) / 
-                                       (1 - acceleration * (bias_correction + z_alpha_2)))
-                alpha_2 = stats.norm.cdf(bias_correction + 
-                                       (bias_correction + z_1_alpha_2) / 
-                                       (1 - acceleration * (bias_correction + z_1_alpha_2)))
-                
-                bca_lower = np.percentile(distribution, alpha_1 * 100)
-                bca_upper = np.percentile(distribution, alpha_2 * 100)
+                # Calculate alpha values with stability checks
+                try:
+                    denom_1 = 1 - acceleration * (bias_correction + z_alpha_2)
+                    denom_2 = 1 - acceleration * (bias_correction + z_1_alpha_2)
+                    
+                    # Check for numerical stability
+                    if abs(denom_1) < 1e-10 or abs(denom_2) < 1e-10:
+                        raise ValueError("Denominator too small for stable calculation")
+                    
+                    alpha_1_arg = bias_correction + (bias_correction + z_alpha_2) / denom_1
+                    alpha_2_arg = bias_correction + (bias_correction + z_1_alpha_2) / denom_2
+                    
+                    alpha_1 = stats.norm.cdf(alpha_1_arg)
+                    alpha_2 = stats.norm.cdf(alpha_2_arg)
+                    
+                    # Ensure alpha values are in valid range [0, 1]
+                    alpha_1 = np.clip(alpha_1, 0.001, 0.999)
+                    alpha_2 = np.clip(alpha_2, 0.001, 0.999)
+                    
+                    bca_lower = np.percentile(distribution, alpha_1 * 100)
+                    bca_upper = np.percentile(distribution, alpha_2 * 100)
+                    
+                except (ValueError, FloatingPointError):
+                    # Fallback to standard percentile method
+                    print(f"Warning: BCa calculation failed for {metric}, using standard CI")
+                    bca_lower = ci_lower
+                    bca_upper = ci_upper
                 
                 # Two-tailed p-value
                 p_value = 2 * min((distribution >= observed_value).mean(),
                                 (distribution <= observed_value).mean())
+                
+                # Ensure p-value is not exactly 0
+                if p_value == 0:
+                    p_value = 1 / len(distribution)
                 
                 bootstrap_results[metric] = {
                     'observed': observed_value,
@@ -836,14 +893,23 @@ class TemporalSemanticAnalyzer:
                 }
         
         # Perform additional statistical tests
-        additional_tests = self._perform_additional_tests(target_words, bootstrap_results)
-        bootstrap_results.update(additional_tests)
+        try:
+            additional_tests = self._perform_additional_tests(target_words, bootstrap_results)
+            bootstrap_results.update(additional_tests)
+        except Exception as e:
+            print(f"Warning: Additional tests failed: {e}")
         
         # Create visualizations
-        self._plot_bootstrap_results(bootstrap_results, confidence_level)
+        try:
+            self._plot_bootstrap_results(bootstrap_results, confidence_level)
+        except Exception as e:
+            print(f"Warning: Plotting failed: {e}")
         
         # Generate statistical report
-        self._generate_statistical_report(bootstrap_results, confidence_level)
+        try:
+            self._generate_statistical_report(bootstrap_results, confidence_level)
+        except Exception as e:
+            print(f"Warning: Report generation failed: {e}")
         
         return bootstrap_results
     
@@ -1139,16 +1205,16 @@ if __name__ == "__main__":
     # Load your models and aligned embeddings
     print("Loading models and aligned embeddings...")
     
-    # You would load these from your previous analysis
+    # Load models
     model_classical = Word2Vec.load("models/word2vec_classical.model")
     model_imperial = Word2Vec.load("models/word2vec_imperial.model")
     model_late = Word2Vec.load("models/word2vec_late.model")
     # 
-    with open("models/aligned_imperial.pkl", "rb") as f:
+    with open("models/aligned_imperial_orthogonal.pkl", "rb") as f:
         aligned_imperial = pickle.load(f)
-    with open("models/aligned_late.pkl", "rb") as f:
+    with open("models/aligned_late_orthogonal.pkl", "rb") as f:
         aligned_late = pickle.load(f)
-    with open("models/shared_vocab.pkl", "rb") as f:
+    with open("models/alignment_vocab.pkl", "rb") as f:
         shared_vocab = pickle.load(f)
     
     # Target words for analysis

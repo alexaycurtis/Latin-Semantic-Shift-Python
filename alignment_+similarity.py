@@ -10,6 +10,7 @@ import pandas as pd
 from typing import Dict, List, Set, Tuple
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 class VectorSpaceAligner:
     # # Create genre metadata structure
@@ -500,6 +501,20 @@ results_linear = aligner.comprehensive_semantic_analysis(aligned_imp_linear, ali
 stats_linear = aligner.generate_summary_statistics(results_linear)
 aligner.print_journal_ready_results(results_linear, stats_linear, "linear")
 
+# Create models directory if it doesn't exist
+os.makedirs("models", exist_ok=True)
+
+print("\n" + "="*50)
+print("SAVING ALIGNED EMBEDDINGS")
+print("="*50)
+
+# Save orthogonal alignment results
+print("Saving orthogonal alignment results...")
+with open("models/aligned_imperial_orthogonal.pkl", "wb") as f:
+    pickle.dump(aligned_imp_orth, f)
+
+with open("models/aligned_late_orthogonal.pkl", "wb") as f:
+    pickle.dump(aligned_late_orth, f)
 # Save results to CSV for further analysis
 #results_orth.to_csv('semantic_drift_orthogonal.csv', index=False)
 #results_linear.to_csv('semantic_drift_linear.csv', index=False)
